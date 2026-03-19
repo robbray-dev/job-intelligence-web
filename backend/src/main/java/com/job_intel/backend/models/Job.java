@@ -28,8 +28,10 @@ public class Job {
 
     private String location;
 
+    @Column(name = "salary_min")
     private Integer salaryMin;
 
+    @Column(name = "salary_max")
     private Integer salaryMax;
 
     @Column(nullable = false)
@@ -38,9 +40,10 @@ public class Job {
     @Column(name = "job_url", nullable = false, unique = true)
     private String jobUrl;
 
+    @Column(name = "posted_date")
     private LocalDate postedDate;
 
-    @Column(insertable = false, updatable = false)
+    @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "job")
