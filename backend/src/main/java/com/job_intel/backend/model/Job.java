@@ -1,13 +1,11 @@
 package com.job_intel.backend.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
@@ -21,35 +19,30 @@ public class Job {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "title")
+    @Column(nullable = false)
     private String title;
 
-    //look up the foreign key stuff in entity classes
-    @Column(name = "company_id")
-    private long companyId;
+    @ManyToOne
+    @JoinColumn(name = "company_id", nullable = false)
+    private Company company;
 
-    @Column(name = "location")
     private String location;
 
-    @Column(name = "salary_min")
-    private int salaryMin;
+    private Integer salaryMin;
 
-    @Column(name = "salary_max")
-    private int salaryMax;
+    private Integer salaryMax;
 
-    @Column(name = "description")
+    @Column(nullable = false)
     private String description;
 
-    @Column(name = "job_url")
+    @Column(name = "job_url", nullable = false, unique = true)
     private String jobUrl;
 
-    @Column(name = "posted_date")
     private LocalDate postedDate;
 
-    @Column(name = "created_at", insertable = false, updatable = false)
+    @Column(insertable = false, updatable = false)
     private LocalDateTime createdAt;
 
-
-
-
+    @OneToMany(mappedBy = "job")
+    private List<JobSkill> jobSkills;
 }
