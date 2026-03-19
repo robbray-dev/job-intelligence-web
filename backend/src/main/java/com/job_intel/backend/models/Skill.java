@@ -1,4 +1,4 @@
-package com.job_intel.backend.model;
+package com.job_intel.backend.models;
 
 import jakarta.persistence.*;
 import lombok.*;

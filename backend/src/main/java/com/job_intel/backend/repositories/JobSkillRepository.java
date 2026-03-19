@@ -1,10 +1,7 @@
 package com.job_intel.backend.repositories;
 
-import com.job_intel.backend.model.Job;
-import com.job_intel.backend.model.JobSkill;
+import com.job_intel.backend.models.JobSkill;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
 
 public interface JobSkillRepository extends JpaRepository<JobSkill, Long> {
 
