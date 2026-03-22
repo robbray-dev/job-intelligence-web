@@ -11,4 +11,5 @@ import java.util.Optional;
 public interface JobRepository extends JpaRepository<Job,Long> {
 
     Job findJobById(Long id);
+    List<Job> findDistinctByJobSkills_Skill_NameIn(String[] names);
 }

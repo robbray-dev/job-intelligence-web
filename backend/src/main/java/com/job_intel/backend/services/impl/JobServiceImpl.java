@@ -32,4 +32,14 @@ public class JobServiceImpl implements IJobService {
         }
         return jobDtos;
     }
+
+    @Override
+    public List<JobDto> getJobsByMultiSkill(String[] names) {
+        List<Job> jobs = jobRepository.findDistinctByJobSkills_Skill_NameIn(names);
+        List<JobDto> jobDtos = new ArrayList<>();
+        for (Job job : jobs) {
+            jobDtos.add(JobDtoMapper.mapToDto(job));
+        }
+        return jobDtos;
+    }
 }

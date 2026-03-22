@@ -9,4 +9,5 @@ import java.util.Optional;
 public interface IJobService {
     JobDto getJob(Long id);
     List<JobDto> getAllJobs();
+    List<JobDto> getJobsByMultiSkill(String[] names);
 }

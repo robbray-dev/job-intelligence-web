@@ -6,13 +6,9 @@ import com.job_intel.backend.models.Job;
 import com.job_intel.backend.services.impl.JobServiceImpl;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
@@ -29,6 +25,13 @@ public class JobController {
     @GetMapping
     public List<JobDto> getAllJobs(){
         return jobService.getAllJobs();
+    }
+
+
+
+    @GetMapping("/filterBySkills")
+    public List<JobDto> getJobsBySkills(@RequestParam String[] skills) {
+        return jobService.getJobsByMultiSkill(skills);
     }
 
 
