@@ -29,9 +29,15 @@ public class JobController {
 
 
 
-    @GetMapping("/filterBySkills")
-    public List<JobDto> getJobsBySkills(@RequestParam String[] skills) {
-        return jobService.getJobsByMultiSkill(skills);
+
+
+    @GetMapping("/filter")
+    public List<JobDto> getJobsByFilter(  @RequestParam(required = false) List<String> skills,
+                                          @RequestParam(required = false) String location,
+                                          @RequestParam(required = false) Integer minSalary,
+                                          @RequestParam(required = false) Integer maxSalary,
+                                          @RequestParam(required = false) String title) {
+        return jobService.filterJobs(skills, location, minSalary, maxSalary, title);
     }
 
 
