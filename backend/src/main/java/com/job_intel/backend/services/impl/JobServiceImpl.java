@@ -37,6 +37,7 @@ public class JobServiceImpl implements IJobService {
 
     @Override
     public List<JobDto> filterJobs(List<String> skills, String location, Integer minSalary, Integer maxSalary, String title) {
+
         List<Job> jobs = jobRepository.filterJobs(skills, location, minSalary, maxSalary, title);
         List<JobDto> jobDtos = new ArrayList<>();
         for (Job job: jobs) {

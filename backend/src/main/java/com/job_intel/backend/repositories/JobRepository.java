@@ -26,7 +26,7 @@ WHERE
 AND (:location IS NULL OR j.location = :location)
 AND (:minSalary IS NULL OR j.salaryMin >= :minSalary)
 AND (:maxSalary IS NULL OR j.salaryMax <= :maxSalary)
-AND (:title IS NULL OR LOWER(j.title) LIKE LOWER(CONCAT('%', :title, '%')))
+AND (:title IS NULL OR LOWER(j.title) LIKE LOWER(CONCAT('%', CAST(:title AS string), '%')))
 """)
     List<Job> filterJobs(
             @Param("skills") List<String> skills,

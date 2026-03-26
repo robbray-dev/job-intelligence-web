@@ -27,16 +27,14 @@ public class JobController {
         return jobService.getAllJobs();
     }
 
-
-
-
-
     @GetMapping("/filter")
     public List<JobDto> getJobsByFilter(  @RequestParam(required = false) List<String> skills,
                                           @RequestParam(required = false) String location,
                                           @RequestParam(required = false) Integer minSalary,
                                           @RequestParam(required = false) Integer maxSalary,
                                           @RequestParam(required = false) String title) {
+
+
         return jobService.filterJobs(skills, location, minSalary, maxSalary, title);
     }
 
