@@ -5,6 +5,8 @@ import com.job_intel.backend.models.Job;
 
 import java.util.List;
 import java.util.Optional;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface IJobService {
     JobDto getJob(Long id);
@@ -14,6 +16,7 @@ public interface IJobService {
             String location,
             Integer minSalary,
             Integer maxSalary,
-            String title
+            String title,
+            Pageable p
     );
 }

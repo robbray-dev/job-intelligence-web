@@ -6,7 +6,9 @@ import com.job_intel.backend.models.Job;
 import com.job_intel.backend.repositories.JobRepository;
 import com.job_intel.backend.services.IJobService;
 import lombok.AllArgsConstructor;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Pageable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,16 +35,17 @@ public class JobServiceImpl implements IJobService {
         return jobDtos;
     }
 
-
-
     @Override
-    public List<JobDto> filterJobs(List<String> skills, String location, Integer minSalary, Integer maxSalary, String title) {
-
-        List<Job> jobs = jobRepository.filterJobs(skills, location, minSalary, maxSalary, title);
+    public List<JobDto> filterJobs(List<String> skills, String location, Integer minSalary, Integer maxSalary, String title, Pageable p) {
+        Page<Job> jobs = jobRepository.filterJobs(skills, location, minSalary, maxSalary, title, p);
         List<JobDto> jobDtos = new ArrayList<>();
-        for (Job job: jobs) {
+        for (Job job: jobs.getContent()) {
             jobDtos.add(JobDtoMapper.mapToDto(job));
         }
+
         return jobDtos;
     }
+
+
+
 }

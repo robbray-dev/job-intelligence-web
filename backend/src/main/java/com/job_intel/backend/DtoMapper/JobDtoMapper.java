@@ -26,5 +26,20 @@ public class JobDtoMapper {
         );
     }
 
+    public static List<JobDto> listMapToDto (List<Job> jobs) {
+        //grab the jobskill list for the job and add the skill name to a list per job
+        List<JobDto> jobDtoList = new ArrayList<>();
+        for(Job job : jobs) {
+           List<String> skillList = new ArrayList<>();
+           for (JobSkill jobSkill: job.getJobSkills()) {
+               skillList.add(jobSkill.getSkill().getName());
+           }
+           jobDtoList.add(new JobDto(job.getId(), job.getTitle(), job.getLocation(), job.getCompany().getName(),
+                   job.getSalaryMin(), job.getSalaryMax(), job.getDescription(), job.getJobUrl(),
+                   job.getPostedDate(), skillList));
+        }
+        return jobDtoList;
+    }
+
 
 }
