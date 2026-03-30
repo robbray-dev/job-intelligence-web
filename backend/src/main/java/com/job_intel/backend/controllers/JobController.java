@@ -6,12 +6,10 @@ import com.job_intel.backend.models.Job;
 import com.job_intel.backend.repositories.JobRepository;
 import com.job_intel.backend.services.impl.JobServiceImpl;
 import lombok.AllArgsConstructor;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
@@ -31,7 +29,7 @@ public class JobController {
     @GetMapping
     public List<JobDto> getAllJobs(@RequestParam(name = "page",defaultValue = "0") Integer page){
         Integer size = 2;
-        Pageable pageable = PageRequest.of(page, 5);
+        Pageable pageable = PageRequest.of(page, 5, Sort.by("postedDate").descending());
         Page<Job> jobPage = jobRepository.findAll(pageable);
 
         return JobDtoMapper.listMapToDto(jobPage.getContent());
@@ -45,7 +43,7 @@ public class JobController {
                                           @RequestParam(required = false) Integer maxSalary,
                                           @RequestParam(required = false) String title) {
 
-        Pageable jobPage = PageRequest.of(pageNumber, 5);
+        Pageable jobPage = PageRequest.of(pageNumber, 5, Sort.by("postedDate").descending());
 
         return jobService.filterJobs(skills, location, minSalary, maxSalary, title, jobPage);
     }
