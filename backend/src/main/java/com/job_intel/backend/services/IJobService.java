@@ -10,7 +10,7 @@ import org.springframework.data.domain.Pageable;
 
 public interface IJobService {
     JobDto getJob(Long id);
-    List<JobDto> getAllJobs();
+    List<JobDto> getAllJobs(Pageable p);
     List<JobDto> filterJobs(
             List<String> skills,
             String location,

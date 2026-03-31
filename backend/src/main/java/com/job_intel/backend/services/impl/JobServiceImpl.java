@@ -12,7 +12,6 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @AllArgsConstructor
@@ -26,10 +25,10 @@ public class JobServiceImpl implements IJobService {
     }
 
     @Override
-    public List<JobDto> getAllJobs() {
+    public List<JobDto> getAllJobs(Pageable pageable) {
         List<JobDto> jobDtos = new ArrayList<>();
 
-        for(Job job:jobRepository.findAll()){
+        for(Job job : jobRepository.findAll(pageable).getContent()){
             jobDtos.add(JobDtoMapper.mapToDto(job));
         }
         return jobDtos;

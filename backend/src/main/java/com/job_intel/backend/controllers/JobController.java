@@ -19,7 +19,6 @@ import java.util.List;
 public class JobController {
 
     private JobServiceImpl jobService;
-    private JobRepository jobRepository;
 
     @GetMapping("{id}")
     public JobDto getJobById(@PathVariable Long id){
@@ -27,12 +26,12 @@ public class JobController {
     }
 
     @GetMapping
-    public List<JobDto> getAllJobs(@RequestParam(name = "page",defaultValue = "0") Integer page){
-        Integer size = 2;
-        Pageable pageable = PageRequest.of(page, 5, Sort.by("postedDate").descending());
-        Page<Job> jobPage = jobRepository.findAll(pageable);
+    public List<JobDto> getAllJobs(@RequestParam(name = "page",defaultValue = "0") int page){
 
-        return JobDtoMapper.listMapToDto(jobPage.getContent());
+        Pageable pageable = PageRequest.of(page, 5, Sort.by("postedDate").descending());
+
+        return jobService.getAllJobs(pageable);
+
     }
 
     @GetMapping("/filter")
