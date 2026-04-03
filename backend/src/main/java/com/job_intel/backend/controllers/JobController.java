@@ -47,5 +47,11 @@ public class JobController {
         return jobService.filterJobs(skills, location, minSalary, maxSalary, title, jobPage);
     }
 
+    @GetMapping("/all-skills")
+    public List<JobDto> getJobsAllSkills(@RequestParam List<String> skills, @RequestParam long skillCount){
+
+        return jobService.skillJobs(skills, skillCount);
+    }
+
 
 }

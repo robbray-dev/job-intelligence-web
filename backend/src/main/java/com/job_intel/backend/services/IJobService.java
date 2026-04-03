@@ -19,4 +19,5 @@ public interface IJobService {
             String title,
             Pageable p
     );
+    List<JobDto> skillJobs(List<String> skills, long skillCount);
 }

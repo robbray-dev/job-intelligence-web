@@ -45,6 +45,12 @@ public class JobServiceImpl implements IJobService {
         return jobDtos;
     }
 
+    @Override
+    public List<JobDto> skillJobs(List<String> skills, long skillCount) {
+        List<Job> jobs = jobRepository.findJobsByExactSkills(skills, skillCount);
+
+        return JobDtoMapper.listMapToDto(jobs);
+    }
 
 
 }

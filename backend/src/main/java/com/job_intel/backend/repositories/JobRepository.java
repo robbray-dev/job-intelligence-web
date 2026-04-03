@@ -25,9 +25,9 @@ public interface JobRepository extends JpaRepository<Job,Long> {
     @Query("""
 SELECT DISTINCT j
 FROM Job j
-JOIN j.company c
 LEFT JOIN j.jobSkills js
 LEFT JOIN js.skill s
+JOIN FETCH j.company
 WHERE 
     (:skills IS NULL OR s.name IN :skills)
 AND (:location IS NULL OR j.location = :location)
@@ -42,5 +42,20 @@ AND (:title IS NULL OR LOWER(j.title) LIKE LOWER(CONCAT('%', CAST(:title AS stri
             @Param("maxSalary") Integer maxSalary,
             @Param("title") String title,
             @Param("page") Pageable page
+    );
+
+
+    @Query("""
+SELECT j
+FROM Job j
+JOIN j.jobSkills js
+JOIN js.skill s
+WHERE s.name IN :skills
+GROUP BY j
+HAVING COUNT(DISTINCT s.name) = :skillCount
+""")
+    List<Job> findJobsByExactSkills(
+            @Param("skills") List<String> skills,
+            @Param("skillCount") long skillCount
     );
 }
