@@ -1,5 +1,6 @@
 package com.job_intel.backend.repositories;
 
+import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.models.Job;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -24,4 +25,7 @@ AND j.salaryMax IS NOT NULL
 GROUP BY j.id, j.title, j.salaryMin, j.salaryMax
 """)
     List<SalarySkillPointDto> getSalaryVsSkills();
+
+    // query to find the hiring companies
+    List<HiringCompaniesDto> getHiringCompanies();
 }

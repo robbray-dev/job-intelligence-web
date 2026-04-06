@@ -1,5 +1,6 @@
 package com.job_intel.backend.services.impl;
 
+import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.repositories.AnalyticRepository;
 import com.job_intel.backend.services.IAnalyticService;
@@ -17,5 +18,10 @@ public class AnalyticServiceImpl implements IAnalyticService {
     @Override
     public List<SalarySkillPointDto> getSalarySkill() {
         return analyticRepository.getSalaryVsSkills();
+    }
+
+    @Override
+    public List<HiringCompaniesDto> getHiringCompanies() {
+        return List.of();
     }
 }
