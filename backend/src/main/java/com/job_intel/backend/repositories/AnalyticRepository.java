@@ -26,6 +26,38 @@ GROUP BY j.id, j.title, j.salaryMin, j.salaryMax
 """)
     List<SalarySkillPointDto> getSalaryVsSkills();
 
+    /*
+     String companyName;
+    Double jobGrowthRate;
+    Long numOfJobs;
+
+  WITH counters AS (
+SELECT c.name, COUNT(CASE WHEN j.posted_date BETWEEN '2026-03-01' AND '2026-03-31' THEN 1 END) AS "previous_jobs",
+COUNT(CASE WHEN j.posted_date BETWEEN '2026-04-01' AND '2026-04-30' THEN 1 END) AS "current_jobs"
+ FROM jobs j
+ JOIN companies c on c.id = j.company_id
+ GROUP BY c.name
+)
+--if previous jobs = 0 set divisor as 1
+SELECT *, CASE WHEN previous_jobs = 0 THEN (CAST((current_jobs - previous_jobs) AS FLOAT )/ 1) * 100
+ELSE (CAST((current_jobs - previous_jobs) AS FLOAT) / previous_jobs) * 100
+END AS "growth_rate"
+FROM counters;
+   */
     // query to find the hiring companies
-    List<HiringCompaniesDto> getHiringCompanies();
+    @Query(value = """
+WITH counters AS (
+  SELECT c.name, COUNT(CASE WHEN j.posted_date BETWEEN '2026-03-01' AND '2026-03-31' THEN 1 END) AS "previous_jobs", COUNT(CASE WHEN j.posted_date BETWEEN '2026-04-01' AND '2026-04-30' THEN 1 END) AS "current_jobs"
+   FROM jobs j
+   JOIN companies c on c.id = j.company_id
+   GROUP BY c.name
+)
+SELECT *, CASE WHEN previous_jobs = 0 THEN (CAST((current_jobs - previous_jobs) AS FLOAT )/ 1) * 100
+ELSE (CAST((current_jobs - previous_jobs) AS FLOAT) / previous_jobs) * 100
+END AS "growth_rate"
+FROM counters
+)
+""", nativeQuery = true)
+
+    List<Object> getHiringCompanies();
 }

@@ -12,7 +12,7 @@ import lombok.Setter;
 public class HiringCompaniesDto {
 
     String companyName;
-    Long jobGrowthRate;
+    Double jobGrowthRate;
     Long numOfJobs;
 
 }

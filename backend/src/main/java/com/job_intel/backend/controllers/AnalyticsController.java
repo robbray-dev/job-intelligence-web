@@ -1,5 +1,6 @@
 package com.job_intel.backend.controllers;
 
+import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.services.impl.AnalyticServiceImpl;
 import lombok.AllArgsConstructor;
@@ -22,4 +23,10 @@ public class AnalyticsController {
     public List<SalarySkillPointDto> getSalarySkillAnalytic() {
         return analyticService.getSalarySkill();
     }
+
+    @GetMapping("/hiring-companies")
+    public List<HiringCompaniesDto> getHiringCompanyAnalytic(){
+        return analyticService.getHiringCompanies();
+    }
+
 }
