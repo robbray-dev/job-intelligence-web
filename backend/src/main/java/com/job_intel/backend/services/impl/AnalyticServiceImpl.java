@@ -22,6 +22,6 @@ public class AnalyticServiceImpl implements IAnalyticService {
 
     @Override
     public List<HiringCompaniesDto> getHiringCompanies() {
-        return List.of();
+        return analyticRepository.getHiringCompanies();
     }
 }
