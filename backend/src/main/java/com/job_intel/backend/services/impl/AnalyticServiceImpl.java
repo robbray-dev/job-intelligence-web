@@ -6,6 +6,7 @@ import com.job_intel.backend.repositories.AnalyticRepository;
 import com.job_intel.backend.services.IAnalyticService;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,7 +22,7 @@ public class AnalyticServiceImpl implements IAnalyticService {
     }
 
     @Override
-    public List<HiringCompaniesDto> getHiringCompanies() {
-        return analyticRepository.getHiringCompanies();
+    public List<HiringCompaniesDto> getHiringCompanies(Pageable p) {
+        return analyticRepository.getHiringCompanies(p);
     }
 }

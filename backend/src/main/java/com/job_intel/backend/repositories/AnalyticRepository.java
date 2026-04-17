@@ -3,6 +3,7 @@ package com.job_intel.backend.repositories;
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.models.Job;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -42,5 +43,5 @@ FROM counters
 
 """, nativeQuery = true)
 
-    List<HiringCompaniesDto> getHiringCompanies();
+    List<HiringCompaniesDto> getHiringCompanies(Pageable p);
 }
