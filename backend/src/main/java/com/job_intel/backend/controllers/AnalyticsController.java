@@ -3,6 +3,7 @@ package com.job_intel.backend.controllers;
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.services.impl.AnalyticServiceImpl;
+import com.job_intel.backend.services.impl.JobSkillsImpl;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.data.domain.PageRequest;
@@ -22,6 +23,8 @@ public class AnalyticsController {
     //service instance
     private AnalyticServiceImpl analyticService;
 
+    private JobSkillsImpl jobSkillsService;
+
     //mapping to salary v skill
     @GetMapping("/salary-skill")
     public List<SalarySkillPointDto> getSalarySkillAnalytic() {
@@ -34,6 +37,11 @@ public class AnalyticsController {
         Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("jobGrowthRate").descending());
 
         return analyticService.getHiringCompanies(pageable);
+    }
+
+    @GetMapping("/controller")
+    public void testing(){
+        jobSkillsService.mapJobSkills();
     }
 
 }
