@@ -8,7 +8,7 @@ import com.job_intel.backend.services.IJobSkillsService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
 
 @Service
 @AllArgsConstructor
@@ -24,10 +24,23 @@ public class JobSkillsImpl implements IJobSkillsService {
 
     @Override
     public void mapJobSkills() {
-        List<JobSkillDto> check = jobSkillRepository.findAllAsDto();
-        for (JobSkillDto js : check){
-            System.out.println("job_id = " + js.getJobId() + " skill_id = " + js.getSkillId());
+        Map<Long,List<Long>> jobSkillMap = new HashMap<>();
+        List<JobSkillDto> jobSkillDtos = jobSkillRepository.findAllAsDto();
+        List<Long> l = new ArrayList<>();
+
+        for (JobSkillDto js : jobSkillDtos){
+            if(!jobSkillMap.containsKey(js.getJobId())) {
+                l = new ArrayList<>();
+                l.add(js.getSkillId());
+                jobSkillMap.put(js.getJobId(), l);
+            } else {
+                l.add(js.getSkillId());
+            }
         }
+
+
+
+
     }
 
 
