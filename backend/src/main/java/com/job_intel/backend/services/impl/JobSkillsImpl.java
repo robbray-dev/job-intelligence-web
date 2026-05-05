@@ -37,12 +37,30 @@ public class JobSkillsImpl implements IJobSkillsService {
                 l.add(js.getSkillId());
             }
         }
-        List<List<Long>> comboOne = combinations(List.of(1L,2L,3L),1);
+      //combos for the skill lists
+        //call the combo method on each map entry, with n being from size 1 - list.length
 
-        for (List<Long> list : comboOne) {
-            System.out.println("list.toString() = " + list.toString());
+        //map to hold the combos
+        Map<Integer, List<Long>> comboMap = new HashMap<>();
+
+        //int to keep track of combo number
+        int comboNum = 1;
+
+        //loop through the entire map set
+        for (Map.Entry<Long,List<Long>> entry : jobSkillMap.entrySet()) {
+            List<Long> skills = jobSkillMap.get(entry.getKey());
+            for (int i = 1; i <= skills.size() ; i++) {
+                List<List<Long>> combos = combinations(skills,i);
+                for (List<Long> combo : combos) {
+                    comboMap.put(comboNum, combo);
+                    comboNum++;
+                }
+            }
         }
 
+        for (Map.Entry<Integer, List<Long>> entry : comboMap.entrySet()){
+            System.out.println("key(combo num) : " + entry.getKey() + " | " + "value/list : " + entry.getValue());
+        }
     }
 
     // Source - https://stackoverflow.com/a/69688477
