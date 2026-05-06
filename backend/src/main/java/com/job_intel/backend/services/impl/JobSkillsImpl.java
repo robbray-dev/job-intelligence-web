@@ -63,13 +63,26 @@ public class JobSkillsImpl implements IJobSkillsService {
             System.out.println("key(combo num) : " + entry.getKey() + " | " + "value/list : " + entry.getValue());
         }
 
+
+        //keeps the combo number and its count
         Map<Integer, Integer> countOfEachComboMap = new HashMap<>();
+
+        //to check if the combo exist in the job_skill list
         boolean countComboFlag = true;
 
+        //go through each combo
         for (Map.Entry<Integer, List<Long>> comboMapEntry : comboMap.entrySet()) {
+
+            //for each combo check if exists in the job_skills list
             for (Map.Entry<Long, List<Long>> jobSkillMapEntry : jobSkillMap.entrySet()) {
+
+                //hash set the list from j_s
                 HashSet<Long> skillSet = new HashSet<>(jobSkillMapEntry.getValue());
+
+                //loop through the combo
                 for (Long skillIdInCombo : comboMapEntry.getValue()) {
+
+                    //if the combo element appears in the job_skill mark the flag true, else false and break out the combo
                     if(skillSet.contains(skillIdInCombo)) {
                         countComboFlag = true;
                     } else {
@@ -77,7 +90,10 @@ public class JobSkillsImpl implements IJobSkillsService {
                         break;
                     }
                 }
+                //if the combo was in the job_skill list
                 if (countComboFlag == true) {
+
+                    //if the combo number hasn't been seen in the count map, then put it, else increment its count by 1 via this count map
                     if(!countOfEachComboMap.containsKey(comboMapEntry.getKey())) {
                         System.out.println("comboMapEntry key/comboNum = " + comboMapEntry.getKey() + " for combo : " + comboMapEntry.getValue());
                         countOfEachComboMap.put(comboMapEntry.getKey(),1);
