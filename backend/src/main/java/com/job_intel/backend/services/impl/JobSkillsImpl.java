@@ -58,9 +58,49 @@ public class JobSkillsImpl implements IJobSkillsService {
             }
         }
 
+        System.out.println("Map for the comboMap");
         for (Map.Entry<Integer, List<Long>> entry : comboMap.entrySet()){
             System.out.println("key(combo num) : " + entry.getKey() + " | " + "value/list : " + entry.getValue());
         }
+
+        Map<Integer, Integer> countOfEachComboMap = new HashMap<>();
+        boolean countComboFlag = true;
+
+        for (Map.Entry<Integer, List<Long>> comboMapEntry : comboMap.entrySet()) {
+            for (Map.Entry<Long, List<Long>> jobSkillMapEntry : jobSkillMap.entrySet()) {
+                HashSet<Long> skillSet = new HashSet<>(jobSkillMapEntry.getValue());
+                for (Long skillIdInCombo : comboMapEntry.getValue()) {
+                    if(skillSet.contains(skillIdInCombo)) {
+                        countComboFlag = true;
+                    } else {
+                        countComboFlag = false;
+                        break;
+                    }
+                }
+                if (countComboFlag == true) {
+                    if(!countOfEachComboMap.containsKey(comboMapEntry.getKey())) {
+                        System.out.println("comboMapEntry key/comboNum = " + comboMapEntry.getKey() + " for combo : " + comboMapEntry.getValue());
+                        countOfEachComboMap.put(comboMapEntry.getKey(),1);
+                    } else {
+                        System.out.println("comboMapEntry key/comboNum = " + comboMapEntry.getKey() + " for combo : " + comboMapEntry.getValue());
+                        countOfEachComboMap.put(comboMapEntry.getKey(),countOfEachComboMap.get(comboMapEntry.getKey()) + 1);
+                    }
+                }
+
+            }
+        }
+
+        System.out.println("count of combo maps, where key is combo number and value is count");
+        for (Map.Entry<Integer, Integer> countOfCombo : countOfEachComboMap.entrySet()) {
+            System.out.println("combo num : " +  countOfCombo.getKey() + " | " +  "combo count: " +countOfCombo.getValue());
+        }
+
+        System.out.println("testing testing");
+        System.out.println("jobSkillMap.toString() = " + jobSkillMap.toString());
+        System.out.println("comboMap = " + comboMap.toString());
+        System.out.println("countOfEachComboMap.toString() = " + countOfEachComboMap.toString());
+
+
     }
 
     // Source - https://stackoverflow.com/a/69688477
