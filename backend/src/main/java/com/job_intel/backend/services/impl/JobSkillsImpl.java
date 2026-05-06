@@ -24,6 +24,8 @@ public class JobSkillsImpl implements IJobSkillsService {
 
     @Override
     public void mapJobSkills() {
+
+        //stores job_skills entries from DB to a hashMap
         Map<Long,List<Long>> jobSkillMap = new HashMap<>();
         List<JobSkillDto> jobSkillDtos = jobSkillRepository.findAllAsDto();
         List<Long> l = new ArrayList<>();
@@ -37,6 +39,8 @@ public class JobSkillsImpl implements IJobSkillsService {
                 l.add(js.getSkillId());
             }
         }
+
+
       //combos for the skill lists
         //call the combo method on each map entry, with n being from size 1 - list.length
 
@@ -46,14 +50,20 @@ public class JobSkillsImpl implements IJobSkillsService {
         //int to keep track of combo number
         int comboNum = 1;
 
+        //hashset to avoid duplicate combos
+        HashSet<List<Long>> containsDuplicateSet = new HashSet<>();
+
         //loop through the entire map set
         for (Map.Entry<Long,List<Long>> entry : jobSkillMap.entrySet()) {
             List<Long> skills = jobSkillMap.get(entry.getKey());
             for (int i = 1; i <= skills.size() ; i++) {
                 List<List<Long>> combos = combinations(skills,i);
                 for (List<Long> combo : combos) {
-                    comboMap.put(comboNum, combo);
-                    comboNum++;
+                    if(containsDuplicateSet.add(combo)) {
+                        comboMap.put(comboNum, combo);
+                        comboNum++;
+                    }
+
                 }
             }
         }
@@ -103,8 +113,8 @@ public class JobSkillsImpl implements IJobSkillsService {
 
 
 
-
     }
+
 
     // Source - https://stackoverflow.com/a/69688477
 // Posted by user17201277, modified by community. See post 'Timeline' for change history
