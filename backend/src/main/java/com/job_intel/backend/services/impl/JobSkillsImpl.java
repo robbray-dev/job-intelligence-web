@@ -58,10 +58,7 @@ public class JobSkillsImpl implements IJobSkillsService {
             }
         }
 
-        System.out.println("Map for the comboMap");
-        for (Map.Entry<Integer, List<Long>> entry : comboMap.entrySet()){
-            System.out.println("key(combo num) : " + entry.getKey() + " | " + "value/list : " + entry.getValue());
-        }
+
 
 
         //keeps the combo number and its count
@@ -95,10 +92,8 @@ public class JobSkillsImpl implements IJobSkillsService {
 
                     //if the combo number hasn't been seen in the count map, then put it, else increment its count by 1 via this count map
                     if(!countOfEachComboMap.containsKey(comboMapEntry.getKey())) {
-                        System.out.println("comboMapEntry key/comboNum = " + comboMapEntry.getKey() + " for combo : " + comboMapEntry.getValue());
                         countOfEachComboMap.put(comboMapEntry.getKey(),1);
                     } else {
-                        System.out.println("comboMapEntry key/comboNum = " + comboMapEntry.getKey() + " for combo : " + comboMapEntry.getValue());
                         countOfEachComboMap.put(comboMapEntry.getKey(),countOfEachComboMap.get(comboMapEntry.getKey()) + 1);
                     }
                 }
@@ -106,15 +101,7 @@ public class JobSkillsImpl implements IJobSkillsService {
             }
         }
 
-        System.out.println("count of combo maps, where key is combo number and value is count");
-        for (Map.Entry<Integer, Integer> countOfCombo : countOfEachComboMap.entrySet()) {
-            System.out.println("combo num : " +  countOfCombo.getKey() + " | " +  "combo count: " +countOfCombo.getValue());
-        }
 
-        System.out.println("testing testing");
-        System.out.println("jobSkillMap.toString() = " + jobSkillMap.toString());
-        System.out.println("comboMap = " + comboMap.toString());
-        System.out.println("countOfEachComboMap.toString() = " + countOfEachComboMap.toString());
 
 
     }
