@@ -115,13 +115,8 @@ public class JobSkillsImpl implements IJobSkillsService {
         CountComparator countComparator = new CountComparator();
 
         Set<Map.Entry<Integer,Integer>> set = countOfEachComboMap.entrySet();
-        System.out.println("set to string: " + set.toString());
         List<Map.Entry<Integer,Integer>> list = new ArrayList<>(set);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-        }
         Collections.sort(list,countComparator);
-        System.out.println("list (sorted) to string: " + list.toString());
 
 
 
