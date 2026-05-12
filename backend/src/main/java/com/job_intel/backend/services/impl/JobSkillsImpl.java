@@ -5,6 +5,7 @@ import com.job_intel.backend.models.JobSkill;
 import com.job_intel.backend.repositories.JobRepository;
 import com.job_intel.backend.repositories.JobSkillRepository;
 import com.job_intel.backend.services.IJobSkillsService;
+import com.job_intel.backend.util.CountComparator;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -110,6 +111,17 @@ public class JobSkillsImpl implements IJobSkillsService {
 
             }
         }
+
+        CountComparator countComparator = new CountComparator();
+
+        Set<Map.Entry<Integer,Integer>> set = countOfEachComboMap.entrySet();
+        System.out.println("set to string: " + set.toString());
+        List<Map.Entry<Integer,Integer>> list = new ArrayList<>(set);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+        Collections.sort(list,countComparator);
+        System.out.println("list (sorted) to string: " + list.toString());
 
 
 
