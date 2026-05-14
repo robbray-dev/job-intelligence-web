@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -40,6 +41,34 @@ public class JobSkillsImpl implements IJobSkillsService {
                 l.add(js.getSkillId());
             }
         }
+        int s = 0;
+        // Source - https://stackoverflow.com/q/71055514
+// Posted by avafab
+// Retrieved 2026-05-13, License - CC BY-SA 4.0
+
+        List<Integer> arr = new ArrayList<Integer>();
+        arr.add(5);
+        arr.add(8);
+
+
+        // Source - https://stackoverflow.com/a/71055749
+// Posted by Giorgi Tsiklauri, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-05-13, License - CC BY-SA 4.0
+
+        List<Long> longList = arr.stream()
+                .map(Long::valueOf) //or map to any other type/objects with "e -> new..."
+                .collect(Collectors.toList());
+
+
+
+        for (Map.Entry<Long, List<Long>> entries : jobSkillMap.entrySet()) {
+            if(entries.getValue().containsAll(longList)){
+                System.out.println("job_id has 5,8 skill is : " + entries.getKey());
+            }
+        }
+
+
+
 
 
       //combos for the skill lists
@@ -117,6 +146,9 @@ public class JobSkillsImpl implements IJobSkillsService {
         Set<Map.Entry<Integer,Integer>> set = countOfEachComboMap.entrySet();
         List<Map.Entry<Integer,Integer>> list = new ArrayList<>(set);
         Collections.sort(list,countComparator);
+        System.out.println(list.get(28).toString());
+        System.out.println(comboMap.get(16).toString());
+
 
 
 
