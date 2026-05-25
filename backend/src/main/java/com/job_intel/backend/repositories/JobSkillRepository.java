@@ -18,6 +18,4 @@ SELECT job_id, skill_id
 FROM job_skills
 """, nativeQuery = true)
     List<JobSkillDto> findAllAsDto();
-
-
 }
