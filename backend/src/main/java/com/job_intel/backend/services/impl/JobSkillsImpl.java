@@ -158,6 +158,7 @@ public class JobSkillsImpl implements IJobSkillsService {
         //comboMap is comboNumber, listOfSkills(combo)
         //countOfEachCombo is comboNUmber, its count across job_skills
         //list is a list of (comboNumber, its count) map objects sorted on its count in ascending order.
+        //list is 3:13, 1:12, 8:9, 21:8, etc
 
         for (int i = 0; i < 20; i++) {
              Map.Entry<Integer,Integer> ele = list.get(i);
