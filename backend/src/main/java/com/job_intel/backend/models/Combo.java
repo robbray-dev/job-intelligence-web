@@ -23,8 +23,8 @@ public class Combo {
     @Column(name = "rank_number")
     private Long rankNumber;
 
-    @Column(name = "skills_in_combo")
-    private String skillsInCombo;
+    @Column(name = "skill_arr")
+    private String skillsArr;
 
     @Column(name = "created_at", nullable = false, insertable = false, updatable = false)
     private Timestamp createdAt;

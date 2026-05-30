@@ -2,6 +2,7 @@ package com.job_intel.backend.services.impl;
 
 import com.job_intel.backend.Dtos.JobSkillDto;
 import com.job_intel.backend.models.JobSkill;
+import com.job_intel.backend.repositories.AnalyticRepository;
 import com.job_intel.backend.repositories.JobRepository;
 import com.job_intel.backend.repositories.JobSkillRepository;
 import com.job_intel.backend.services.IJobSkillsService;
@@ -17,6 +18,8 @@ import java.util.stream.Collectors;
 public class JobSkillsImpl implements IJobSkillsService {
 
     private JobSkillRepository jobSkillRepository;
+
+    private AnalyticRepository analyticRepository;
 
 
     @Override
@@ -156,6 +159,11 @@ public class JobSkillsImpl implements IJobSkillsService {
         //countOfEachCombo is comboNUmber, its count across job_skills
         //list is a list of (comboNumber, its count) map objects sorted on its count in ascending order.
 
+        for (int i = 0; i < 20; i++) {
+             Map.Entry<Integer,Integer> ele = list.get(i);
+             List<Long> c = comboMap.get(ele.getKey());
+             analyticRepository.insertCombo(c,i+1);
+        }
 
 
     }

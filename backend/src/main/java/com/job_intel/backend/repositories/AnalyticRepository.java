@@ -2,11 +2,15 @@ package com.job_intel.backend.repositories;
 
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
+import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.models.Job;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.NativeQuery;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -44,4 +48,17 @@ FROM counters
 """, nativeQuery = true)
 
     List<HiringCompaniesDto> getHiringCompanies(Pageable p);
+
+    //insertCombo
+
+    @Transactional
+    @Modifying
+    @NativeQuery(value = """
+INSERT INTO combos (skill_arr, rank_number)
+SELECT array_agg(skills.name) as skill_arr, ?2
+FROM skills
+WHERE skills.id IN (?1);
+""")
+    void insertCombo(List<Long> skillIds, Integer rankNum);
+
 }
