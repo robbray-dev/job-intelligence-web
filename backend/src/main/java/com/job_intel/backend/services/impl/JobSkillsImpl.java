@@ -146,9 +146,15 @@ public class JobSkillsImpl implements IJobSkillsService {
         Set<Map.Entry<Integer,Integer>> set = countOfEachComboMap.entrySet();
         List<Map.Entry<Integer,Integer>> list = new ArrayList<>(set);
         Collections.sort(list,countComparator);
-        System.out.println(list.get(28).toString());
-        System.out.println(comboMap.get(16).toString());
 
+        System.out.println(list.toString());
+
+        System.out.println(comboMap.get(3));
+        System.out.println(comboMap.get(1));
+
+        //comboMap is comboNumber, listOfSkills(combo)
+        //countOfEachCombo is comboNUmber, its count across job_skills
+        //list is a list of (comboNumber, its count) map objects sorted on its count in ascending order.
 
 
 

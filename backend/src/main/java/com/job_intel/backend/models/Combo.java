@@ -20,8 +20,11 @@ public class Combo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "skill_in_combo")
-    private String skillInCombo;
+    @Column(name = "rank_number")
+    private Long rankNumber;
+
+    @Column(name = "skills_in_combo")
+    private String skillsInCombo;
 
     @Column(name = "created_at", nullable = false, insertable = false, updatable = false)
     private Timestamp createdAt;
