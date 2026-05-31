@@ -1,11 +1,12 @@
 package com.job_intel.backend.services;
 
+import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.models.JobSkill;
 
 import java.util.List;
 
 public interface IJobSkillsService {
     JobSkill getJobSkill(Long id);
-    void mapJobSkills();
+    List<comboDTO> mapJobSkills();
 
 }

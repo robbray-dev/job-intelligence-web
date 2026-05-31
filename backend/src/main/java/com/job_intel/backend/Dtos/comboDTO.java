@@ -12,5 +12,5 @@ import lombok.Setter;
 public class comboDTO {
 
     private String[] combo;
-    private int rankNum;
+    private Long rankNum;
 }

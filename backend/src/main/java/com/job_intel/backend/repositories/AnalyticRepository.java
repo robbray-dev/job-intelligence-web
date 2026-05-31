@@ -12,6 +12,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -59,6 +60,13 @@ SELECT array_agg(skills.name) as skill_arr, ?2
 FROM skills
 WHERE skills.id IN (?1);
 """)
-    void insertCombo(List<Long> skillIds, Integer rankNum);
+    void insertCombo(List<Long> skillIds, Long rankNum);
+
+    @NativeQuery(value = """
+SELECT skill_arr, rank_number
+FROM combos
+""")
+    List<comboDTO> getCombos();
+
 
 }

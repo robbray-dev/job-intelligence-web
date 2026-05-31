@@ -2,6 +2,7 @@ package com.job_intel.backend.controllers;
 
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
+import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.services.impl.AnalyticServiceImpl;
 import com.job_intel.backend.services.impl.JobSkillsImpl;
 import lombok.AllArgsConstructor;
@@ -40,8 +41,9 @@ public class AnalyticsController {
     }
 
     @GetMapping("/controller")
-    public void testing(){
-        jobSkillsService.mapJobSkills();
+    public List<comboDTO> testing(){
+        return jobSkillsService.mapJobSkills();
     }
+
 
 }

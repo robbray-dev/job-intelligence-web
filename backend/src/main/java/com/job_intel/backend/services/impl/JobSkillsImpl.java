@@ -1,6 +1,7 @@
 package com.job_intel.backend.services.impl;
 
 import com.job_intel.backend.Dtos.JobSkillDto;
+import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.models.JobSkill;
 import com.job_intel.backend.repositories.AnalyticRepository;
 import com.job_intel.backend.repositories.JobRepository;
@@ -28,7 +29,7 @@ public class JobSkillsImpl implements IJobSkillsService {
     }
 
     @Override
-    public void mapJobSkills() {
+    public List<comboDTO> mapJobSkills() {
 
         //stores job_skills entries from DB to a hashMap
         Map<Long,List<Long>> jobSkillMap = new HashMap<>();
@@ -163,8 +164,10 @@ public class JobSkillsImpl implements IJobSkillsService {
         for (int i = 0; i < 20; i++) {
              Map.Entry<Integer,Integer> ele = list.get(i);
              List<Long> c = comboMap.get(ele.getKey());
-             analyticRepository.insertCombo(c,i+1);
+             Long rank = Long.valueOf(i+1);
+             analyticRepository.insertCombo(c,rank);
         }
+       return analyticRepository.getCombos();
 
 
     }
