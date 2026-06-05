@@ -40,7 +40,7 @@ public class AnalyticsController {
         return analyticService.getHiringCompanies(pageable);
     }
 
-    @GetMapping("/controller")
+    @GetMapping("/tech-combos")
     public List<comboDTO> testing(){
         return jobSkillsService.mapJobSkills();
     }
