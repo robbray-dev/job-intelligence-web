@@ -2,6 +2,7 @@ package com.job_intel.backend.repositories;
 
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
+import com.job_intel.backend.Dtos.SkillVelocityDto;
 import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.models.Job;
 import org.springframework.data.domain.Pageable;
@@ -67,6 +68,21 @@ SELECT skill_arr, rank_number
 FROM combos
 """)
     List<comboDTO> getCombos();
+
+
+    @NativeQuery(value = """
+WITH counters AS (SELECT s.name, COUNT(CASE WHEN j.posted_date BETWEEN '2026-03-01' AND '2026-03-31' THEN 1 END) AS "previous_period_count", COUNT(CASE WHEN j.posted_date BETWEEN '2026-04-01' AND '2026-04-30' THEN 1 END) AS "current_period_count"
+   FROM job_skills js
+   JOIN skills s on s.id = js.skill_id
+   JOIN jobs j on j.id = js.job_id
+   GROUP BY s.name)
+
+SELECT name, CASE WHEN previous_period_count = 0 THEN (CAST((current_period_count - previous_period_count) AS DECIMAL )/ 1) * 100
+ELSE (CAST((current_period_count - previous_period_count) AS DECIMAL) / previous_period_count) * 100
+END AS "growth_rate"
+FROM counters
+""")
+    List<SkillVelocityDto> getSkillVelocity();
 
 
 }

@@ -2,6 +2,7 @@ package com.job_intel.backend.controllers;
 
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
+import com.job_intel.backend.Dtos.SkillVelocityDto;
 import com.job_intel.backend.Dtos.comboDTO;
 import com.job_intel.backend.services.impl.AnalyticServiceImpl;
 import com.job_intel.backend.services.impl.JobSkillsImpl;
@@ -43,6 +44,11 @@ public class AnalyticsController {
     @GetMapping("/tech-combos")
     public List<comboDTO> testing(){
         return jobSkillsService.mapJobSkills();
+    }
+
+    @GetMapping("/skillVelocity")
+    public List<SkillVelocityDto> getSkillVelocityAnalytic() {
+        return analyticService.getSkillVelocities();
     }
 
 
