@@ -82,7 +82,7 @@ ELSE (CAST((current_period_count - previous_period_count) AS DECIMAL) / previous
 END AS "growth_rate"
 FROM counters
 """)
-    List<SkillVelocityDto> getSkillVelocity();
+    List<SkillVelocityDto> getSkillVelocity(Pageable p);
 
 
 }

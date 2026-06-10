@@ -28,7 +28,7 @@ public class AnalyticServiceImpl implements IAnalyticService {
     }
 
     @Override
-    public List<SkillVelocityDto> getSkillVelocities() {
-        return analyticRepository.getSkillVelocity();
+    public List<SkillVelocityDto> getSkillVelocities(Pageable p) {
+        return analyticRepository.getSkillVelocity(p);
     }
 }

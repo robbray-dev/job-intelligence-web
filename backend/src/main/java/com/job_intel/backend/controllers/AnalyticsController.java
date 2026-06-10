@@ -47,8 +47,11 @@ public class AnalyticsController {
     }
 
     @GetMapping("/skillVelocity")
-    public List<SkillVelocityDto> getSkillVelocityAnalytic() {
-        return analyticService.getSkillVelocities();
+    public List<SkillVelocityDto> getSkillVelocityAnalytic(@RequestParam(name = "page", defaultValue = "0") int pageNumber) {
+
+        Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("growth_rate").descending());
+
+        return analyticService.getSkillVelocities(pageable);
     }
 
 

@@ -12,5 +12,5 @@ public interface IAnalyticService {
     List<SalarySkillPointDto> getSalarySkill();
     List<HiringCompaniesDto> getHiringCompanies(Pageable p);
 
-    List<SkillVelocityDto> getSkillVelocities();
+    List<SkillVelocityDto> getSkillVelocities(Pageable p);
 }
