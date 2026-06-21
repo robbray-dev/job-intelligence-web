@@ -14,5 +14,5 @@ import lombok.Setter;
 public class datePostingDto {
 
     private LocalDate postedDate;
-    private Integer jobPostingCount;
+    private Long jobPostingCount;
 }

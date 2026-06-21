@@ -3,6 +3,7 @@ package com.job_intel.backend.services.impl;
 import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.Dtos.SkillVelocityDto;
+import com.job_intel.backend.Dtos.datePostingDto;
 import com.job_intel.backend.repositories.AnalyticRepository;
 import com.job_intel.backend.services.IAnalyticService;
 import lombok.AllArgsConstructor;
@@ -30,5 +31,10 @@ public class AnalyticServiceImpl implements IAnalyticService {
     @Override
     public List<SkillVelocityDto> getSkillVelocities(Pageable p) {
         return analyticRepository.getSkillVelocity(p);
+    }
+
+    @Override
+    public List<datePostingDto> getJobDatePosting(Pageable p) {
+        return analyticRepository.getDatesPosting(p);
     }
 }

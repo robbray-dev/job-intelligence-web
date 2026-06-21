@@ -4,6 +4,7 @@ import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.Dtos.SkillVelocityDto;
 import com.job_intel.backend.Dtos.comboDTO;
+import com.job_intel.backend.Dtos.datePostingDto;
 import com.job_intel.backend.services.impl.AnalyticServiceImpl;
 import com.job_intel.backend.services.impl.JobSkillsImpl;
 import lombok.AllArgsConstructor;
@@ -52,6 +53,15 @@ public class AnalyticsController {
         Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("growth_rate").descending());
 
         return analyticService.getSkillVelocities(pageable);
+    }
+
+    @GetMapping("/jobCountPerDate")
+    public List<datePostingDto> getJobCountForDate(@RequestParam(name = "page", defaultValue = "0") int pageNumber){
+
+        Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("job_postings").descending());
+
+        return analyticService.getJobDatePosting(pageable);
+
     }
 
 

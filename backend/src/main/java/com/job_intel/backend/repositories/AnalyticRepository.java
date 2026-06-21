@@ -4,6 +4,7 @@ import com.job_intel.backend.Dtos.HiringCompaniesDto;
 import com.job_intel.backend.Dtos.SalarySkillPointDto;
 import com.job_intel.backend.Dtos.SkillVelocityDto;
 import com.job_intel.backend.Dtos.comboDTO;
+import com.job_intel.backend.Dtos.datePostingDto;
 import com.job_intel.backend.models.Job;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -83,6 +84,13 @@ END AS "growth_rate"
 FROM counters
 """)
     List<SkillVelocityDto> getSkillVelocity(Pageable p);
+
+
+    @NativeQuery(value = """
+select j.posted_date, count(*) as "job_postings" from jobs j
+group by posted_date
+            """)
+    List<datePostingDto> getDatesPosting(Pageable p);
 
 
 }
