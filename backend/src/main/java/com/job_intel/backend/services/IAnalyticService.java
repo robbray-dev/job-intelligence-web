@@ -18,5 +18,5 @@ public interface IAnalyticService {
 
     List<datePostingDto> getJobDatePosting(Pageable p);
 
-    List<Long> getDummies(Pageable p);
+    
 }

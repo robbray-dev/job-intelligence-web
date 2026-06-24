@@ -38,9 +38,5 @@ public class AnalyticServiceImpl implements IAnalyticService {
         return analyticRepository.getDatesPosting(p);
     }
 
-    @Override
-    public List<Long> getDummies(Pageable p) {
-        
-        return analyticRepository.getDummy(p);
-    }
+   
 }

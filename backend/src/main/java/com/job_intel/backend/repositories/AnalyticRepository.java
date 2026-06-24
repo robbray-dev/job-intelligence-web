@@ -94,11 +94,7 @@ group by posted_date
     List<datePostingDto> getDatesPosting(Pageable p);
 
 
-      @NativeQuery(value = """
-SELECT j.id
-FROM jobs j
-            """)
-    List<Long> getDummy(Pageable p);
+
 
 
 }

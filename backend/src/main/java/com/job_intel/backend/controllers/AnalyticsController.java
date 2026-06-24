@@ -67,15 +67,5 @@ public class AnalyticsController {
     }
 
 
-    @GetMapping("/dummy")
-    public List<Long> getDumDum(@RequestParam(name = "page", defaultValue = "0") int pageNumber){
-
-        Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("id").descending());
-        
-
-        return analyticService.getDummies(pageable);
-
-    }
-
 
 }
