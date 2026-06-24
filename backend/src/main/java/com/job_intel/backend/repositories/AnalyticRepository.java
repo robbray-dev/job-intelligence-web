@@ -87,10 +87,18 @@ FROM counters
 
 
     @NativeQuery(value = """
-select j.posted_date, count(*) as "job_postings" from jobs j
+select posted_date, count(*) as "job_postings" 
+from jobs j
 group by posted_date
             """)
     List<datePostingDto> getDatesPosting(Pageable p);
+
+
+      @NativeQuery(value = """
+SELECT j.id
+FROM jobs j
+            """)
+    List<Long> getDummy(Pageable p);
 
 
 }

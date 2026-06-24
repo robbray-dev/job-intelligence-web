@@ -17,4 +17,6 @@ public interface IAnalyticService {
     List<SkillVelocityDto> getSkillVelocities(Pageable p);
 
     List<datePostingDto> getJobDatePosting(Pageable p);
+
+    List<Long> getDummies(Pageable p);
 }

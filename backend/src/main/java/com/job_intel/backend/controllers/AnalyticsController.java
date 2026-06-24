@@ -50,6 +50,7 @@ public class AnalyticsController {
     @GetMapping("/skillVelocity")
     public List<SkillVelocityDto> getSkillVelocityAnalytic(@RequestParam(name = "page", defaultValue = "0") int pageNumber) {
 
+
         Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("growth_rate").descending());
 
         return analyticService.getSkillVelocities(pageable);
@@ -59,8 +60,20 @@ public class AnalyticsController {
     public List<datePostingDto> getJobCountForDate(@RequestParam(name = "page", defaultValue = "0") int pageNumber){
 
         Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("job_postings").descending());
+        
 
         return analyticService.getJobDatePosting(pageable);
+
+    }
+
+
+    @GetMapping("/dummy")
+    public List<Long> getDumDum(@RequestParam(name = "page", defaultValue = "0") int pageNumber){
+
+        Pageable pageable = PageRequest.of(pageNumber, 5, Sort.by("id").descending());
+        
+
+        return analyticService.getDummies(pageable);
 
     }
 

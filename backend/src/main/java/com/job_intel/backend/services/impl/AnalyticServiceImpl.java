@@ -37,4 +37,10 @@ public class AnalyticServiceImpl implements IAnalyticService {
     public List<datePostingDto> getJobDatePosting(Pageable p) {
         return analyticRepository.getDatesPosting(p);
     }
+
+    @Override
+    public List<Long> getDummies(Pageable p) {
+        
+        return analyticRepository.getDummy(p);
+    }
 }
