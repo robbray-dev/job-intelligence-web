@@ -35,6 +35,7 @@ public class AnalyticServiceImpl implements IAnalyticService {
 
     @Override
     public List<datePostingDto> getJobDatePosting(Pageable p) {
+       
         return analyticRepository.getDatesPosting(p);
     }
 

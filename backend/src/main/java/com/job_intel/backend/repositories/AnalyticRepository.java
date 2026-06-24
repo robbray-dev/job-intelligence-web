@@ -88,7 +88,7 @@ FROM counters
 
     @NativeQuery(value = """
 select posted_date, count(*) as "job_postings" 
-from jobs j
+from jobs
 group by posted_date
             """)
     List<datePostingDto> getDatesPosting(Pageable p);
