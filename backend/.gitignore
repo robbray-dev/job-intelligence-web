@@ -40,3 +40,5 @@ out/
 
 .devcontainer/devcontainer-lock.json
 .devcontainer/devcontainer.env
+
+/target/
