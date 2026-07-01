@@ -11,6 +11,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
+@NoArgsConstructor
 @AllArgsConstructor
 public class TechMapJobInit {
 
@@ -46,6 +47,7 @@ public class TechMapJobInit {
                        //try catch block
         try{
             this.res = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println(this.res.body());
         } catch (IOException e) {
             System.out.println("Something went wrong. IO exception");
         } catch (InterruptedException e) {
