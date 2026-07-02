@@ -6,12 +6,16 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.job_intel.backend.job_board_apis.TechMapJobInit;
 
 @SpringBootTest
 class TechMapJobTest {
+
+    @Autowired
+    private TechMapJobInit tec;
 
     @Test
     //test the response of the techmapjob class
@@ -28,6 +32,14 @@ class TechMapJobTest {
         System.out.println(tech.getRes());
         assertNotNull(tech.getRes());
 
+    }
+
+    @Test
+    void apiTest(){
+        String apiKey = tec.getApiKey();
+        System.out.println(apiKey);
+
+        assertNotNull(apiKey);
     }
 
 }
