@@ -27,10 +27,10 @@ class TechMapJobTest {
      */
     void jobInitTest (){
        
-        TechMapJobInit tech = new TechMapJobInit();
-        tech.initClient();
-        System.out.println(tech.getRes());
-        assertNotNull(tech.getRes());
+       
+        tec.initClient();
+        System.out.println(tec.getRes());
+        assertNotNull(tec.getRes());
 
     }
 
