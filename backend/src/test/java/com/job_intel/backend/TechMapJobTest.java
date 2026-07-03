@@ -18,13 +18,6 @@ class TechMapJobTest {
     private TechMapJobInit tec;
 
     @Test
-    //test the response of the techmapjob class
-    /*
-    void testName
-        techMapJob.init
-        System.out.print res
-        assert(techMapJob.res is not null)
-     */
     void jobInitTest (){
        
        
