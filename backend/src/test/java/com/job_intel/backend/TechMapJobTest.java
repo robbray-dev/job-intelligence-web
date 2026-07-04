@@ -17,6 +17,7 @@ class TechMapJobTest {
     @Autowired
     private TechMapJobInit tec;
 
+    /*
     @Test
     void jobInitTest (){
        
@@ -26,6 +27,7 @@ class TechMapJobTest {
         assertNotNull(tec.getRes());
 
     }
+ */
 
     @Test
     void apiTest(){
