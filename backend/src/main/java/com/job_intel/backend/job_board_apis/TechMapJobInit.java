@@ -15,7 +15,6 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-@Component
 public class TechMapJobInit {
 
     //might get removed cuz i dont need it

@@ -18,7 +18,7 @@ class RapidApiServiceTest {
     @Test
     void apiServiceTest(){
 
-        String key = apiService.getApiKey();
+        String key = this.apiService.getApiKey();
         System.out.println(key);
         assertNotNull(key);
     }
