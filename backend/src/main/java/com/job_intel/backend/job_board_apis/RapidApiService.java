@@ -8,8 +8,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-@NoArgsConstructor
-@Component
 public class RapidApiService {
 
     @Value("${rapid.api.key}")

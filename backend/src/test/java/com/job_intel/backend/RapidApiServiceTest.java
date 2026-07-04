@@ -10,10 +10,10 @@ import com.job_intel.backend.job_board_apis.RapidApiService;
 
 @SpringBootTest
 class RapidApiServiceTest {
-
+/*
     @Autowired 
     private RapidApiService apiService;
-
+ */
     
     @Test
     void apiServiceTest(){
@@ -23,6 +23,10 @@ class RapidApiServiceTest {
         assertNotNull(key);
    */
 
-        
+        RapidApiService s = new RapidApiService();
+        String key = s.getApiKey();
+        System.out.println(key);
+        assertNotNull(key);
+
         }
 }
