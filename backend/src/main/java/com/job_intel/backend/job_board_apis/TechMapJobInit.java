@@ -6,18 +6,15 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
-@NoArgsConstructor
 @AllArgsConstructor
-
 @Component
 public class TechMapJobInit {
 
@@ -26,8 +23,28 @@ public class TechMapJobInit {
 
     private HttpResponse<String> res;
 
-    @Value("${rapid.api.key}")
-    private String apiKey;
+   
+    @Autowired
+    private RapidApiService aRapidApiService;
+
+    public TechMapJobInit(){
+         this.request = HttpRequest.newBuilder()
+            .uri(URI.create("https://daily-international-job-postings.p.rapidapi.com/api/v2/jobs/search?format=json&countryCode=us&hasSalary=true&page=1"))
+            .header("x-rapidapi-key", aRapidApiService.getApiKey())
+            .header("x-rapidapi-host", "daily-international-job-postings.p.rapidapi.com")
+            .header("Content-Type", "application/json")
+            .method("GET", HttpRequest.BodyPublishers.noBody())
+            .build();
+                       //try catch block
+        try{
+            this.res = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+        } catch (IOException e) {
+            System.out.println("Something went wrong. IO exception");
+        } catch (InterruptedException e) {
+            System.out.println("Something went wrong. Interrupted exception");
+        }
+    }
+
 
     //what fields for this object
     // i want this object to have methods that ...
@@ -45,25 +62,7 @@ public class TechMapJobInit {
         /
 
      */
-    public void initClient (){
-        this.request = HttpRequest.newBuilder()
-            .uri(URI.create("https://daily-international-job-postings.p.rapidapi.com/api/v2/jobs/search?format=json&countryCode=us&hasSalary=true&page=1"))
-            .header("x-rapidapi-key", apiKey)
-            .header("x-rapidapi-host", "daily-international-job-postings.p.rapidapi.com")
-            .header("Content-Type", "application/json")
-            .method("GET", HttpRequest.BodyPublishers.noBody())
-            .build();
-                       //try catch block
-        try{
-            this.res = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-            System.out.println(this.res.body());
-        } catch (IOException e) {
-            System.out.println("Something went wrong. IO exception");
-        } catch (InterruptedException e) {
-            System.out.println("Something went wrong. Interrupted exception");
-        }
-
-    }
+   
 
   
 

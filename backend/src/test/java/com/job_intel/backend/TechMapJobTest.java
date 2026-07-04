@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.job_intel.backend.job_board_apis.RapidApiService;
 import com.job_intel.backend.job_board_apis.TechMapJobInit;
 
 @SpringBootTest
@@ -30,11 +31,17 @@ class TechMapJobTest {
  */
 
     @Test
-    void apiTest(){
-        String apiKey = tec.getApiKey();
+    void apiTest(@Autowired RapidApiService apiService){
+        String apiKey = apiService.getApiKey();
         System.out.println(apiKey);
 
         assertNotNull(apiKey);
     }
 
+
+    @Test
+    void techMapJobInitConstructorTest() {
+
+        System.out.println(tec.getRes().body());
+    }
 }
