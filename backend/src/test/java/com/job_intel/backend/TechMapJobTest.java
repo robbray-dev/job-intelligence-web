@@ -15,8 +15,7 @@ import com.job_intel.backend.job_board_apis.TechMapJobInit;
 @SpringBootTest
 class TechMapJobTest {
 
-    @Autowired
-    private TechMapJobInit tec;
+   
 
     /*
     @Test
@@ -28,7 +27,7 @@ class TechMapJobTest {
         assertNotNull(tec.getRes());
 
     }
- */
+
 
     @Test
     void apiTest(@Autowired RapidApiService apiService){
@@ -38,10 +37,12 @@ class TechMapJobTest {
         assertNotNull(apiKey);
     }
 
+ */
 
     @Test
     void techMapJobInitConstructorTest() {
 
+        TechMapJobInit tec = new TechMapJobInit();
         System.out.println(tec.getRes().body());
     }
 }

@@ -14,7 +14,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
-@AllArgsConstructor
 public class TechMapJobInit {
 
     //might get removed cuz i dont need it
@@ -23,13 +22,13 @@ public class TechMapJobInit {
     private HttpResponse<String> res;
 
    
-    @Autowired
-    private RapidApiService aRapidApiService;
 
     public TechMapJobInit(){
+
+        RapidApiService a = new RapidApiService();
          this.request = HttpRequest.newBuilder()
             .uri(URI.create("https://daily-international-job-postings.p.rapidapi.com/api/v2/jobs/search?format=json&countryCode=us&hasSalary=true&page=1"))
-            .header("x-rapidapi-key", aRapidApiService.getApiKey())
+            .header("x-rapidapi-key", a.getApiKey())
             .header("x-rapidapi-host", "daily-international-job-postings.p.rapidapi.com")
             .header("Content-Type", "application/json")
             .method("GET", HttpRequest.BodyPublishers.noBody())
