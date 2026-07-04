@@ -43,7 +43,7 @@ public class AnalyticsController {
     }
 
     @GetMapping("/tech-combos")
-    public List<comboDTO> testing(){
+    public List<comboDTO> getCommonCombos(){
         return jobSkillsService.mapJobSkills();
     }
 
