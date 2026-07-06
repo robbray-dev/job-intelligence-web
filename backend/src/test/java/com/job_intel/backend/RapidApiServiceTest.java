@@ -4,12 +4,16 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.job_intel.backend.job_board_apis.RapidApiService;
 
 @SpringBootTest
 class RapidApiServiceTest {
+
+    @Value("${rapid.api.key}")
+    private String apiKey;
 /*
     @Autowired 
     private RapidApiService apiService;
@@ -23,7 +27,7 @@ class RapidApiServiceTest {
         assertNotNull(key);
    */
 
-        RapidApiService s = new RapidApiService();
+        RapidApiService s = new RapidApiService(apiKey);
         String key = s.getApiKey();
         System.out.println(key);
         assertNotNull(key);
