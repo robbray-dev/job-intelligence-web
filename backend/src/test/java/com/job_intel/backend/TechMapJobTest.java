@@ -9,15 +9,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.beans.factory.annotation.Value;
-
-import com.job_intel.backend.job_board_apis.RapidApiService;
 import com.job_intel.backend.job_board_apis.TechMapJobInit;
 
 @SpringBootTest
 class TechMapJobTest {
 
-    @Value("${rapid.api.key}")
-    String apiKey;
    
 
     /*
