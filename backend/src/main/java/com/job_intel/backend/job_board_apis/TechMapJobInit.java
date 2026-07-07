@@ -11,9 +11,11 @@ public class TechMapJobInit {
    
 
     public static String getJobDataFromApi() {
+        String key = System.getenv("RAPID_API_KEY");
+        System.out.println(key);
          HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://daily-international-job-postings.p.rapidapi.com/api/v2/jobs/search?format=json&countryCode=us&hasSalary=true&page=1"))
-            .header("x-rapidapi-key", "API_KEY_WILL_GO_HERE")
+            .header("x-rapidapi-key", key)
             .header("x-rapidapi-host", "daily-international-job-postings.p.rapidapi.com")
             .header("Content-Type", "application/json")
             .method("GET", HttpRequest.BodyPublishers.noBody())

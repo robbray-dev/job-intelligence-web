@@ -45,7 +45,6 @@ class TechMapJobTest {
     @Test
     void techMapJobInitConstructorTest() {
 
-        TechMapJobInit tec = new TechMapJobInit(apiKey);
-        System.out.println(tec.getRes().body());
+        System.out.println(TechMapJobInit.getJobDataFromApi());
     }
 }
