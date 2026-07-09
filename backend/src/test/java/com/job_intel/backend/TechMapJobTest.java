@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.beans.factory.annotation.Value;
+
+import com.job_intel.backend.job_board_apis.TechMapJobDataToDataScript;
 import com.job_intel.backend.job_board_apis.TechMapJobInit;
 
 @SpringBootTest
@@ -42,5 +44,12 @@ class TechMapJobTest {
     void techMapJobInitConstructorTest() {
 
         System.out.println(TechMapJobInit.getJobDataFromApi());
+    }
+
+    @Test
+    void jsonTest(){
+        // so far so good, just need to print actual jobs
+        String json = TechMapJobInit.getJobDataFromApi();
+        TechMapJobDataToDataScript.mapJobDataToEntity(json);
     }
 }
