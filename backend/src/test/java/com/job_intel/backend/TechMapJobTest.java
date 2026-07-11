@@ -50,7 +50,7 @@ class TechMapJobTest {
     @Test
     void jsonTest(){
         // so far so good, just need to print actual jobs
-        String json = TechMapJobInit.getJobDataFromApi();
+        String json = JsonEx.jsonTemp();
         TechMapJobDataToDataScript.mapJobDataToEntity(json);
     }
          
