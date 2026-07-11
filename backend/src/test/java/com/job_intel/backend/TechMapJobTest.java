@@ -46,12 +46,12 @@ class TechMapJobTest {
         System.out.println(TechMapJobInit.getJobDataFromApi());
     }
 */
-/*
+
     @Test
     void jsonTest(){
         // so far so good, just need to print actual jobs
-        String json = JsonEx.jsonTemp();
+        String json = TechMapJobInit.getJobDataFromApi();
         TechMapJobDataToDataScript.mapJobDataToEntity(json);
     }
-         */
+         
 }

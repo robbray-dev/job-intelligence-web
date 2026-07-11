@@ -3,1043 +3,1015 @@ package com.job_intel.backend;
 public class JsonEx {
     public static String jsonTemp(){
        return "{\r\n" + //
-                        "  \"api\": \"Techmap.io Job Posting API\",\r\n" + //
-                        "  \"apiVersion\": \"v2.6\",\r\n" + //
-                        "  \"apiEndpoint\": \"GET search result for Job Postings by countryCode, dateCreated, language, industry, timezone, workPlace, etc.\",\r\n" + //
-                        "  \"page\": 1,\r\n" + //
-                        "  \"pageSize\": 10,\r\n" + //
-                        "  \"totalCount\": 683,\r\n" + //
-                        "  \"query\": {\r\n" + //
-                        "    \"query\": {\r\n" + //
-                        "      \"bool\": {\r\n" + //
-                        "        \"must\": [\r\n" + //
-                        "          {\r\n" + //
-                        "            \"range\": {\r\n" + //
-                        "              \"dateCreated\": {\r\n" + //
-                        "                \"gte\": \"2026-07-05T00:00:00.000Z\",\r\n" + //
-                        "                \"lte\": \"2026-07-05T23:59:59.999Z\"\r\n" + //
-                        "              }\r\n" + //
-                        "            }\r\n" + //
-                        "          },\r\n" + //
-                        "          {\r\n" + //
-                        "            \"term\": {\r\n" + //
-                        "              \"hasSalary\": true\r\n" + //
-                        "            }\r\n" + //
-                        "          },\r\n" + //
-                        "          {\r\n" + //
-                        "            \"match\": {\r\n" + //
-                        "              \"countryCode\": \"us\"\r\n" + //
-                        "            }\r\n" + //
-                        "          }\r\n" + //
-                        "        ]\r\n" + //
-                        "      }\r\n" + //
-                        "    }\r\n" + //
-                        "  },\r\n" + //
-                        "  \"result\": [\r\n" + //
-                        "    {\r\n" + //
-                        "      \"occupation\": \"Nurse\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-04T00:29:25.260Z\",\r\n" + //
-                        "      \"city\": \"Wessington\",\r\n" + //
-                        "      \"timezone\": \"CDT\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Education\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49adfcdb987454fd6f1f53\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-04T00:29:25.26Z\",\r\n" + //
-                        "        \"employmentType\": \"Shift\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"32.00\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"48.00\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\",\r\n" + //
-                        "            \"unitText\": \"YEAR\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"description\": \"**Careers With Purpose**   \\n\\n**Join our not-for-profit organization that has provided over 100 years of housing and services to seniors with a commitment to quality care and service in a Christian environment.**   \\n\\n**Facility:** GSS SD Miller Prairie Ctr   \\n\\n**Location:** Miller, SD   \\n\\n**Address:** 421 E 4th St, Miller, SD 57362, USA   \\n\\n**Shift:** 12 Hours - Day Shifts   \\n\\n**Job Schedule:** PRN   \\n\\n**Weekly Hours:** Varies   \\n\\n**Salary Range:** $32.00 - $48.00   \\n\\n**Pay Info:** $5,000.00 Sign on Bonus Eligible!   \\n\\n**Job Summary**   \\n\\nThe Registered Nurse (RN) is responsible for utilizing the nursing process (assessment, diagnosis, outcomes/planning, implementation and evaluation) to provide individualized nursing care to residents. Collaborates with resident and family, other inter-disciplinary colleagues, including providers, to plan, implement and evaluate care. Demonstrates competency and practices within the full scope of nursing expertise/knowledge and utilizes appropriate age and population specific standards as designated in their assigned clinical setting. Cares for residents in all phases of preventative care, health maintenance, diagnosis, and treatment. Responsible for the coordination of care, resident assessment, resident education and various other nursing interventions.   \\n\\nMay serve as charge nurse and delegate appropriate tasks to license and unlicensed assistive personnel that are within the job descriptions, skills, resident care needs, and the competence level of the delegate. Provides adequate assistance and support to delegates to ensure safe, reliable administration of resident care and resolution of care and service concerns. Functions within the scopes and standards of nursing practice as outlined in the Nurse Practice Act and Administrative Rules in state of practice and licensure. The Professional Nursing Practice recognizes the Scope and Standards of Practice and the Code of Ethics for Nurses with Interpretive Statements as published by the American Nurses Association as the foundation of nursing care delivery and professional conduct.   \\n\\n**Qualifications**   \\n\\nGraduate from a nationally accredited nursing program preferred, including, but not limited to, Commission on Collegiate Nursing Education (CCNE), Accreditation Commission for Education in Nursing (ACEN), and National League for Nursing Commission for Nursing Education Accreditation (NLN CNEA). Bachelor's Degree in nursing preferred.   \\n\\nCurrently holds an unencumbered RN license with the State Board of Nursing where the practice of nursing is occurring and/or possess multistate licensure if in a Nurse Licensure Compact (NLC) state. Obtains and subsequently maintains required department specific competencies and certifications.   \\n\\n**Benefits**   \\n\\nGood Samaritan offers an attractive benefits package for qualifying Full time and part-time employees. Depending on eligibility, a variety of benefits include health insurance, dental insurance, vision insurance, life insurance, a 401(k) retirement plan, work/life balance benefits, and a generous time off package to maintain a healthy home-work balance. For more information about Total Rewards, visit https://sanfordcareers.com/benefits .   \\n\\nGood Samaritan is an EEO/AA Employer M/F/Disability/Vet. If you are an individual with a disability and would like to request an accommodation for help with your online application, please call 1-877-673-0854 or send an email to (see below)   \\n\\nGood Samaritan has a Drug Free Workplace Policy. An accepted offer will require a drug screen and pre-employment background screening as a condition of employment.   \\n\\n**Req Number:** R-0265794   \\n\\n**Job Function:** Nursing   \\n\\n**Featured:** No\",\r\n" + //
-                        "        \"industry\": \"Education\",\r\n" + //
-                        "        \"jobBenefits\": \"Pension Plan\",\r\n" + //
-                        "        \"title\": \"RN-Registered Nurse - PRN - Days\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://find.jobs/jobs-near-me/rn-registered-nurse-prn-days-wessington-south-dakota/2858787011-2/\",\r\n" + //
-                        "        \"relevantOccupation\": \"Nurse\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"Citrine\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"14e2a3bc285143a1c394f6fb\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"Good Samaritan\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"url\": \"https://find.jobs\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"9e346ca2cd616afd60d81d3e\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"postalCode\": \"57381\",\r\n" + //
-                        "            \"addressLocality\": \"Wessington\",\r\n" + //
-                        "            \"addressRegion\": \"South Dakota\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"latitude\": 44.45415,\r\n" + //
-                        "          \"name\": \"57381 Wessington, South Dakota, United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"longitude\": -98.69704\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"N/A\",\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"CDT Timezone\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"techmap_us\",\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"geoPoint\": {\r\n" + //
-                        "        \"lon\": -98.69704,\r\n" + //
-                        "        \"lat\": 44.45415\r\n" + //
-                        "      },\r\n" + //
-                        "      \"title\": \"RN-Registered Nurse - PRN - Days\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"Citrine\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T00:29:25.260Z\",\r\n" + //
-                        "      \"timezoneOffset\": -5,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"company\": \"Good Samaritan\",\r\n" + //
-                        "      \"state\": \"South Dakota\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"techmap\",\r\n" + //
-                        "      \"department\": \"N/A\",\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"dateExpired\": \"2026-08-04T00:29:25.260Z\",\r\n" + //
-                        "      \"minSalary\": 32,\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FullTime\",\r\n" + //
-                        "        \"PartTime\",\r\n" + //
-                        "        \"Shift\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"postCode\": \"57381\",\r\n" + //
-                        "      \"isDirect\": true\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"occupation\": \"Intelligence Manager\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:47:08.221693Z\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Environmental\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49b79cfcdf8f0bb8c03fb2\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FlexTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"145000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"155000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"DNSFilter's mission is to protect our customers and partners with products they love to use! We are revolutionizing network security by providing fast, accurate, and reliable threat protection and content filtering. We're a rapidly growing company dedicated to creating a safer internet for businesses and organizations worldwide. Leveraging AI-driven threat intelligence, DNSFilter empowers our customers to proactively block threats before they impact their networks. We foster a collaborative, innovative, and results-oriented culture where every team member contributes to our mission of making the internet safer.\\n\\nAs we continue our product-fueled growth by adding new features and broadening our solution to meet the needs of the global market, it's clear there's a missing piece. That's where you come in!\\n\\n**We are looking for a Product Marketing \\\\& Competitive Intelligence Manager to serve as the engine room of our product marketing team. This is a hands-on execution role with a clear growth path. You will work directly with the Director, Product Marketing \\\\& Competitive Intelligence, to ship the work that moves the pipeline, equips our sellers, and keeps DNSFilter ahead of every competitor in our space. We are looking for someone who is energized by execution---someone who wants to write the battlecard, build the launch, run the competitive teardown, and see their work show up in real deals. You will lead projects, not people, and you will be measured on what you ship and the impact it creates. This role reports to the Director, Product Marketing \\\\& Competitive Intelligence.**\\n\\n**Eligible candidates have and can work successfully in a small to mid-sized fast-paced, hyper-growth, SaaS start-up or scale-up.**   \\n\\n**This is a full-time role with a preference for candidates on the East Coast of North America or in the United Kingdom.**\\n\\nWe recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If you feel like this job is for you, please apply. We believe diversity of experience and skills, including transferable skills, combined with passion, is a key to innovation and excellence; therefore, we encourage people from all backgrounds to apply to our positions!\\n\\n**In this role, you will:**\\n\\n* Run the daily heartbeat of our competitive intelligence function. Track competitors in depth. Build and maintain battlecards, solution briefs, and sales assets. Produce win and loss insights. Analyze pricing and packaging moves. Work closely with Sales Engineers and sellers to have the most up-to-date intel.\\n* Support and lead launches for new features and capabilities. Build launch plans, write first-draft narratives, coordinate cross-functional inputs, and own the launch checklist from kickoff to retro.\\n* Help shape and maintain the positioning and messaging across the DNSFilter portfolio. Translate product capabilities into customer language. Make sure the story is consistent across the web, sales decks, and partner assets.\\n* Build the assets and tools Sales and Channel teams use to win---pitch decks, demo scripts, objection handling guides, ROI tools, and discovery frameworks. Sit in on calls. Learn what works. Iterate fast.\\n* Use AI tooling daily to accelerate competitive research, draft assets, summarize calls, scan the market, prototype messaging, and analyze customer signals. AI is not a side experiment in this role---it is core to how the function operates.\\n* Help run a steady cadence of customer interviews, win and loss conversations, analyst inputs, and field signal collection. Turn what you hear into sharper positioning, stronger launches, and better product decisions.\\n* Operate as a trusted partner to Product, Sales, and Marketing peers. Bring clarity. Move work forward. Be the person teammates want to be in a room with.\\n* Travel 10-15% of the year for company events\\n\\n**To qualify for this role, you have:**\\n\\n* 4+ years of professional experience inside the cybersecurity industry. This is a hard requirement. We need someone who already knows the threat landscape, the buyer, and the competitive set.\\n* Direct experience in product marketing or competitive intelligence, ideally in a B2B SaaS or cybersecurity environment.\\n* Practical, hands-on experience using AI tools to accelerate marketing workflows. You can describe specific workflows you have rebuilt with AI and the leverage you generated. AI is *not* a nice-to-have in this role---it is core to how the function operates.\\n* Comfortable working closely with Sales and Product teams in a high-growth environment.\\n* Comfort being coached and are coachable. You want to grow, you take feedback well, and you act on it quickly.\\n* Ability to travel 10-15% of the year for company events\\n* Ability to work hours overlapping with ET hours\\n* Must be eligible to work in the region of hire without sponsorship from an employer now and/or in the future\\n\\n**Bonus points for:**\\n\\n* You have already built battlecards, run a launch, or written positioning that sellers actually used.\\n* Experience working closely with Sales Engineers on competitive intelligence and field-ready assets.\\n\\n**We Offer:**\\n\\n* Pathway to promotion to additional organizational positions and responsibilities based upon results and performance, not just time in the chair. You help us grow, and we will help you grow.\\n* Passionate and intelligent colleagues who work hard and have a good time doing it\\n* Paid company-wide week off at the end of each year\\n* Flexible Vacation Policy\\n* Awesome company swag\\n* Full medical, dental, and vision benefits for US, UK, and Canada-based employees\\n* Full short-term disability and life benefits; available long-term disability\\n* Retirement savings account options with vested company matching for qualifying employees\\n* In-person annual gatherings. Last time we all spent a week on a beach in the Dominican Republic!\\n\\n*DNSFilter is a pay-for-performance organization, which means there is an opportunity to advance your compensation based on performance over time. The hiring base pay is dependent on several factors, including level, function, training, transferable skills, work experience, business needs, and geographic location. As a hybrid company, our compensation reflects the cost of labor across several U.S. and global geographic markets. We pay differently based on those defined markets. Our Talent Team can share more about the specific salary range for the job location during the hiring process.*\\n\\n*DNSFilter participates in the E-Verify program.*\\n\\n*At DNSFilter, we utilize sophisticated software and tools to identify and eliminate Deepfake candidates. This approach helps us maintain the integrity of our hiring process, ensuring that we select the most qualified and genuine individuals to join our team.*  \\nU.S. hiring salary range  \\n$145,000---$155,000 USD\",\r\n" + //
-                        "        \"industry\": \"Environmental\",\r\n" + //
-                        "        \"jobBenefits\": \"Team Events\",\r\n" + //
-                        "        \"title\": \"Product Marketing & Competitive Intelligence Manager\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://boards.greenhouse.io/dnsfilter/jobs/5145558007?gh_jid=5145558007\",\r\n" + //
-                        "        \"relevantOccupation\": \"Intelligence Manager\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"MS-DOS\",\r\n" + //
-                        "          \"Linux-HA\",\r\n" + //
-                        "          \"Iteration\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"1214ca9d455860a54f99bdf0\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"DNSFilter\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"Marketing\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"579e8434e0484489cffe265b\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"name\": \"United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"minSalary\": 145000,\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"title\": \"Product Marketing & Competitive Intelligence Manager\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"MS-DOS\",\r\n" + //
-                        "        \"Linux-HA\",\r\n" + //
-                        "        \"Iteration\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:47:08.221693Z\",\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FlexTime\",\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"company\": \"DNSFilter\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"Marketing\",\r\n" + //
-                        "      \"isDirect\": true,\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ]\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"occupation\": \"Full Stack Programmer\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:47:08.771994Z\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Engineering\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49b79cfcdf8f0bb8c03fb3\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FlexTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"125000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"135000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"DNSFilter's mission is to protect our customers and partners with products they love to use! We are revolutionizing network security by providing fast, accurate, and reliable threat protection and content filtering. We're a rapidly growing company dedicated to creating a safer internet for businesses and organizations worldwide. Leveraging AI-driven threat intelligence, DNSFilter empowers our customers to proactively block threats before they impact their networks. We foster a collaborative, innovative, and results-oriented culture where every team member contributes to our mission of making the internet safer.\\n\\nAs we continue our product-fueled growth by adding new features and broadening our solution to meet the needs of the global market, it's clear there's a missing piece. That's where you come in!\\n\\n**We are looking for a full-stack software engineer specializing in React and NextJS development. As a full-stack software engineer, you will work closely with our Engineering Organization team to modernize our application and convert it to our new design system. We're looking for someone with a track record of delivering high-quality code who can work effectively in a fully remote environment. We are following lean development practices, focusing on delivering quality products in a timely manner.**   \\n\\n**Eligible candidates have and can work successfully in a small to mid-sized fast-paced, hyper-growth, SaaS start-up or scale-up. This is a full-time role with a preference for candidates in Tampa, Florida.**   \\n\\nWe recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If you feel like this job is for you, please apply. We believe diversity of experience and skills, including transferable skills, combined with passion, is a key to innovation and excellence; therefore, we encourage people from all backgrounds to apply to our positions!\\n\\n**At DNSFilter, you will:**\\n\\n* Be a member of our Engineering organization working on the front and back end of our software application (Ruby, Golang, React, NextJS, MUI, .NET)\\n* Work closely with other engineers, the UX team, and other stakeholders to build modularized solutions using our new design system\\n* Deliver real business value to our customer base\\n* Expand your knowledge on all technologies within our ecosystem\\n* Use AI to accelerate your learning and productivity, and an advocate for AI throughout the department\\n\\n**To qualify for this role, you have:**\\n\\n* 5 years of experience working Ruby and/or Golang\\n* 2 years of experience developing and maintaining JavaScript, React and Redux code\\n* Experience building microservices or RESTful API's\\n* Experience building reusable components\\n* Proven ability to leverage AI tools (e.g., GitHub Copilot, Claude Code, LLMs) to accelerate coding, debugging, and unit test generation while maintaining high standards for security and performance\\n* Experience integrating AI into the broader SDLC---including documentation, PR summaries, and architectural prototyping---to significantly reduce \\\"time to context\\\" and repetitive overhead\\n* Maintains a \\\"human-in-the-loop\\\" approach to critically audit AI-generated outputs for hallucinations and suboptimal patterns, while mentoring others on responsible AI usage\\n* Experience using React Query to optimize searches and cache data\\n* Attention to detail while converting UX designs to a working application\\n* You will have an API-first mindset, developing components and services that are consumed via interfaces and API contracts\\n* Experience with PostgreSQL, Redis, Kafka, ClickHouse, and other data stores\\n* Working knowledge of AWS and EKS\\n* Experience working remotely under minimal supervision\\n* The ability to keep work hours that mostly overlap with 8:00 AM - 5:00 PM Eastern Timezone, M-F\\n\\n**Bonus points for:**\\n\\n* Knowledge or experience with other programming languages, specifically TypeScript, Next.js\\n* Knowledge of feature flag management tools such as LaunchDarkly\\n* Experience working with multiple distributed/global teams\\n* Experience building a security product\\n* Excellent documentation skills in and out of code\\n* Awareness of AppSec, OSS licensing, and security tools\\n* An understanding of computer networking protocols and DNS\\n\\n**We Offer:**\\n\\n* Pathway to promotion to additional organizational positions and responsibilities based upon results and performance, not just time in the chair. You help us grow, and we will help you grow.\\n* Passionate and intelligent colleagues who work hard and have a good time doing it\\n* Paid company-wide week off at the end of each year\\n* Flexible Vacation Policy\\n* Awesome company swag\\n* Full medical, dental, and vision benefits for US, UK, and Canada-based employees\\n* Full short-term disability and life benefits; available long-term disability\\n* Retirement savings account options with vested company matching for qualifying employees\\n* In-person annual gatherings. Last time we all spent a week on a beach in the Dominican Republic!\\n\\n*DNSFilter is a pay-for-performance organization, which means there is an opportunity to advance your compensation based on performance over time. The hiring base pay is dependent on several factors, including level, function, training, transferable skills, work experience, business needs, and geographic location. As a hybrid company, our compensation reflects the cost of labor across several U.S. and global geographic markets. We pay differently based on those defined markets. Our Talent Team can share more about the specific salary range for the job location during the hiring process.*\\n\\n*DNSFilter participates in the E-Verify program.*\\n\\n*At DNSFilter, we utilize sophisticated software and tools to identify and eliminate Deepfake candidates. This approach helps us maintain the integrity of our hiring process, ensuring that we select the most qualified and genuine individuals to join our team.*  \\nU.S. hiring salary range  \\n$125,000---$135,000 USD\",\r\n" + //
-                        "        \"industry\": \"Engineering\",\r\n" + //
-                        "        \"title\": \"Senior Full-Stack Software Engineer\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://boards.greenhouse.io/dnsfilter/jobs/5116133007?gh_jid=5116133007\",\r\n" + //
-                        "        \"relevantOccupation\": \"Full Stack Programmer\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"ReactOS\",\r\n" + //
-                        "          \"Coding\",\r\n" + //
-                        "          \"ClickHouse\",\r\n" + //
-                        "          \"Apache Kafka\",\r\n" + //
-                        "          \"MS-DOS\",\r\n" + //
-                        "          \"Scigress\",\r\n" + //
-                        "          \"Redux\",\r\n" + //
-                        "          \"Redis\",\r\n" + //
-                        "          \"Typescript\",\r\n" + //
-                        "          \"JavaScript\",\r\n" + //
-                        "          \"Postgresql\",\r\n" + //
-                        "          \"Unit Testing\",\r\n" + //
-                        "          \"InterSystems Caché\",\r\n" + //
-                        "          \"Debugger\",\r\n" + //
-                        "          \"Ruby\",\r\n" + //
-                        "          \"AWS\",\r\n" + //
-                        "          \"Github\",\r\n" + //
-                        "          \"React.js\",\r\n" + //
-                        "          \"Debugging\",\r\n" + //
-                        "          \"Multilingual User Interface\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"1214ca9d455860a54f99bdf0\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"DNSFilter\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"N/A\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"579e8434e0484489cffe265b\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"name\": \"United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"Remote\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"minSalary\": 125000,\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"title\": \"Senior Full-Stack Software Engineer\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"ReactOS\",\r\n" + //
-                        "        \"Coding\",\r\n" + //
-                        "        \"ClickHouse\",\r\n" + //
-                        "        \"Apache Kafka\",\r\n" + //
-                        "        \"MS-DOS\",\r\n" + //
-                        "        \"Scigress\",\r\n" + //
-                        "        \"Redux\",\r\n" + //
-                        "        \"Redis\",\r\n" + //
-                        "        \"Typescript\",\r\n" + //
-                        "        \"JavaScript\",\r\n" + //
-                        "        \"Postgresql\",\r\n" + //
-                        "        \"Unit Testing\",\r\n" + //
-                        "        \"InterSystems Caché\",\r\n" + //
-                        "        \"Debugger\",\r\n" + //
-                        "        \"Ruby\",\r\n" + //
-                        "        \"AWS\",\r\n" + //
-                        "        \"Github\",\r\n" + //
-                        "        \"React.js\",\r\n" + //
-                        "        \"Debugging\",\r\n" + //
-                        "        \"Multilingual User Interface\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:47:08.771994Z\",\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"Senior\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FlexTime\",\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"company\": \"DNSFilter\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"N/A\",\r\n" + //
-                        "      \"isDirect\": true,\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"Remote\"\r\n" + //
-                        "      ]\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"occupation\": \"Client Manager\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:47:09.633393Z\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Environmental\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49b79dfcdf8f0bb8c03fb4\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FlexTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"90000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"100000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"DNSFilter's mission is to protect our customers and partners with products they love to use! We are revolutionizing network security by providing fast, accurate, and reliable threat protection and content filtering. We're a rapidly growing company dedicated to creating a safer internet for businesses and organizations worldwide. Leveraging AI-driven threat intelligence, DNSFilter empowers our customers to proactively block threats before they impact their networks. We foster a collaborative, innovative, and results-oriented culture where every team member contributes to our mission of making the internet safer.\\n\\nAs we continue our product-fueled growth by adding new features and broadening our solution to meet the needs of the global market, it's clear there's a missing piece. That's where you come in!\\n\\n**We are looking for Strategic Channel Account Managers who will be responsible for developing and growing deep, revenue-generating relationships with our most important strategic partners, such as SHI and Guidepoint. Rather than focusing on recruiting new resellers, this role is about investing in a select set of high-impact partners --- driving joint go-to-market execution, enabling their sales teams, building executive alignment, and expanding DNSFilter's footprint through their customer base. Since the DNSFilter Reseller Program went live in January 2024, we have established a foundation of partners, and the next phase requires a dedicated, persistent focus on maturing these strategic relationships and documenting measurable progress against joint business plans.**   \\n\\n**We are seeking candidates who enjoy a remote work environment and look forward to a fast-paced, hyper-growth SaaS organization. This is a full-time remote role and is open to candidates in the United States and Canada, with a preference for candidates located in the New Jersey area.**\\n\\nWe recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If you feel like this job is for you, please apply. We believe diversity of experience and skills, including transferable skills, combined with passion, is a key to innovation and excellence; therefore, we encourage people from all backgrounds to apply to our positions!\\n\\n**In this role, you will:**\\n\\n* Demonstrate a deep understanding of the channel sales process to build out a new pipeline via channel-sourced opportunities, creating incentive programs, and collaboratively communicating with DNSFilter's sales team\\n* Thrive in an independent work environment; however, for this individual to succeed, they must be capable of working within a dynamic and highly distributed team environment that is entirely remote\\n* Deliver consistent sales training and coordinate technical training across Resellers and Distributors of DNSFilter\\n* Participate in channel marketing planning, budget management, and knowledge of partners' marketing and enablement programs\\n* Leverage prior experience creating campaigns, promotions, and field events to drive channel-sourced pipeline\\n* Attend channel partner locations and support partner and industry conferences in the United States and Canada\\n* Work with the Sales organization to do account mapping with key channel partners\\n\\n**To qualify for this role, you have:**\\n\\n* Must be able to travel 50% of the time or more within the United States and Canada for industry conferences/events/channel partner locations, with an updated passport and no travel restrictions.\\n* Must be eligible to work without sponsorship now and in the future.\\n* 8+ years of Channel Account Manager experience pertaining to Reseller and Distributor accounts. Specific experience with SHI, Guidepoint, and Climb would be preferred.\\n* Previous successful experience working in a remote environment.\\n* SaaS experience, an understanding of IT-related / Network infrastructure business, and experience developing and proposing appropriate solutions.\\n* IT infrastructure experience\\n* Successful track record in meeting and exceeding monthly, quarterly, and annual quotas, and increasing opportunity generation (deal registrations) with channel partners working alongside a direct sales team.\\n* Strong appetite to make outbound phone calls and travel to create rapport with channel partners and build mindshare for the partner program.\\n* Prior working relationships and demonstrated ability to launch new vendors with channel partners.\\n\\n**Bonus points for:**\\n\\n* Working knowledge of the cybersecurity market is highly desirable.\\n* Existing relationships at both SHI and Guidepoint.\\n\\n**We Offer:**\\n\\n* Pathway to promotion to additional organizational positions and responsibilities based upon results and performance, not just time in the chair. You help us grow, and we will help you grow.\\n* Passionate and intelligent colleagues who work hard and have a good time doing it\\n* Paid company-wide week off at the end of each year\\n* Flexible Vacation Policy\\n* Awesome company swag\\n* Full medical, dental, and vision benefits for US, UK, and Canada-based employees\\n* Full short-term disability and life benefits; available long-term disability\\n* Retirement savings account options with vested company matching for qualifying employees\\n* In-person annual gatherings. Last time we all spent a week on a beach in the Dominican Republic!\\n\\n*DNSFilter is a pay-for-performance organization, which means there is an opportunity to advance your compensation based on performance over time. The hiring base pay is dependent on several factors, including level, function, training, transferable skills, work experience, business needs, and geographic location. As a hybrid company, our compensation reflects the cost of labor across several U.S. and global geographic markets. We pay differently based on those defined markets. Our Talent Team can share more about the specific salary range for the job location during the hiring process.*\\n\\n*DNSFilter participates in the E-Verify program.*\\n\\n*At DNSFilter, we utilize sophisticated software and tools to identify and eliminate Deepfake candidates. This approach helps us maintain the integrity of our hiring process, ensuring that we select the most qualified and genuine individuals to join our team.* **The OTE for this role is $170-180k**  \\nU.S. hiring salary range  \\n$90,000---$100,000 USD\",\r\n" + //
-                        "        \"industry\": \"Environmental\",\r\n" + //
-                        "        \"title\": \"Strategic Channel Account Manager\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://boards.greenhouse.io/dnsfilter/jobs/5117739007?gh_jid=5117739007\",\r\n" + //
-                        "        \"relevantOccupation\": \"Client Manager\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"MS-DOS\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"1214ca9d455860a54f99bdf0\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"DNSFilter\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"Sales\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"579e8434e0484489cffe265b\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"name\": \"United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"Remote\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"minSalary\": 90000,\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"title\": \"Strategic Channel Account Manager\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"MS-DOS\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:47:09.633393Z\",\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FlexTime\",\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"company\": \"DNSFilter\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"Sales\",\r\n" + //
-                        "      \"isDirect\": true,\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"Remote\"\r\n" + //
-                        "      ]\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"occupation\": \"Manager\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:47:09.812748Z\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Construction\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49b79dfcdf8f0bb8c03fb5\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FlexTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"180000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"210000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"DNSFilter's mission is to protect our customers and partners with products they love to use! We are revolutionizing network security by providing fast, accurate, and reliable threat protection and content filtering. We're a rapidly growing company dedicated to creating a safer internet for businesses and organizations worldwide. Leveraging AI-driven threat intelligence, DNSFilter empowers our customers to proactively block threats before they impact their networks. We foster a collaborative, innovative, and results-oriented culture where every team member contributes to our mission of making the internet safer.\\n\\nAs we continue our product-fueled growth by adding new features and broadening our solution to meet the needs of the global market, it's clear there's a missing piece. That's where you come in!\\n\\n**We are looking for a Director, Product Marketing \\\\& Competitive Intelligence to own how DNSFilter is positioned in the market, how our products are launched, how our sellers compete, and how we read the competitive landscape. This is not a steady-state management role. We are looking for a proactive, energized, industrious product marketing leader who treats positioning as a competitive weapon, treats competitive intelligence as a daily discipline, and treats AI as a force multiplier on every single workstream. You will be both player and coach---some days you will set strategy and direct your team, other days you will write the battlecard, build the launch narrative, brief an analyst, or rebuild a pricing page yourself. You will lead one direct report, the Senior Product Marketing \\\\& Competitive Intelligence Manager, and report to the Director, Content Marketing.**\\n\\n**Eligible candidates have and can work successfully in a small to mid-sized fast-paced, hyper-growth, SaaS start-up or scale-up.\\nThis is a full-time role with a preference for candidates on the East Coast of North America or in the United Kingdom.**\\n\\nWe recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If you feel like this job is for you, please apply. We believe diversity of experience and skills, including transferable skills, combined with passion, is a key to innovation and excellence; therefore, we encourage people from all backgrounds to apply to our positions!\\n\\n**In this role, you will:**\\n\\n* Own the positioning, messaging, and narrative architecture for the DNSFilter portfolio across MSP, VAR, and Enterprise audiences. Define who we are, who we are for, why we win, and why it matters. Make sure the story appears consistently across every customer-facing surface.\\n* Lead end-to-end launches for new features, capabilities, and products. Build the launch plan, write the core narrative, coordinate cross-functional teams, schedule training as needed, and measure the results. Hold the bar on launch quality.\\n* Build and run a competitive intelligence function that gives Sales, Product, and Leadership a real edge. Track competitors in depth. Produce battlecards, win and loss insights, pricing teardowns, and field-ready talking points. Make sure every seller knows how to beat every competitor on every deal.\\n* Partner with Sales Enablement to equip Sales and Channel teams with the assets, tools, and training they need to convert---pitch decks, demo narratives, objection handling, ROI tools, and discovery frameworks. Walk the floor with reps. Sit in on calls. Iterate based on what actually moves deals.\\n* Build a steady cadence of customer interviews, win and loss analysis, analyst feedback, and field signal collection. Own the case study and testimonial elements of the wider advocacy program. Proactively coordinate meetings with customers for interviews at tradeshows and analyst meetings.\\n* Support the Comms \\\\& IR team with analyst relationship engagements. Help source customers for RFPs and G2 reviews. Help ensure we are securing the right customers for the right asks.\\n* Lead and grow the Senior Product Marketing \\\\& Competitive Intelligence Manager.\\n* Set high standards, give direct feedback, and build a high-output, low-drama team culture.\\n* Travel 10-15% of the year for company events\\n\\n**To qualify for this role, you have:**\\n\\n* 7+ years of professional experience inside the cybersecurity industry. This is a hard requirement. We need someone who already understands the threat landscape, the buyer, the channel, and the competitive set.\\n* A proven track record in product marketing leadership, ideally with direct ownership of competitive intelligence. Experience launching products, building positioning, and enabling sales teams at scale.\\n* Demonstrated ability to operate as both player and coach. You have built strategy, and you have written the deck. You have run the team, and you have run the launch.\\n* Experience working closely with Sales, Product, and Executive Leadership in a high-growth SaaS or cybersecurity environment.\\n* Practical, hands-on experience using AI tools to accelerate marketing workflows. You can describe specific workflows you have rebuilt with AI, the leverage you generated, and how you coached your team to do the same. AI is *not* a nice-to-have in this role---it is core to how the function operates.\\n* Ability to travel 10-15% of the year for company events\\n* Ability to work hours overlapping with ET hours\\n* Must be eligible to work in the region of hire without sponsorship from an employer now and/or in the future\\n\\n**Bonus points for:**\\n\\n* Direct experience with MSP and channel sales motions\\n* Prior analyst relations or industry analyst engagement experience\\n* Experience building a competitive intelligence program from scratch\\n\\n**We Offer:**\\n\\n* Pathway to promotion to additional organizational positions and responsibilities based upon results and performance, not just time in the chair. You help us grow, and we will help you grow.\\n* Passionate and intelligent colleagues who work hard and have a good time doing it\\n* Paid company-wide week off at the end of each year\\n* Flexible Vacation Policy\\n* Awesome company swag\\n* Full medical, dental, and vision benefits for US, UK, and Canada-based employees\\n* Full short-term disability and life benefits; available long-term disability\\n* Retirement savings account options with vested company matching for qualifying employees\\n* In-person annual gatherings. Last time we all spent a week on a beach in the Dominican Republic!\\n\\n*DNSFilter is a pay-for-performance organization, which means there is an opportunity to advance your compensation based on performance over time. The hiring base pay is dependent on several factors, including level, function, training, transferable skills, work experience, business needs, and geographic location. As a hybrid company, our compensation reflects the cost of labor across several U.S. and global geographic markets. We pay differently based on those defined markets. Our Talent Team can share more about the specific salary range for the job location during the hiring process.*\\n\\n*DNSFilter participates in the E-Verify program.*\\n\\n*At DNSFilter, we utilize sophisticated software and tools to identify and eliminate Deepfake candidates. This approach helps us maintain the integrity of our hiring process, ensuring that we select the most qualified and genuine individuals to join our team.*  \\nU.S. hiring salary range  \\n$180,000---$210,000 USD\",\r\n" + //
-                        "        \"industry\": \"Construction\",\r\n" + //
-                        "        \"jobBenefits\": \"Team Events\",\r\n" + //
-                        "        \"title\": \"Director, Product Marketing and Competitive Intelligence\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://boards.greenhouse.io/dnsfilter/jobs/5145277007?gh_jid=5145277007\",\r\n" + //
-                        "        \"relevantOccupation\": \"Manager\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"MS-DOS\",\r\n" + //
-                        "          \"Iteration\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"1214ca9d455860a54f99bdf0\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"DNSFilter\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"Marketing\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"579e8434e0484489cffe265b\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"name\": \"United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"minSalary\": 180000,\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"title\": \"Director, Product Marketing and Competitive Intelligence\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"MS-DOS\",\r\n" + //
-                        "        \"Iteration\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:47:09.812748Z\",\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"Director\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FlexTime\",\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"company\": \"DNSFilter\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"Marketing\",\r\n" + //
-                        "      \"isDirect\": true,\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ]\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"occupation\": \"Engineer\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:47:11.009541Z\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Construction\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49b79ffcdf8f0bb8c03fb6\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FlexTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"165000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"190000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"DNSFilter's mission is to protect our customers and partners with products they love to use! We are revolutionizing network security by providing fast, accurate, and reliable threat protection and content filtering. We're a rapidly growing company dedicated to creating a safer internet for businesses and organizations worldwide. Leveraging AI-driven threat intelligence, DNSFilter empowers our customers to proactively block threats before they impact their networks. We foster a collaborative, innovative, and results-oriented culture where every team member contributes to our mission of making the internet safer.\\n\\nAs we continue our product-fueled growth by adding new features and broadening our solution to meet the needs of the global market, it's clear there's a missing piece. That's where you come in!\\n\\n**We are looking for a Senior GTM Systems Engineer to own the technical foundation that powers our go-to-market teams. In this role, you'll architect and configure our core platforms, build and maintain cross-system integrations, and lead our strategy for embedding AI into GTM workflows. The ideal candidate is a seasoned Salesforce technologist who thinks in systems, sweats the details on data quality, and knows how to build automations that actually get adopted and maintained.**\\n\\n**Eligible candidates have and can work successfully in a small to mid-sized fast-paced, hyper-growth, SaaS start-up or scale-up. This is a full-time role.**\\n\\nWe recognize that people come with a wealth of experience and talent beyond just the technical requirements of a job. If you feel like this job is for you, please apply. We believe diversity of experience and skills, including transferable skills, combined with passion, is a key to innovation and excellence; therefore, we encourage people from all backgrounds to apply to our positions!\\n\\n**In this role, you will:**\\n\\n*Core Platform Architecture \\\\& Configuration*\\n\\n* Own the technical design and configuration of Salesforce, HubSpot, Vitally, and Zendesk, including data models, object relationships, field governance, and validation rules\\n* Build and maintain Flows, Apex triggers, and custom objects in Salesforce to support complex, multi-channel GTM logic\\n* Configure HubSpot workflows, lifecycle stages, lead scoring, and campaign attribution to support Marketing and BDR operations\\n* Manage Vitally health scores, segments, playbooks, and integrations to give CS the signals they need to retain and expand customers\\n\\n*Integrations \\\\& Data Pipeline*\\n\\n* Design and maintain real-time and batch integrations across the GTM stack and into adjacent systems (billing, product analytics, data warehouse)\\n* Own API-level connections and define sync logic between Salesforce and HubSpot so Sales and Marketing operate from a single source of truth\\n* Partner with the Lead Operations Engineer to ensure GTM data and downstream reporting is trustworthy and aligned to business processes\\n\\n*Automation \\\\& Workflow Design*\\n\\n* Identify and eliminate manual work for GTM teams through automation: lead routing, lifecycle transitions, renewal triggers, health alerts, and expansion signals\\n* Architect automations with maintainability in mind -- documented, testable, and built so a new teammate can pick them up quickly\\n\\n*AI-Powered GTM Operations*\\n\\n* Own the strategy for embedding AI (primarily Claude) into GTM platforms and workflows, identifying where it creates the most leverage across Sales, Marketing, and CS\\n* Build and deploy AI-assisted automations within Salesforce, HubSpot, and Vitally: intelligent lead scoring and routing, deal risk detection, call and email summarization, and CS health signal enrichment\\n* Connect AI capabilities to GTM data through APIs, MCP integrations, and platform-native AI features with proper governance guardrails\\n* Measure the impact of AI implementations on team productivity, data quality, and revenue outcomes\\n\\n*Data Quality \\\\& Governance*\\n\\n* Champion data hygiene across all platforms: define standards, build enforcement rules, and create processes that keep records clean at the source\\n* Establish and maintain a change management process: version control, sandbox testing, release notes, and rollback plans\\n\\n**To qualify for this role, you have:**\\n\\n* 7 years of Salesforce Admin/Sr. Admin experience with custom objects, flows, and demonstrated progressive platform ownership\\n* Experience configuring HubSpot, including workflows, lifecycle management, forms, and Salesforce integration\\n* Hands-on experience with at least one CS platform (Vitally, Gainsight, or similar)\\n* Demonstrated experience building and maintaining cross-platform integrations and familiarity with the standard revenue operations stack: ZoomInfo, Gong, 6sense, etc.\\n* Strong understanding of GTM system models: lead-to-opportunity, account/contact hierarchy, deal stages, customer segments, etc.\\n* Experience integrating LLMs or AI tools (Claude or similar) into GTM platforms and workflows\\n* Ability to write clear technical documentation and explain architecture decisions to non-technical stakeholders\\n* Ability to work hours overlapping with ET hours\\n* Must be eligible to work in the region of hire without sponsorship now and/or in the future\\n\\n**Bonus points for:**\\n\\n* Prior ownership of a full system migration or major re-architecture (e.g., consolidating two Salesforce orgs, replacing a legacy CRM)\\n* Prior experience with core platform architecture reviews, preferably Salesforce\\n* Salesforce Platform App Builder or Developer certification\\n* Project management experience, including coordination with external consulting partners\\n* Familiarity with core RevOps metrics: pipeline, deal velocity, ARR, lead conversion, customer health, etc.\\n* Exposure to data warehouse tooling and how GTM data lands there\\n* You ask \\\"why\\\" before building -- understanding the business need before reaching for a solution\\n* You think about the downstream impacts of your decisions on data quality, user experience, and system performance\\n* You communicate proactively, flag blockers early, and document your work clearly\\n* You push back constructively when scope creeps or requirements don't hold up technically, and bring alternative solutions to the table\\n\\n**We Offer:**\\n\\n* Pathway to promotion based on results and performance, not just time in the chair. You help us grow, and we will help you grow.\\n* Passionate and intelligent colleagues who work hard and have a good time doing it\\n* Paid company-wide week off at the end of each year\\n* Flexible Vacation Policy\\n* Awesome company swag\\n* Full medical, dental, and vision benefits for US, UK, and Canada-based employees\\n* Full short-term disability and life benefits; available long-term disability\\n* Retirement savings account options with vested company matching for qualifying employees\\n* In-person annual gatherings. Last time we all spent a week on a beach in the Dominican Republic!\\n\\nDNSFilter is a pay-for-performance organization, which means there is an opportunity to advance your compensation based on performance over time. The hiring base pay is dependent on several factors, including level, function, training, transferable skills, work experience, business needs, and geographic location. As a hybrid company, our compensation reflects the cost of labor across several U.S. and global geographic markets. We pay differently based on those defined markets. Our Talent Team can share more about the specific salary range for the job location during the hiring process.\\n\\nDNSFilter participates in the E-Verify program.  \\n\\nAt DNSFilter, we utilize sophisticated software and tools to identify and eliminate Deepfake candidates. This approach helps us maintain the integrity of our hiring process, ensuring that we select the most qualified and genuine individuals to join our team.  \\nU.S. hiring salary range  \\n$165,000---$190,000 USD\",\r\n" + //
-                        "        \"industry\": \"Construction\",\r\n" + //
-                        "        \"title\": \"Senior GTM Systems Engineer\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://boards.greenhouse.io/dnsfilter/jobs/5128200007?gh_jid=5128200007\",\r\n" + //
-                        "        \"relevantOccupation\": \"Engineer\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"MS-DOS\",\r\n" + //
-                        "          \"Autoconf\",\r\n" + //
-                        "          \"Cross-platform software\",\r\n" + //
-                        "          \"Apache Velocity\",\r\n" + //
-                        "          \"C Sharp\",\r\n" + //
-                        "          \"C\",\r\n" + //
-                        "          \"CryEngine\",\r\n" + //
-                        "          \"Deep learning\",\r\n" + //
-                        "          \"GT.M\",\r\n" + //
-                        "          \"Maintainability\",\r\n" + //
-                        "          \"Sync\",\r\n" + //
-                        "          \"Checkstyle\",\r\n" + //
-                        "          \"GNewSense\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"1214ca9d455860a54f99bdf0\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"DNSFilter\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"N/A\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"579e8434e0484489cffe265b\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"name\": \"United States\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"minSalary\": 165000,\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"title\": \"Senior GTM Systems Engineer\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"MS-DOS\",\r\n" + //
-                        "        \"Autoconf\",\r\n" + //
-                        "        \"Cross-platform software\",\r\n" + //
-                        "        \"Apache Velocity\",\r\n" + //
-                        "        \"C Sharp\",\r\n" + //
-                        "        \"C\",\r\n" + //
-                        "        \"CryEngine\",\r\n" + //
-                        "        \"Deep learning\",\r\n" + //
-                        "        \"GT.M\",\r\n" + //
-                        "        \"Maintainability\",\r\n" + //
-                        "        \"Sync\",\r\n" + //
-                        "        \"Checkstyle\",\r\n" + //
-                        "        \"GNewSense\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:47:11.009541Z\",\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"Senior\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FlexTime\",\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"company\": \"DNSFilter\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"N/A\",\r\n" + //
-                        "      \"isDirect\": true,\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ]\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"occupation\": \"General Manager – Home Services\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T02:31:04.990823Z\",\r\n" + //
-                        "      \"city\": \"Elmwood Park\",\r\n" + //
-                        "      \"timezone\": \"EDT\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Automotive\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49c1e9fcdf8f0bb8c03fb7\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FullTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"110000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"150000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"🚪 Door Works\\n- ------------\\n\\n### General Manager -- Elmwood Park, NJ\\n\\n**$110,000--$150,000 \\\\| Full Benefits \\\\| Leadership Role**\\n\\nDoor Works is seeking a driven, hands-on **General Manager** to lead our service and installation teams in Elmwood Park, NJ. This role oversees daily operations, field performance, scheduling, inventory, safety, and profitability --- ensuring exceptional customer experiences and strong financial results.\\n\\n*** ** * ** ***\\n\\n### What You'll Do\\n\\n* Lead service \\\\& installation operations\\n\\n* Manage dispatch, scheduling, and technician performance\\n\\n* Oversee inventory, fleet maintenance, and operational reporting\\n\\n* Partner with Sales to drive revenue and margin\\n\\n* Maintain OSHA compliance and safety training\\n\\n* Resolve customer concerns and uphold quality standards\\n\\n* Assist with hiring, onboarding, and team development\\n\\n*** ** * ** ***\\n\\n### What You Bring\\n\\n* Operations leadership experience (home services preferred)\\n\\n* Knowledge of residential \\\\& commercial garage doors\\n\\n* Experience with ServiceTitan strongly preferred\\n\\n* Strong financial \\\\& data analysis skills\\n\\n* Excellent communication and leadership abilities\\n\\n* Valid Driver's License\\n\\n*** ** * ** ***\\n\\n### What We Offer\\n\\n* Competitive salary: **$110K--$150K**\\n\\n* Health, Dental, Vision\\n\\n* PTO \\\\& Paid Holidays\\n\\n* 401(k) with match\\n\\n* Employer-paid Life, LTD \\\\& STD\\n\\n* Growth opportunities within a leading residential services organization\\n\\nIf you're ready to lead teams, improve operations, and drive results --- **apply today and grow with Door Works.** 🚪\\n\\n***Guild Garage Group LLC is an Equal Opportunity Employer AA/EOE/M/F/V/D. In compliance with the Americans with Disabilities Act, Door Works may provide reasonable accommodations to qualified individuals with disabilities and encourages both prospective and current employees to discuss potential accommodations with the employer.***\\n\\n***All candidates are required to undergo pre-employment Background and Drug Screenings, as well as a Motor Vehicle Record Check.***\\n\\n***\\\\*This posting provides details on potential commissioned compensation ranges and possibilities. These amounts are not guaranteed and should in no way be construed as a salary offer.***  \\nPay Range  \\n$110,000---$150,000 USD  \\nBy submitting your application, you consent to receive text messages, emails, and phone calls from Guild Garage Group and/or our coalition of partnered brands regarding job opportunities, application status, and recruiting-related communications. Message and data rates may apply. You may opt out of receiving text messages at any time by replying STOP. All messages are related to employment opportunities and recruiting activities.\",\r\n" + //
-                        "        \"industry\": \"Automotive\",\r\n" + //
-                        "        \"jobBenefits\": \"Paid Holidays, Pension Plan\",\r\n" + //
-                        "        \"title\": \"General Manager – Home Services\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://job-boards.greenhouse.io/doorworks/jobs/4178125009\",\r\n" + //
-                        "        \"relevantOccupation\": \"General Manager – Home Services\",\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"e01c5c975bd7fc30afc5c793\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"Door Works\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"N/A\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"3cad25c72c5d2bb9d7e711d1\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"addressLocality\": \"Elmwood Park\",\r\n" + //
-                        "            \"addressRegion\": \"NJ\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"latitude\": 40.89959,\r\n" + //
-                        "          \"name\": \"Elmwood Park, NJ\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"longitude\": -74.11578\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"geoPoint\": {\r\n" + //
-                        "        \"lon\": -74.11578,\r\n" + //
-                        "        \"lat\": 40.89959\r\n" + //
-                        "      },\r\n" + //
-                        "      \"title\": \"General Manager – Home Services\",\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T02:31:04.990823Z\",\r\n" + //
-                        "      \"timezoneOffset\": -4,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"company\": \"Door Works\",\r\n" + //
-                        "      \"state\": \"NJ\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"N/A\",\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"minSalary\": 110000,\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isDirect\": true\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"occupation\": \"General Application\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T02:31:05.098262Z\",\r\n" + //
-                        "      \"city\": \"Elmwood Park\",\r\n" + //
-                        "      \"timezone\": \"EDT\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Automotive\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49c1e9fcdf8f0bb8c03fb8\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"Holidays\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"USD\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"USD\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"18.00\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"25.00\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"**About Us**\\n- -----------\\n\\nAt **Door Works, Inc.** , we specialize in high-quality garage door installation, service, and repair for **residential and commercial** customers across **New Jersey and the Greater New York area**.\\n\\nOur story began in 2014 when several respected companies --- Ramsey Door, Groenewal, Raynor Door, and Garden State Door --- came together to form one powerful team. Since then, we've continued to grow, welcoming Bridgewater Overhead Door, Hillsborough/Independent Doors, and Doors Inc. to the Door Works family.\\n\\nFrom our **Elmwood Park showroom** (one of the largest in the state) to our fully stocked service trucks on the road every day, we're proud to deliver professional, friendly, and reliable service our customers can count on.\\n\\n*** ** * ** ***\\n\\n**We're Always Looking for Great People!**\\n- -----------------------------------------\\n\\nDon't see a specific role that fits right now? No problem --- we're always growing and hiring great people who share our dedication to quality, safety, and customer satisfaction.\\n\\nWe frequently hire for:\\n\\n* **Garage Door Installers**\\n\\n* **Service Technicians**\\n\\n* **Apprentices / Helpers**\\n\\n* **Warehouse \\\\& Inventory Assistants**\\n\\n* **Office \\\\& Administrative Support**\\n\\n* **Sales Representatives**\\n\\n*** ** * ** ***\\n\\n**What We Look For**\\n- -------------------\\n\\n✅ Strong work ethic and reliability  \\n\\n✅ Positive, customer-focused attitude  \\n\\n✅ Willingness to learn and take direction  \\n\\n✅ Basic mechanical or construction skills (a plus!)  \\n\\n✅ Valid driver's license and clean driving record (for field roles)  \\n\\n✅ Ability to lift 50 lbs and work safely in various weather conditions  \\n\\n✅ Pride in workmanship and attention to detail\\n\\n*** ** * ** ***\\n\\n### **Why Join Door Works**\\n\\n* Competitive pay based on experience and performance\\n\\n* Health, dental, and vision benefits\\n\\n* Paid time off and holidays\\n\\n* 401(k) retirement plan\\n\\n* Training and advancement opportunities\\n\\n* Work with industry-leading brands like LiftMaster, Raynor, and Clopay\\n\\n* A supportive, team-oriented environment where your hard work is recognized\\n\\n*** ** * ** ***\\n\\n### **Join the Team That Opens Doors --- Literally and Professionally.**\\n\\nIf you're ready to build a meaningful career with a company that values quality, teamwork, and integrity, we'd love to hear from you.\\n\\n👉 **Apply today and become part of the Door Works family!**\\n\\n**Door Works, Inc.**   \\n\\nProudly Serving New Jersey \\\\& the Greater New York Area  \\nwww.doorworks.com\\n\\n***Guild Garage Group LLC is an Equal Opportunity Employer AA/EOE/M/F/V/D. In compliance with the Americans with Disabilities Act, Door Works may provide reasonable accommodations to qualified individuals with disabilities and encourages both prospective and current employees to discuss potential accommodations with the employer.***\\n\\n***All candidates are required to undergo pre-employment Background and Drug Screenings, as well as a Motor Vehicle Record Check.***\\n\\n***\\\\*This posting provides details on potential commissioned compensation ranges and possibilities. These amounts are not guaranteed and should in no way be construed as a salary offer.***  \\nPay Range  \\n$18---$25 USD  \\nBy submitting your application, you consent to receive text messages, emails, and phone calls from Guild Garage Group and/or our coalition of partnered brands regarding job opportunities, application status, and recruiting-related communications. Message and data rates may apply. You may opt out of receiving text messages at any time by replying STOP. All messages are related to employment opportunities and recruiting activities.\",\r\n" + //
-                        "        \"industry\": \"Automotive\",\r\n" + //
-                        "        \"jobBenefits\": \"Paid Holidays, Pension Plan\",\r\n" + //
-                        "        \"title\": \"General Application\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://job-boards.greenhouse.io/doorworks/jobs/4060995009\",\r\n" + //
-                        "        \"relevantOccupation\": \"General Application\",\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"e01c5c975bd7fc30afc5c793\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"Door Works\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"url\": \"https://doorworks.com\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"N/A\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"3cad25c72c5d2bb9d7e711d1\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"addressLocality\": \"Elmwood Park\",\r\n" + //
-                        "            \"addressRegion\": \"NJ\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"latitude\": 40.89959,\r\n" + //
-                        "          \"name\": \"Elmwood Park, NJ\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"longitude\": -74.11578\r\n" + //
-                        "        },\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"greenhouse_us\",\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"geoPoint\": {\r\n" + //
-                        "        \"lon\": -74.11578,\r\n" + //
-                        "        \"lat\": 40.89959\r\n" + //
-                        "      },\r\n" + //
-                        "      \"title\": \"General Application\",\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T02:31:05.098262Z\",\r\n" + //
-                        "      \"timezoneOffset\": -4,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"company\": \"Door Works\",\r\n" + //
-                        "      \"state\": \"NJ\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"greenhouse\",\r\n" + //
-                        "      \"department\": \"N/A\",\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"minSalary\": 18,\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FullTime\",\r\n" + //
-                        "        \"Holidays\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isDirect\": true\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"occupation\": \"IT Manager\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:30:53.139Z\",\r\n" + //
-                        "      \"city\": \"Nashville\",\r\n" + //
-                        "      \"timezone\": \"CDT\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"Contract\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Gastronomy\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49c8e5a76cf24e741c2729\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FullTime, Contract\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"EUR\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"EUR\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"100000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"120000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\",\r\n" + //
-                        "            \"unitText\": \"Year\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"Requirements\\n- -----------\\n\\n### Must have:\\n\\n### - Were looking for 7--10+ years of IT leadership experience, ideally within hospitality, restaurants, or hotels. - We need strong expertise in multi-unit IT infrastructure and connected technology environments. - Experience with POS platforms such as OpenTable and Toast, along with broader hospitality tech stacks, is required. - We expect proven capability in cybersecurity, PCI compliance, and risk mitigation. - Were seeking someone with experience managing vendors, contracts, and IT budgets. - Strong leadership, communication, and analytical problem-solving skills are essential. - Experience supporting both restaurant and hotel operations is preferred. - Familiarity with cloud platforms such as AWS, Azure, or Google Cloud is important. - We value experience with systems integration and API-driven platforms. - Experience scaling IT infrastructure for growing organizations is needed. - Being based in Nashville is preferred. - Proof of eligibility to work in the United States is required.\\n\\nResponsibilities:\\n- ----------------\\n\\n- Develop and implement an enterprise IT strategy that supports our business objectives and expansion plans. - Support growth across multiple properties in Texas and Tennessee. - Lead IT budgeting, forecasting, and vendor negotiations. - Build and maintain strong relationships with external technology partners. - Oversee our full IT infrastructure, including networks, hardware, cloud services, and on-premise solutions. - Ensure dependable uptime and system reliability across restaurants, hotel, and corporate office locations. - Manage technology rollouts for new openings, renovations, and concept launches. - Oversee and optimize core platforms, including POS systems and inventory/ERP tools. - Ensure smooth integration between POS, reservations, accounting, payroll, CRM, and other business systems. - Support digital guest-facing experiences such as online ordering, reservations, and mobile engagement. - Establish and uphold cybersecurity policies and best practices. - Maintain PCI compliance and safeguard guest and payment data. - Lead internal IT support or oversee outsourced helpdesk services. - Work with leadership to enhance reporting capabilities and improve data access. - Support business intelligence tools and dashboards. - Protect data integrity across all systems. - Travel regularly, about 25% of the time, to coordinate with regional teams and support on-site operations.\\n- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\\n\\nCompany:\\n- -------\\n\\nWe are The Twelve Thirty Club in Nashville, part of Author \\\\& Edit, the hospitality group created by restaurant innovator Sam Fox. Our concepts are designed with a distinctive global perspective and a strong connection to the communities we serve. We offer a range of benefits, including restaurant discounts, an employee assistance program focused on mental health and wellness, medical coverage with HSA options, dental and vision insurance, life, accident protection and critical illness coverage, pet insurance, and domestic partner benefits. We are a creative, guest-focused team that values hospitality, passion, and career growth, and this is an in-person role with a salary range of $100,000 to $120,000 per year.\\n- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\",\r\n" + //
-                        "        \"industry\": \"Gastronomy\",\r\n" + //
-                        "        \"jobBenefits\": \"Health Insurrance\",\r\n" + //
-                        "        \"title\": \"Director of IT\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://devitjobs.com/jobs/The-Twelve-Thirty-Club-Director-of-IT\",\r\n" + //
-                        "        \"relevantOccupation\": \"IT Manager\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"Manager\",\r\n" + //
-                        "          \"API\",\r\n" + //
-                        "          \"AWS\",\r\n" + //
-                        "          \"Azure\",\r\n" + //
-                        "          \"Business Intelligence\",\r\n" + //
-                        "          \"Cloud\",\r\n" + //
-                        "          \"CRM\",\r\n" + //
-                        "          \"Dapper\",\r\n" + //
-                        "          \"ERP\",\r\n" + //
-                        "          \"Hardware\",\r\n" + //
-                        "          \"Support\",\r\n" + //
-                        "          \"Mobile\",\r\n" + //
-                        "          \"Cloud computing\",\r\n" + //
-                        "          \"Roxio Toast\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"responsibilities\": \"Develop and implement an enterprise IT strategy that supports our business objectives and expansion plans, Support growth across multiple properties in Texas and Tennessee, Lead IT budgeting, forecasting, and vendor negotiations, Build and maintain strong relationships with external technology partners, Oversee our full IT infrastructure, including networks, hardware, cloud services, and on-premise solutions, Ensure dependable uptime and system reliability across restaurants, hotel, and corporate office locations, Manage technology rollouts for new openings, renovations, and concept launches, Oversee and optimize core platforms, including POS systems and inventory/ERP tools, Ensure smooth integration between POS, reservations, accounting, payroll, CRM, and other business systems, Support digital guest-facing experiences such as online ordering, reservations, and mobile engagement, Establish and uphold cybersecurity policies and best practices, Maintain PCI compliance and safeguard guest and payment data, Lead internal IT support or oversee outsourced helpdesk services, Work with leadership to enhance reporting capabilities and improve data access, Support business intelligence tools and dashboards, Protect data integrity across all systems, Travel regularly, about 25% of the time, to coordinate with regional teams and support on-site operations\",\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"74f480a55ad5c97d698d5db5\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"The Twelve Thirty Club\",\r\n" + //
-                        "          \"logo\": \"https://static.devitjobs.com/logo-images/https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/5f784add4439627457fc6cee635ec2d5\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"Customer Support\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"4c73364e459e6c6c17ea45bd\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"streetAddress\": \"Broadway 111\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"postalCode\": \"37201\",\r\n" + //
-                        "            \"addressLocality\": \"Nashville\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"latitude\": 36.1619307,\r\n" + //
-                        "          \"name\": \"Broadway 111, 37201 Nashville\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"longitude\": -86.7751004\r\n" + //
-                        "        },\r\n" + //
-                        "        \"educationRequirements\": \"Were looking for 7–10+ years of IT leadership experience, ideally within hospitality, restaurants, or hotels, We need strong expertise in multi-unit IT infrastructure and connected technology environments, Experience with POS platforms such as OpenTable and Toast, along with broader hospitality tech stacks, is required, We expect proven capability in cybersecurity, PCI compliance, and risk mitigation, Were seeking someone with experience managing vendors, contracts, and IT budgets, Strong leadership, communication, and analytical problem-solving skills are essential, Experience supporting both restaurant and hotel operations is preferred, Familiarity with cloud platforms such as AWS, Azure, or Google Cloud is important, We value experience with systems integration and API-driven platforms, Experience scaling IT infrastructure for growing organizations is needed, Being based in Nashville is preferred, Proof of eligibility to work in the United States is required\",\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"Onsite, CDT Timezone\",\r\n" + //
-                        "        \"sameAs\": \"https://www.indeed.com/tmn/ccs/48adbe920c3d2749/6be58bd7efb6df06a16ea4b0d1ba4f2a5f73ffaba26fc12fe922aa7e1f9113de/7985898892702321?sf=VaC01\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"devjobs_us\",\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"geoPoint\": {\r\n" + //
-                        "        \"lon\": -86.7751004,\r\n" + //
-                        "        \"lat\": 36.1619307\r\n" + //
-                        "      },\r\n" + //
-                        "      \"title\": \"Director of IT\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"Manager\",\r\n" + //
-                        "        \"API\",\r\n" + //
-                        "        \"AWS\",\r\n" + //
-                        "        \"Azure\",\r\n" + //
-                        "        \"Business Intelligence\",\r\n" + //
-                        "        \"Cloud\",\r\n" + //
-                        "        \"CRM\",\r\n" + //
-                        "        \"Dapper\",\r\n" + //
-                        "        \"ERP\",\r\n" + //
-                        "        \"Hardware\",\r\n" + //
-                        "        \"Support\",\r\n" + //
-                        "        \"Mobile\",\r\n" + //
-                        "        \"Cloud computing\",\r\n" + //
-                        "        \"Roxio Toast\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:30:53.139Z\",\r\n" + //
-                        "      \"timezoneOffset\": -5,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"company\": \"The Twelve Thirty Club\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"devjobs\",\r\n" + //
-                        "      \"department\": \"Customer Support\",\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"Onsite\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"minSalary\": 100000,\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"Director\",\r\n" + //
-                        "        \"Lead\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"postCode\": \"37201\",\r\n" + //
-                        "      \"isDirect\": true\r\n" + //
-                        "    },\r\n" + //
-                        "    {\r\n" + //
-                        "      \"occupation\": \"Systems Administrator\",\r\n" + //
-                        "      \"dateActive\": \"2026-08-05T01:19:21.922Z\",\r\n" + //
-                        "      \"city\": \"San Antonio\",\r\n" + //
-                        "      \"timezone\": \"CDT\",\r\n" + //
-                        "      \"contractType\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"language\": \"en\",\r\n" + //
-                        "      \"industry\": \"Environmental\",\r\n" + //
-                        "      \"jsonLD\": {\r\n" + //
-                        "        \"identifier\": \"6a49c8fca76cf24e741c2734\",\r\n" + //
-                        "        \"validThrough\": \"2026-08-05\",\r\n" + //
-                        "        \"employmentType\": \"FullTime\",\r\n" + //
-                        "        \"@type\": \"JobPosting\",\r\n" + //
-                        "        \"salaryCurrency\": \"EUR\",\r\n" + //
-                        "        \"baseSalary\": {\r\n" + //
-                        "          \"@type\": \"MonetaryAmount\",\r\n" + //
-                        "          \"currency\": \"EUR\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"value\": {\r\n" + //
-                        "            \"minValue\": \"80000\",\r\n" + //
-                        "            \"@type\": \"QuantitativeValue\",\r\n" + //
-                        "            \"maxValue\": \"85000\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\",\r\n" + //
-                        "            \"unitText\": \"Year\"\r\n" + //
-                        "          }\r\n" + //
-                        "        },\r\n" + //
-                        "        \"description\": \"Requirements\\n- -----------\\n\\n### Must have:\\n\\n### - We require a high school diploma with 6 to 9 years of relevant experience, or equivalent experience. - We require an active TS/SCI clearance. - We require a current CompTIA Security+ certification. - We are looking for experience as a system administrator in a mid- to large-scale Windows environment. - We require hands-on experience with F5 BIG-IP systems, including load balancers, ADCs, and SSL offloading. - We need someone who can perform daily system health checks. - We require experience installing software on Windows Server platforms. - We require experience troubleshooting in a Windows environment. - We require experience developing standard operating procedures for system functions. - Preferred qualifications include ServiceNow knowledge. - Strong written and verbal communication skills are preferred. - We prefer candidates who can coordinate effectively with stakeholders and collaborate well with team members.\\n\\nResponsibilities:\\n- ----------------\\n\\n- We establish and maintain the reliable operation of computer systems, including operating systems, software, and hardware in both networked and standalone environments. - We install, evaluate, and configure supported products and resolve issues encountered during deployment and use. - We troubleshoot, isolate, and correct system and server problems and anomalies. - We create and document new methods that support network and system operations, and we implement process improvements when needed. - We consult with support teams, help desks, customers, and other technical staff to resolve issues and coordinate maintenance activities. - We identify recurring issues and recommend actions to reduce their impact or frequency. - We may plan transitions from development or production environments to new technologies. - We monitor system performance, manage system data, and determine appropriate server installation methods and procedures. - We configure, deploy, and maintain F5 BIG-IP systems, including load balancers, ADCs, and SSL offloading. - We troubleshoot F5-related performance and availability issues to minimize service disruption. - We collaborate with network, systems, and security teams to integrate F5 solutions into the broader infrastructure. - We design and implement traffic management rules, including GSLB and LSLB. - We manage SSL/TLS offloading, including key and certificate administration for secure communications. - We monitor F5 systems for health and performance and provide optimization recommendations. - We configure and maintain F5 iRules to manage application traffic and support specialized use cases. - We ensure compliance with security policies, best practices, and regulatory requirements. - We support incident response and root cause analysis for F5-related issues affecting critical applications or services. - We maintain documentation for F5 configurations, change management, troubleshooting, and standard operating procedures. - We provide technical guidance and support to other IT teams and end users. - We assist with F5 system upgrades and patching.\\n- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\\n\\nCompany:\\n- -------\\n\\nWe are hiring a Systems Administrator with F5 load balancing expertise to support an Air Force intelligence system. This is an onsite role based in San Antonio, Texas. The position offers a salary range of USD $80,000 to $85,000 per year and requires work in a secure, mission-critical environment supporting essential infrastructure.\\n- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\",\r\n" + //
-                        "        \"industry\": \"Environmental\",\r\n" + //
-                        "        \"title\": \"Load Balancing Systems Administrator\",\r\n" + //
-                        "        \"@context\": \"https://schema.org\",\r\n" + //
-                        "        \"url\": \"https://devitjobs.com/jobs/Govcio-LLC-Load-Balancing-Systems-Administrator\",\r\n" + //
-                        "        \"relevantOccupation\": \"Systems Administrator\",\r\n" + //
-                        "        \"skills\": [\r\n" + //
-                        "          \"System\",\r\n" + //
-                        "          \"Hardware\",\r\n" + //
-                        "          \"Support\",\r\n" + //
-                        "          \"Load Balancing\",\r\n" + //
-                        "          \"Network\",\r\n" + //
-                        "          \"Security\",\r\n" + //
-                        "          \"Windows\",\r\n" + //
-                        "          \"ServiceNow\",\r\n" + //
-                        "          \"Autoconf\",\r\n" + //
-                        "          \"Dirac\",\r\n" + //
-                        "          \"Windows Server\"\r\n" + //
-                        "        ],\r\n" + //
-                        "        \"responsibilities\": \"We establish and maintain the reliable operation of computer systems, including operating systems, software, and hardware in both networked and standalone environments, We install, evaluate, and configure supported products and resolve issues encountered during deployment and use, We troubleshoot, isolate, and correct system and server problems and anomalies, We create and document new methods that support network and system operations, and we implement process improvements when needed, We consult with support teams, help desks, customers, and other technical staff to resolve issues and coordinate maintenance activities, We identify recurring issues and recommend actions to reduce their impact or frequency, We may plan transitions from development or production environments to new technologies, We monitor system performance, manage system data, and determine appropriate server installation methods and procedures, We configure, deploy, and maintain F5 BIG-IP systems, including load balancers, ADCs, and SSL offloading, We troubleshoot F5-related performance and availability issues to minimize service disruption, We collaborate with network, systems, and security teams to integrate F5 solutions into the broader infrastructure, We design and implement traffic management rules, including GSLB and LSLB, We manage SSL/TLS offloading, including key and certificate administration for secure communications, We monitor F5 systems for health and performance and provide optimization recommendations, We configure and maintain F5 iRules to manage application traffic and support specialized use cases, We ensure compliance with security policies, best practices, and regulatory requirements, We support incident response and root cause analysis for F5-related issues affecting critical applications or services, We maintain documentation for F5 configurations, change management, troubleshooting, and standard operating procedures, We provide technical guidance and support to other IT teams and end users, We assist with F5 system upgrades and patching\",\r\n" + //
-                        "        \"hiringOrganization\": {\r\n" + //
-                        "          \"identifier\": \"d7c59c585f49a89608444e8f\",\r\n" + //
-                        "          \"@type\": \"Organization\",\r\n" + //
-                        "          \"name\": \"Govcio LLC\",\r\n" + //
-                        "          \"alternateName\": \"Govcio\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\"\r\n" + //
-                        "        },\r\n" + //
-                        "        \"employmentUnit\": \"Legal\",\r\n" + //
-                        "        \"jobLocation\": {\r\n" + //
-                        "          \"identifier\": \"296da42e84b60bff2dfd77c0\",\r\n" + //
-                        "          \"address\": {\r\n" + //
-                        "            \"addressCountry\": \"United States\",\r\n" + //
-                        "            \"streetAddress\": \"General Hudnell Dr 313\",\r\n" + //
-                        "            \"@type\": \"PostalAddress\",\r\n" + //
-                        "            \"postalCode\": \"78226\",\r\n" + //
-                        "            \"addressLocality\": \"San Antonio\",\r\n" + //
-                        "            \"@context\": \"https://schema.org\"\r\n" + //
-                        "          },\r\n" + //
-                        "          \"@type\": \"Place\",\r\n" + //
-                        "          \"latitude\": 29.3831335,\r\n" + //
-                        "          \"name\": \"General Hudnell Dr 3133, 78226 San Antonio\",\r\n" + //
-                        "          \"@context\": \"https://schema.org\",\r\n" + //
-                        "          \"longitude\": -98.5609209\r\n" + //
-                        "        },\r\n" + //
-                        "        \"educationRequirements\": \"We require a high school diploma with 6 to 9 years of relevant experience, or equivalent experience, We require an active TS/SCI clearance, We require a current CompTIA Security+ certification, We are looking for experience as a system administrator in a mid- to large-scale Windows environment, We require hands-on experience with F5 BIG-IP systems, including load balancers, ADCs, and SSL offloading, We need someone who can perform daily system health checks, We require experience installing software on Windows Server platforms, We require experience troubleshooting in a Windows environment, We require experience developing standard operating procedures for system functions, Preferred qualifications include ServiceNow knowledge, Strong written and verbal communication skills are preferred, We prefer candidates who can coordinate effectively with stakeholders and collaborate well with team members\",\r\n" + //
-                        "        \"datePosted\": \"2026-07-05\",\r\n" + //
-                        "        \"applicantLocationRequirements\": \"Onsite, CDT Timezone\",\r\n" + //
-                        "        \"sameAs\": \"https://click.appcast.io/t/NWRzZXPliwHZBLi-ncAMmfif5X3RiSKAB4ZYiyLfdN6zO6QlcZvIz7XQ9kLuCjIf\"\r\n" + //
-                        "      },\r\n" + //
-                        "      \"source\": \"devjobs_us\",\r\n" + //
-                        "      \"locale\": \"en_US\",\r\n" + //
-                        "      \"geoPoint\": {\r\n" + //
-                        "        \"lon\": -98.5609209,\r\n" + //
-                        "        \"lat\": 29.3831335\r\n" + //
-                        "      },\r\n" + //
-                        "      \"title\": \"Load Balancing Systems Administrator\",\r\n" + //
-                        "      \"skills\": [\r\n" + //
-                        "        \"System\",\r\n" + //
-                        "        \"Hardware\",\r\n" + //
-                        "        \"Support\",\r\n" + //
-                        "        \"Load Balancing\",\r\n" + //
-                        "        \"Network\",\r\n" + //
-                        "        \"Security\",\r\n" + //
-                        "        \"Windows\",\r\n" + //
-                        "        \"ServiceNow\",\r\n" + //
-                        "        \"Autoconf\",\r\n" + //
-                        "        \"Dirac\",\r\n" + //
-                        "        \"Windows Server\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"dateCreated\": \"2026-07-05T01:19:21.922Z\",\r\n" + //
-                        "      \"timezoneOffset\": -5,\r\n" + //
-                        "      \"countryCode\": \"us\",\r\n" + //
-                        "      \"company\": \"Govcio\",\r\n" + //
-                        "      \"isDuplicate\": false,\r\n" + //
-                        "      \"portal\": \"devjobs\",\r\n" + //
-                        "      \"department\": \"Legal\",\r\n" + //
-                        "      \"workPlace\": [\r\n" + //
-                        "        \"Onsite\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"isRecruiter\": false,\r\n" + //
-                        "      \"minSalary\": 80000,\r\n" + //
-                        "      \"hasSalary\": true,\r\n" + //
-                        "      \"careerLevel\": [\r\n" + //
-                        "        \"N/A\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"workType\": [\r\n" + //
-                        "        \"FullTime\"\r\n" + //
-                        "      ],\r\n" + //
-                        "      \"postCode\": \"78226\",\r\n" + //
-                        "      \"isDirect\": true\r\n" + //
-                        "    }\r\n" + //
-                        "  ],\r\n" + //
-                        "  \"resultSizeInBytes\": 81582\r\n" + //
-                        "}";
+                      "    \"api\": \"Techmap.io Job Posting API\",\r\n" + //
+                      "    \"apiVersion\": \"v2.6\",\r\n" + //
+                      "    \"apiEndpoint\": \"GET search result for Job Postings by countryCode, dateCreated, language, industry, timezone, workPlace, etc.\",\r\n" + //
+                      "    \"page\": 1,\r\n" + //
+                      "    \"pageSize\": 10,\r\n" + //
+                      "    \"totalCount\": 4944,\r\n" + //
+                      "    \"query\": {\r\n" + //
+                      "        \"query\": {\r\n" + //
+                      "            \"bool\": {\r\n" + //
+                      "                \"must\": [\r\n" + //
+                      "                    {\r\n" + //
+                      "                        \"range\": {\r\n" + //
+                      "                            \"dateCreated\": {\r\n" + //
+                      "                                \"gte\": \"2026-07-09T00:00:00.000Z\",\r\n" + //
+                      "                                \"lte\": \"2026-07-09T23:59:59.999Z\"\r\n" + //
+                      "                            }\r\n" + //
+                      "                        }\r\n" + //
+                      "                    },\r\n" + //
+                      "                    {\r\n" + //
+                      "                        \"term\": {\r\n" + //
+                      "                            \"hasSalary\": true\r\n" + //
+                      "                        }\r\n" + //
+                      "                    },\r\n" + //
+                      "                    {\r\n" + //
+                      "                        \"match\": {\r\n" + //
+                      "                            \"countryCode\": \"us\"\r\n" + //
+                      "                        }\r\n" + //
+                      "                    }\r\n" + //
+                      "                ]\r\n" + //
+                      "            }\r\n" + //
+                      "        }\r\n" + //
+                      "    },\r\n" + //
+                      "    \"result\": [\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Manager\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Castroville\",\r\n" + //
+                      "            \"timezone\": \"PDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Services\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4ef8f2965f72784350d729\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FullTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"24.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"27.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Benefits:**\\n\\n* Health insurance\\n* Opportunity for advancement\\n* Training \\\\& development\\n* Vision insurance\\n* 401(k) matching\\n* Dental insurance  \\nSERVPRO of Monterey Peninsula is hiring a **Restoration Supervisor**!  \\n\\n**Benefits**  \\nSERVPRO of Monterey Peninsula offers:\\n\\n* Competitive compensation\\n* Superior benefits\\n* Career progression\\n* Professional development\\n\\nAnd more!  \\nAs the front-line representative of the SERVPRO® brand, the **Restoration Supervisor** demonstrates the company's Here to Help® commitment to customers and clients. This is done by coordinating, monitoring, and performing work activities on projects to successfully fulfill service needs and facilitate a positive customer experience.  \\n\\n**Key Responsibilities**\\n\\n* Coordinate and perform production processes as scheduled and ensure quality control\\n* Manage the customer and client experience and overall customer satisfaction tracked with online reviews\\n* Communicate clear expectations to restoration technicians and supervise their activities\\n* Document a detailed and accurate job file to support the services provided\\n* Manage labor and consumable item usage on assigned projects\\n* Communicate with restoration project manager and office staff on project progress and issues\\n\\n**Additional Responsibilities:**\\n\\n* Communicate and follow all OSHA guidelines for job safety\\n* Manage assets by protecting and using equipment and materials properly\\n* Coach and train restoration technicians\\n\\n**Position Requirements**\\n\\n* Valid driver's license\\n* High school diploma/GED (preferred)\\n* At least 1 year of experience in cleaning, restoration, or construction\\n* IICRC certification a plus, not required\\n\\n**Skills/Physical Demands/Competencies**\\n\\n* Ability to lift a minimum of 50 pounds regularly, occasionally up to 100 pounds with assistance\\n* Ability to climb ladders, work at ceiling heights, work in tight spaces (i.e. crawl spaces, attics)\\n* Ability to repetitively push/pull/lift/carry objects\\n* Ability to work with/around cleaning agents\\n\\nEach SERVPRO® Franchise is Independently Owned and Operated.  \\n*All employees of a SERVPRO Franchise are hired by, employed by, and under the sole supervision and control of an independently owned and operated Servpro Franchise. Servpro Franchise employees are not employed by, jointly employed by, agents of or under the supervision or control of Servpro Industries, LLC or Servpro Franchisor, LLC (the Franchisor), in any manner whatsoever. All Sample Forms provided by Servpro Industries to Servpro Franchises should be reviewed and approved by the Franchise's attorney for compliance with Federal, State and Local laws. All Sample Forms are provided for informational purposes and Servpro Franchises may choose whether or not to use them.*\",\r\n" + //
+                      "                \"industry\": \"Services\",\r\n" + //
+                      "                \"jobBenefits\": \"Pension Plan\",\r\n" + //
+                      "                \"title\": \"Restoration Supervisor\",\r\n" + //
+                      "                \"directApply\": true,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://iicrc-careers.careerplug.com/jobs/3489663\",\r\n" + //
+                      "                \"relevantOccupation\": \"Manager\",\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"f14216cfcd2ad2a063b15589\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"SERVPRO of Monterey Peninsula\",\r\n" + //
+                      "                    \"logo\": \"https://d2zpdrfrohaf9r.cloudfront.net/system/images/1054372/original/IICRC_Logo_Transparent.png\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://servpro.com\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"13063369711df4c0a780040e\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"95012\",\r\n" + //
+                      "                        \"addressLocality\": \"Castroville\",\r\n" + //
+                      "                        \"addressRegion\": \"CA\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 36.76195,\r\n" + //
+                      "                    \"name\": \"Castroville, CA, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -121.7518\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"PDT Timezone\",\r\n" + //
+                      "                \"sameAs\": \"https://iicrc-careers.careerplug.com/jobs/3489663\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"careerplug_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -121.7518,\r\n" + //
+                      "                \"lat\": 36.76195\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Restoration Supervisor\",\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:00:00.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -7,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"SERVPRO of Monterey Peninsula\",\r\n" + //
+                      "            \"state\": \"CA\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"careerplug\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 24,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Janitorial\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Myrtle Beach\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Services\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4ef8f4965f72784350d72c\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"16.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"17.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Benefits:**\\n\\n* Opportunity for advancement\\n* Paid time off\\n* 401(k)\\n* 401(k) matching\\n* Bonus based on performance  \\nImmediate openings for part time roles.  \\n\\n**Open Multiple Custodial Shifts:**\\n\\n* Days:\\n\\n* Monday, Wednesday, Friday - 9:30AM - 1:30pm\\n* Evenings\\n\\n* Tuesday - 6:00pm - 10pm\\n\\n* Thursday - 6:00pm - 10pm\\n* Weekends\\n\\n* Saturday - 11:00AM to 5:00pm\\n\\n* Sunday - 2:00pm to 7:00pm\\n\\nThis is a fun place to work and we can accomodate any arrangement or number of shifts.  \\n\\n**Our essential team members enjoy:**\\n\\n* Competitive Pay\\n* Paid Training\\n* 401k with employer matching options\\n* Pay via direct deposit\\n* Paid Time Off\\n\\n**Responsibilities:**\\n\\n* This position is responsible for creating cleaner, healthier environments for our customers', their students and grounds by performing the following essential duties and responsibilities. Duties include, but not limited to:\\n* Perform all cleaning duties for facilities using provided ServiceMaster products, tools and procedures\\n* Sweeping, mopping, polishing, trash removal, restroom cleaning, windows, dusting\\n* Maintain inventory of supplies and equipment.\\n* Use proper PPE where required\\n* Opens and locks facilities, enable and disable security system as required\\n\\n**Physical Demands and Qualifications:**\\n\\n* Constant (up to 100%) standing, walking, pushing, kneeling, twisting, reaching\\n* Must be able to lift and/or carry up to 25lbs.\\n* Ability to differentiate between cleaning products and uses\\n* 1-2 years' experience as a custodian, janitor, or housekeeper a plus but not required\\n* Will provide on the job training to those with strong work ethic and willingness to learn.\\n* The ability to be flexible and work at a fast pace in a multi-tasked job is a must.\\n* Contribute to a positive work climate with a pleasant attitude\\n* Contribute to the overall team effort including being in uniform, dependable and on time\\n* Treat all co-workers and customers with courtesy and respect\",\r\n" + //
+                      "                \"industry\": \"Services\",\r\n" + //
+                      "                \"jobBenefits\": \"Paid Holidays, Pension Plan\",\r\n" + //
+                      "                \"title\": \"Janitorial positions in Pawleys Island Area with a Great Fun Team\",\r\n" + //
+                      "                \"directApply\": true,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://iicrc-careers.careerplug.com/jobs/3489645\",\r\n" + //
+                      "                \"relevantOccupation\": \"Janitorial\",\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"f14216cfcd2ad2a063b15589\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"ServiceMaster Janitorial Solutions\",\r\n" + //
+                      "                    \"logo\": \"https://d2zpdrfrohaf9r.cloudfront.net/system/images/1054372/original/IICRC_Logo_Transparent.png\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://greenhomesolutions.com\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"8b482d55d5feaf9c313a083a\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"29572\",\r\n" + //
+                      "                        \"addressLocality\": \"Myrtle Beach\",\r\n" + //
+                      "                        \"addressRegion\": \"SC\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 33.6890603,\r\n" + //
+                      "                    \"name\": \"Myrtle Beach, SC, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -78.8866943\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\",\r\n" + //
+                      "                \"sameAs\": \"https://iicrc-careers.careerplug.com/jobs/3489645\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"careerplug_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -78.8866943,\r\n" + //
+                      "                \"lat\": 33.6890603\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Janitorial positions in Pawleys Island Area with a Great Fun Team\",\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:00:00.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"ServiceMaster Janitorial Solutions\",\r\n" + //
+                      "            \"state\": \"SC\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"careerplug\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 16,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"PartTime\",\r\n" + //
+                      "                \"Shift\",\r\n" + //
+                      "                \"Weekends\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Clerk\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:01:10.000Z\",\r\n" + //
+                      "            \"city\": \"Milford\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Environmental\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f030996e6cd2a3602e69c\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"90000\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"100000\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"YEAR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Position Summary:**\\n\\nThe Senior Accountant supports the day-to-day accounting and financial reporting functions of the organization to promote accuracy, compliance, and efficiency across the finance function. This role contributes to the preparation of financial statements, account reconciliations, cost accounting analyses, and audit support activities while assisting with budgeting, reporting, and continuous process improvement initiatives. The position is also partnered with operations and finance teams to support financial visibility and informed decision-making.\\n\\n**Responsibilities:**\\n\\n• Prepare and analyze financial statements to support accurate and timely financial reporting in accordance with accounting standards.\\n\\n• Reconcile general ledger accounts and research discrepancies to maintain accurate financial records.\\n\\n• Assist with monthly, quarterly, and annual close processes and related financial reporting activities.\\n\\n• Support accounts payable and accounts receivable processes to help ensure timely and accurate transaction processing.\\n\\n• Perform fixed asset accounting activities, including depreciation schedules and asset tracking.\\n\\n• Assist with cost accounting functions, including inventory analysis, standard costing, margin analysis, and manufacturing cost reporting.\\n\\n• Support budgeting and forecasting processes through financial analysis and reporting.\\n\\n• Prepare audit schedules and support documentation for internal and external audit requests.\\n\\n• Maintain compliance with company policies, GAAP, and applicable regulatory requirements.\\n\\n• Identify opportunities for process improvements and assist with implementation of best practices to enhance efficiency and accuracy.\\n\\n• Collaborate cross-functionally with operations, purchasing, and finance teams to support reporting and business initiatives.\\n\\n**Skills and Experience:**\\n\\n• Strong understanding of accounting principles and financial reporting.\\n\\n• Excellent analytical and problem-solving skills.\\n\\n• High attention to detail and organizational abilities.\\n\\n• Strong verbal and written communication skills.\\n\\n• Ability to manage multiple priorities and meet deadlines.\\n\\n• Proficiency in Microsoft Office Suite, particularly Excel.\\n\\n• Experience with accounting software and ERP systems preferred.\\n\\n• Bachelor's degree in accounting, finance, or a related field required; CPA or CMA certification preferred.\\n\\n• Five or more years of accounting experience, preferably in a senior or supervisory role.\\n\\n**Other Details:**\\n\\n• Work Environment: Office setting with regular interaction with production and warehouse areas.\\n\\n• Physical Demands: Role may require occasional walking, standing, and warehouse site visits.\\n\\n• Schedule: Full-time, Monday to Friday, with flexibility for extended hours as needed.\\n\\n• Travel: Occasional travel may be required for supplier visits, conferences, and inter-facility coordination.\\n\\n• ADA Compliance: Alinabal is committed to providing reasonable accommodations in accordance with the Americans with Disabilities Act (ADA). Employees who require accommodation or have work restrictions will be supported through an interactive process to ensure safe and effective performance of essential job functions.\\n\\n*The duties listed above are intended only as illustrations of the various types of work that may be performed. The omission of specific statements of duties does not exclude them from the position if the work is similar, related, or a logical assignment to the position.*\\n\\n*The job description does not constitute an employment agreement between the employer and employee and is subject to change by the employer as the needs of the employer and requirements of the job change.*\\n\\nAlinabal is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, sexual orientation, gender identity, national origin, disability, or veteran status.\\n\\nYou should be proficient in:\\n\\n* Bachelor's Degree\\n* Generally Accepted Accounting Principles (GAAP)\\n* Cost Accounting\\n* Accounts Payable (AP)\\n* Accounts Receivable (AR)\\n* Bank Reconciliation\\n* Financial Audit Experience\\n\\nMachines \\\\& technologies you'll use:\\n\\n* Accounting Software\",\r\n" + //
+                      "                \"industry\": \"Environmental\",\r\n" + //
+                      "                \"title\": \"Senior Accountant\",\r\n" + //
+                      "                \"directApply\": false,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://100hires.com/j/sZ9BE4f\",\r\n" + //
+                      "                \"relevantOccupation\": \"Clerk\",\r\n" + //
+                      "                \"skills\": [\r\n" + //
+                      "                    \"Microsoft Excel\",\r\n" + //
+                      "                    \"Microsoft Office\"\r\n" + //
+                      "                ],\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"43fc71219a7f95230e1b4eb5\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"Alinabal - Manufacturing Facilities\",\r\n" + //
+                      "                    \"logo\": \"https://100hires.com/\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"8c1b6c6e9b52eaa0bc4cc444\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"06460\",\r\n" + //
+                      "                        \"addressLocality\": \"Milford\",\r\n" + //
+                      "                        \"addressRegion\": \"CT\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 41.222,\r\n" + //
+                      "                    \"name\": \"Milford, CT, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -73.056\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"100hires_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -73.056,\r\n" + //
+                      "                \"lat\": 41.222\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Senior Accountant\",\r\n" + //
+                      "            \"skills\": [\r\n" + //
+                      "                \"Microsoft Excel\",\r\n" + //
+                      "                \"Microsoft Office\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:01:10.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"Alinabal - Manufacturing Facilities\",\r\n" + //
+                      "            \"state\": \"CT\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"100hires\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 90000,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"Senior\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"FullTime\",\r\n" + //
+                      "                \"Weekdays\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Assembler\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:30:42.000Z\",\r\n" + //
+                      "            \"city\": \"Grand Ledge\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Environmental\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f03d796e6cd2a3602e6f1\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"20.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"26.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"### Who We Are\\n\\nRoberts Sinto Corporation, located in Grand Ledge, MI, is part of the Sinto America Group of companies, the North American subsidiary of Sintokogio, Ltd., a worldwide organization with a global reputation for excellence in manufacturing.\\n\\nSinto America offers innovative, top-class solutions to meet the needs of our customers and industries, with operating companies dedicated to providing superior customer service through practical, cost-effective, and technologically advanced equipment and service solutions across North America.\\n\\nSinto America is comprised of seven primary segments, including Foundry Mold and Core Making, Sand Processing, Bulk Material Handling, Automation, 3D Ceramic Printing, Surface Treatment, and Surface Technologies.\\n\\nRoberts Sinto Corporation is a leading OEM designer and manufacturer of heavy industrial equipment serving foundry, surface treatment, and material handling markets. With more than 50 years of experience, we build custom machinery and systems engineered to meet demanding industrial applications.\\n\\nRoberts Sinto is currently seeking an **Industrial Machine Controls Assembler** to join our team in Grand Ledge, MI. This position focuses primarily on **wiring and assembling electrical control panels for industrial machinery in an OEM manufacturing environment**.\\n\\nWhat You Will Do\\n- ---------------\\n\\nThe Industrial Machine Controls Assembler is responsible for **building, wiring, and verifying electrical control panels** used in heavy industrial equipment. This role is hands-on and production-focused, with the majority of time spent **wiring panels, routing cables, and assembling control systems** according to prints and specifications.\\n\\n### Electrical Panel Assembly \\\\& Wiring\\n\\n* Wire and assemble industrial electrical control panels according to schematics, wiring diagrams, and bills of material\\n* Install and wire components such as PLCs, HMIs, VFDs, power supplies, relays, terminal blocks, sensors, and safety devices\\n* Route, label, and terminate wiring to OEM standards and customer specifications\\n* Perform point-to-point wiring checks and basic electrical verification\\n* Maintain neat, organized, and professional panel layouts\\n\\n### Production \\\\& Equipment Support\\n\\n* Support integration of control panels into industrial machinery\\n* Assist with machine power-up, checkout, and troubleshooting as needed\\n* Support equipment run-offs and testing activities\\n* Assist with panel or equipment modifications and rework when required\\n* Coordinate with assembly, engineering, and controls teams to resolve issues\\n\\n### Quality, Systems \\\\& Safety\\n\\n* Follow established assembly procedures, quality standards, and work instructions\\n* Ensure work complies with applicable electrical codes and internal standards\\n* Accurately complete job tracking and documentation using ERP systems (Syteline)\\n* Maintain a clean, organized, and safe work area\\n* Adhere to all safety policies and ISO quality requirements\\n\\nWhat We Want From You\\n- --------------------\\n\\n### Education \\\\& Experience\\n\\n* High school diploma or equivalent\\n* 2--5 years of experience wiring industrial control panels, preferred\\n* Experience in an **OEM manufacturing or machine-building environment** strongly preferred\\n\\n### Preferred Experience\\n\\n* Industrial controls, automation, or electrical assembly background\\n* Familiarity with PLC-based control systems and industrial automation components\\n* Experience wiring panels for custom or engineered-to-order machinery\\n\\n### Skills and Abilities\\n\\n* Ability to read and interpret electrical schematics, wiring diagrams, and layouts\\n* Strong attention to detail and workmanship quality\\n* Working knowledge of hand tools, electrical tools, and measuring devices\\n* Basic understanding of industrial electrical safety practices\\n* Ability to follow written and verbal instructions\\n* Effective communication and teamwork skills\\n* Working knowledge of basic math concepts (measurements, counts, ratios)\\n\\nPhysical Requirements\\n- --------------------\\n\\nWhile performing the duties of this job, the employee is frequently required to stand; sit; use hands to handle tools, wires, and electrical components; and talk and hear. The employee is occasionally required to walk and reach with hands and arms. The employee must be able to lift and/or move up to 50 pounds unassisted. Specific vision abilities required include close vision, depth perception, and the ability to adjust focus.\\n\\nWork Environment\\n- ---------------\\n\\nWhile performing the duties of this job, the employee will work in a manufacturing and production environment and may be exposed to moving mechanical parts, airborne particles, extremes of heat and cold, and electrical hazards. The noise level in the work environment is usually moderate.\\n\\nThe Benefits of Joining Our Team\\n- -------------------------------\\n\\nBecause we seek to hire the best people, we work hard to provide benefits that make their lives better. Our comprehensive benefits program includes:\\n\\n* Health coverage for Medical, Dental, and Vision plans\\n* 401(k) plan with generous company match and profit sharing\\n* Short-term and long-term disability, life insurance up to $50k of base salary, and AD\\\\&D insurance at 100% company cost\\n* Flexible spending accounts for healthcare and dependent care\\n* Generous paid time off that increases with tenure, plus paid sick time\\n* 100% company-paid Employee Assistance Program (EAP)\\n* Tuition reimbursement\\n\\nWhen you join Roberts Sinto, you don't just take a job---you become part of a skilled team building complex industrial machinery that drives customer success.\\n\\nYou should be proficient in:\\n\\n* Electrical Schematics\\n* 120/208/240/480 Voltage Systems\\n* Electrical / Electronic Systems\\n* High Voltage Systems\\n* Blueprint Reading\",\r\n" + //
+                      "                \"industry\": \"Environmental\",\r\n" + //
+                      "                \"jobBenefits\": \"Paid Holidays, Pension Plan\",\r\n" + //
+                      "                \"title\": \"Industrial Machine Controls Assembler\",\r\n" + //
+                      "                \"directApply\": false,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://100hires.com/j/k8nZd4y\",\r\n" + //
+                      "                \"relevantOccupation\": \"Assembler\",\r\n" + //
+                      "                \"skills\": [\r\n" + //
+                      "                    \"Terminate\",\r\n" + //
+                      "                    \"Assembly language\",\r\n" + //
+                      "                    \"Blueprint\",\r\n" + //
+                      "                    \"Assembler\"\r\n" + //
+                      "                ],\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"5221a58fa9fb1864b509d5be\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"Sinto Industrial - USA\",\r\n" + //
+                      "                    \"logo\": \"https://100hires.com/\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://sintoamerica.com\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"71de17a12dc8298aed99e594\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"48837\",\r\n" + //
+                      "                        \"addressLocality\": \"Grand Ledge\",\r\n" + //
+                      "                        \"addressRegion\": \"MI\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 42.753,\r\n" + //
+                      "                    \"name\": \"Grand Ledge, MI, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -84.746\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"100hires_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -84.746,\r\n" + //
+                      "                \"lat\": 42.753\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Industrial Machine Controls Assembler\",\r\n" + //
+                      "            \"skills\": [\r\n" + //
+                      "                \"Terminate\",\r\n" + //
+                      "                \"Assembly language\",\r\n" + //
+                      "                \"Blueprint\",\r\n" + //
+                      "                \"Assembler\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:30:42.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"Sinto Industrial - USA\",\r\n" + //
+                      "            \"state\": \"MI\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"100hires\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 20,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Service Technician\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:24:45.000Z\",\r\n" + //
+                      "            \"city\": \"Columbus\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Automotive\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f049b96e6cd2a3602e720\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FullTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"33.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"43.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"DEUTZ is one of the world's leading manufacturers of innovative drive systems. Its core competences are the development, production, distribution and servicing of diesel, gas and electric drivetrains for professional applications that is used in construction equipment, agricultural machinery, material handling equipment, stationary equipment, commercial vehicles, rail vehicles and other applications.\\n\\n**Job Summary:**\\n\\nThe Remote Field Service Technicians are creative mechanic marvels that contribute to the organization'ssuccess by providingexpertisein field service troubleshooting, installations, and repair of our machinery. The Remote Field Service Technician will perform field-related preventative maintenance and routine repairs on all DEUTZ products and Non-DEUTZ Construction Equipmentoperatingwithin the DEUTZ Power Center. The Remote Field Service Technician will liaise with our Service Supervisor, Parts Dept, Customers, New enginesalesand engineering/warranty department. This role requires robust problem-solving skills with the ability to adapt and work in a team environment.The ideal candidate must be personable, reliable, ethical, and intelligent with a diligent and hard-working drive.\\n\\n**Essential Duties and Responsibilities**\\n\\nTheRemote Field Service Technicianwillbe responsible for, but not limited to, the following duties:\\n\\n* Travel to customer(s) locations to perform engine and equipment-related repairs.\\n\\n* Assistin resolving customer-related issuesina timelymanner.\\n\\n* Work with all employees and supervisors to ensure the facility is clean and organized and presents a positive image of DEUTZ.\\n\\n* Plan methods and sequence of performing repairs assigned.\\n\\n* Pre-order all parts and materialsrequiredto perform assigned repairs.\\n\\n* Inspect required repairs safely and effectively.\\n\\n* Ensure all repairs are completed as assigned and according to manufacturer requirements.\\n\\n* Ensure proper cosmetic appearance upon completion of repairs.\\n\\n* Ensure all parts and materials not used are returned per DEUTZ Power Center return parts guidelines.\\n\\n* Maintain and keep the work area in a clean and safe condition.\\n\\n* Communicate with customers in a respectful and honest manner.\\n\\n* Match all identified solutions necessary to affectrepair.\\n\\n* Complete all work orders and time sheetsin a timely manner.\\n\\n* Consult, when necessary, with the DEUTZ Service Department ticket system to ensure the accuracy and approval of repairs.\\n\\n* Ensure vehicle parts inventory ismaintainedat a suitable level for first-call completions and local parts sales.\\n\\n* Perform all workin accordance withall established policies and procedures.\\n\\n* Assistin the proper filing of warranty claims and customer invoices.\\n\\n* Follow all DEUTZ employee policies and procedures, especially pertaining to travel and company credit cards.\\n\\n* Maintains and cleans service trucks meeting DOT requirements.\\n\\n* Other duties as assigned.\\n\\n**Other Qualifications**\\n\\n* Strong experience in diagnosis, and repair of NG/CNG, Tier 3-4 emissions level preferred.\\n\\n* Ability to develop exceptionally strong working knowledge of DEUTZ Diesel engines.\\n\\n* Ability to work with minimal supervision.\\n\\n* Meet all local/state and company requirements tooperatea company-assigned service vehicle.\\n\\n* Excellent communication skills (writing, speaking in person, and over the phone).\\n\\n* Proficient in the use of basic computer functions and portable diagnostic tools.\\n\\n* Musthaveyour owntools. Key DEUTZ tools will be provided.\\n\\n**Supervisory Responsibility**\\n\\n* None\\n\\n**Travel Requirements**\\n\\n* Anticipated domestic and international travel is approximately 100% depending on business needs within the region.\\n\\n**MinimumRequirements**\\n\\n* High School Graduate or General Education Degree (GED)\\n\\n* Must be able tomaintainDOT medical card status\\n\\n* Must have a valid driver's license and be insurable by the company\\n\\n* 4+ years as shop technician experience or 2+ years as a field service technician\\n\\n**Preferred Requirements**\\n\\n* Two years of Diesel engine experience.\\n\\n* 2-5 years of construction equipment repair experience preferred\\n\\n* Strong computer usage with the ability to effectivelyutilizesoftware includingSerdia,Serpic,Fieldaware, Word, and Excel\\n\\n* Certification/Training in heavy equipment and diesel engine repairs preferred\\n\\n**Physical Requirements:**\\n\\nManufacturing assembly and warehouseenvironments.Subject to noise, dust, diesel fuel, oil, and extreme hot/cold temperatures. No A/C.\\n\\nThe above job description is not intended to be an all-inclusive list of duties and standards of the position. Incumbents will follow any other instructions, and perform any related duties, as assigned by their supervisor.\\n\\n\\\\*\\\\*EEO Statement \\\\*\\\\*\\n\\nDEUTZ is an equal opportunity employer and considers all applicants for employment based on merit, competence, performance, and business needs. We do not discriminate on the bases of any status protected under federal, state, or local law. Applicants will be considered regardless of their race, color, sex, gender identity or expression, age, religion, creed, national origin, citizenship status, sexual orientation, genetic information, physical or mental disability, military status or any other characteristic protected under federal, state, or local law. In addition to complying with all applicable laws, DEUTZ also has a strong corporate commitment to inclusion.\\n\\nYou should be proficient in:\\n\\n* Heavy Equipment Repair\\n* Mechanical Troubleshooting Skills\\n* Electrical Troubleshooting\\n* Lift Truck Repair \\\\& Maintenance\\n* Field Service Readiness\\n* Diesel \\\\& Heavy Equipment Systems\\n* Mechanical Systems \\\\& Component Repair\\n* Aerial \\\\& Utility Equipment Systems\\n* Equipment Repair \\\\& Maintenance\",\r\n" + //
+                      "                \"industry\": \"Automotive\",\r\n" + //
+                      "                \"title\": \"Remote Field Service Technician\",\r\n" + //
+                      "                \"directApply\": false,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://100hires.com/j/iBT6eHR\",\r\n" + //
+                      "                \"relevantOccupation\": \"Service Technician\",\r\n" + //
+                      "                \"skills\": [\r\n" + //
+                      "                    \"Microsoft Excel\"\r\n" + //
+                      "                ],\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"fd5dad9ece01ee6017df9304\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"DEUTZ Americas\",\r\n" + //
+                      "                    \"logo\": \"https://100hires.com/\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"847d657df5b894ea072d4ab6\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"43211\",\r\n" + //
+                      "                        \"addressLocality\": \"Columbus\",\r\n" + //
+                      "                        \"addressRegion\": \"OH\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 39.961,\r\n" + //
+                      "                    \"name\": \"Columbus, OH, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -82.999\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"Hybrid, EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"100hires_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -82.999,\r\n" + //
+                      "                \"lat\": 39.961\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Remote Field Service Technician\",\r\n" + //
+                      "            \"skills\": [\r\n" + //
+                      "                \"Microsoft Excel\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:24:45.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"DEUTZ Americas\",\r\n" + //
+                      "            \"state\": \"OH\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"100hires\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"Hybrid\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 33,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Assembler\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:54:14.000Z\",\r\n" + //
+                      "            \"city\": \"Alachua\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Engineering\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f04ef96e6cd2a3602e73b\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"Shift\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"18.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"24.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"We are seeking mechanically inclined Assembly Technicians for an established company in the Alachua, FL area who will perform in a heavy production environment, assembling large and heavy parts using hand tools, power tools, and other specialized equipment.\\n\\n**Candidates with automotive or complex assembly experience are encouraged to apply.**\\n\\n**Pay rate $18-$24/hr depending on experience**\\n\\n**Shift: 1st 6:30am to 3:00pm Monday to Friday**\\n\\n**Job Duties:**\\n\\nReview specifications to determine assembly and special options.\\n\\nCheck bins for adequate supplies\\n\\nEnsure connections for correct fit, parts, and sub-assemblies per specifications\\n\\nFollow detailed instructions for assembly of industrial products.\\n\\nMaintain a clean and safe work environment\\n\\n**Qualifications / Requirements:**\\n\\nExperience and ability to read blueprints preferred.\\n\\nMust be able to lift 50 lbs\\n\\nMust be able to work within a non-climate controlled environment.\\n\\nThis is a drug-free workplace. All candidates must be able to pass a pre-employment drug screen and be willing to submit to a national background check.\\n\\nYou should be proficient in:\\n\\n* Mechanical Troubleshooting Skills\\n* Electrical / Electronic Systems\\n* Mechanical Assembly Skills\\n* Low Voltage Cabling Installation\\n* Equipment Installation \\\\& Wiring\\n* Equipment Repair \\\\& Maintenance\\n* Blueprint Reading\",\r\n" + //
+                      "                \"industry\": \"Engineering\",\r\n" + //
+                      "                \"title\": \"Mechanical Assembler\",\r\n" + //
+                      "                \"directApply\": false,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://100hires.com/j/nzQz4BZ\",\r\n" + //
+                      "                \"relevantOccupation\": \"Assembler\",\r\n" + //
+                      "                \"skills\": [\r\n" + //
+                      "                    \"Assembly language\",\r\n" + //
+                      "                    \"Blueprint\",\r\n" + //
+                      "                    \"Assembler\"\r\n" + //
+                      "                ],\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"5c0abd30256f81f119d02b9c\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"FastTrack Staffing\",\r\n" + //
+                      "                    \"logo\": \"https://100hires.com/\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"c5cb996d78ec0e41ad64deb5\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"32615\",\r\n" + //
+                      "                        \"addressLocality\": \"Alachua\",\r\n" + //
+                      "                        \"addressRegion\": \"FL\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 29.79381,\r\n" + //
+                      "                    \"name\": \"Alachua, FL, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -82.49442\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"100hires_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -82.49442,\r\n" + //
+                      "                \"lat\": 29.79381\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Mechanical Assembler\",\r\n" + //
+                      "            \"skills\": [\r\n" + //
+                      "                \"Assembly language\",\r\n" + //
+                      "                \"Blueprint\",\r\n" + //
+                      "                \"Assembler\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:54:14.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"FastTrack Staffing\",\r\n" + //
+                      "            \"state\": \"FL\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"100hires\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": true,\r\n" + //
+                      "            \"minSalary\": 18,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"Shift\",\r\n" + //
+                      "                \"Weekdays\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Pharmacy Executive\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Vancouver\",\r\n" + //
+                      "            \"timezone\": \"PDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Trade\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f084aa0c5be5708c5fbe3\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"CAD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"18.25\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"22.09\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"CAD\",\r\n" + //
+                      "                \"description\": \"Not just a job...   \\na community   \\na partnership   \\na team   \\n\\nYou'll experience them all at London Drugs. As one of Canada's fastest-growing and most successful retail chains, we know what it takes to build a satisfying career. We are seeking innovative, customer focused people to join our team! We currently have opportunities for:  \\n\\n**Pharmacy Assistant - Part Time**  \\nLondon Drugs means many things to many people. As a London Drugs Pharmacy Assistant, it means a community-oriented working environment that fosters professional excellence. Pharmacy Assistants are provided with a working environment that stresses professionalism. You will be given the tools and opportunity to practice your profession in a well designed pharmacy, which helps optimize patient care.   \\n\\nYou will be responsible for assisting the Pharmacists and Pharmacy Manager with daily operations of the Pharmacy Department. Duties will include customer service, servicing the front counter, cashier duties, telephone inquiries and general housekeeping duties. Additionally, you will operate the pharmacy computer and assist in the processing of prescriptions and preparation of prescriptions. Other responsibilities will include involvement of ordering and receiving drug orders and management of the pharmacy inventory. If you are looking for a challenging position in retail pharmacy and have the professionalism, commitment to excellence and drive to join our team, London Drugs is the place for you.  \\nThe successful candidate will have the following:\\n\\n* Good interpersonal skills when dealing with customers, staff, \\\\& management.\\n* Good communication skills, both written and verbal.\\n* Self-starter with a high level of enthusiasm.\\n* Ability to relate to all levels of customers and their needs.\\n* Ability to work quickly and accurately under pressure.\\n* Ability to work as a team player and have a team approach\\n* Basic computer skills.\\n* Previous Pharmacy experience preferable.\\n\\n**We offer advancement opportunities through our promote-from-within policies, as well as the following comprehensive benefits program. Starting pay will fall within the salary range indicated and may vary based on job-related experience, knowledge, and education:**   \\n\\n* Comprehensive medical, dental, prescription drug and vision coverage available with service for you and your family (Ensuring you and your family are taken care of)\\n* Company matched RRSPs (Helping you plan for your future)\\n* Employee Discount Program (Sharing our success)\\n* Ongoing In-House Training \\\\& Education Courses (Lifelong learning)\\n* Employee Family Assistance Program (Free confidential counselling)\\n\\nApplicants should be available to work a flexible schedule, Monday to Sunday.   \\n\\nIf you possess the necessary skills and expertise and would like to join an exciting team of professionals,   \\n\\n**Apply Now!**  \\nLondon Drugs is an equal opportunity employer dedicated to building an inclusive and diverse workforce. We are committed to building a company that represents a variety of backgrounds, perspectives, and skills. The more inclusive we are, the better our work will be.   \\n\\nWe will provide accommodations during the recruitment process upon request.   \\n\\nThe above statements are intended to describe the general nature and level of work applicable to this position and are not intended to be an exhaustive list of all responsibilities, duties and skills required. Be advised, London Drugs DOES NOT use third party recruitment services.   \\n\\nLondon Drugs may collect, use, and/or disclose your personal information (including the information in this application) where it is reasonable for establishing, managing or terminating an employment relationship. This includes the use or disclosure of your personal information to persons inside or external to our organization, for the purpose of checking references or gathering other information to support an assessment of your candidacy.  \\n\\n*To protect yourself, do not respond to unsolicited job offers from individuals or e-mail addresses, and never disclose any sensitive details about your identity (including personal or financial) to anyone you do not know or trust or on any unverified website, or website you do not trust.*\",\r\n" + //
+                      "                \"industry\": \"Trade\",\r\n" + //
+                      "                \"title\": \"Pharmacy Assistant - Part Time\",\r\n" + //
+                      "                \"directApply\": true,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://london-drugs-limited-jobs.careerplug.com/jobs/3489701\",\r\n" + //
+                      "                \"relevantOccupation\": \"Pharmacy Executive\",\r\n" + //
+                      "                \"skills\": [\r\n" + //
+                      "                    \"Laravel\"\r\n" + //
+                      "                ],\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"986b0a7b60d2b34e8dc073f3\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"London Drugs Limited\",\r\n" + //
+                      "                    \"logo\": \"https://d2zpdrfrohaf9r.cloudfront.net/system/logos/481973/original/2025-ProudlyCanadian-HeaderLogo-210x30-noBG.png?1756849585\",\r\n" + //
+                      "                    \"alternateName\": \"London Drugs\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://londondrugs.com\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"4076e30bfcff11af8ff15bb8\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"Canada\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"V6E1B5\",\r\n" + //
+                      "                        \"addressLocality\": \"Vancouver\",\r\n" + //
+                      "                        \"addressRegion\": \"BC\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"name\": \"Vancouver, BC, CA\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"PDT Timezone\",\r\n" + //
+                      "                \"sameAs\": \"https://london-drugs-limited-jobs.careerplug.com/jobs/3489701\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"careerplug_us\",\r\n" + //
+                      "            \"locale\": \"en_CA\",\r\n" + //
+                      "            \"title\": \"Pharmacy Assistant - Part Time\",\r\n" + //
+                      "            \"skills\": [\r\n" + //
+                      "                \"Laravel\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:00:00.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -7,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"London Drugs\",\r\n" + //
+                      "            \"state\": \"BC\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"careerplug\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 18.25,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"FullTime\",\r\n" + //
+                      "                \"PartTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"postCode\": \"V6E1B5\",\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Manager\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-09T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Castroville\",\r\n" + //
+                      "            \"timezone\": \"PDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Services\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f0d7f543bc26b90de3a56\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-09\",\r\n" + //
+                      "                \"employmentType\": \"FullTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"24.00\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"27.00\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"HOUR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Benefits:**\\n\\n* Health insurance\\n* Opportunity for advancement\\n* Training \\\\& development\\n* Vision insurance\\n* 401(k) matching\\n* Dental insurance  \\nSERVPRO of Monterey Peninsula is hiring a **Restoration Supervisor**!  \\n\\n**Benefits**  \\nSERVPRO of Monterey Peninsula offers:\\n\\n* Competitive compensation\\n* Superior benefits\\n* Career progression\\n* Professional development\\n\\nAnd more!  \\nAs the front-line representative of the SERVPRO® brand, the **Restoration Supervisor** demonstrates the company's Here to Help® commitment to customers and clients. This is done by coordinating, monitoring, and performing work activities on projects to successfully fulfill service needs and facilitate a positive customer experience.  \\n\\n**Key Responsibilities**\\n\\n* Coordinate and perform production processes as scheduled and ensure quality control\\n* Manage the customer and client experience and overall customer satisfaction tracked with online reviews\\n* Communicate clear expectations to restoration technicians and supervise their activities\\n* Document a detailed and accurate job file to support the services provided\\n* Manage labor and consumable item usage on assigned projects\\n* Communicate with restoration project manager and office staff on project progress and issues\\n\\n**Additional Responsibilities:**\\n\\n* Communicate and follow all OSHA guidelines for job safety\\n* Manage assets by protecting and using equipment and materials properly\\n* Coach and train restoration technicians\\n\\n**Position Requirements**\\n\\n* Valid driver's license\\n* High school diploma/GED (preferred)\\n* At least 1 year of experience in cleaning, restoration, or construction\\n* IICRC certification a plus, not required\\n\\n**Skills/Physical Demands/Competencies**\\n\\n* Ability to lift a minimum of 50 pounds regularly, occasionally up to 100 pounds with assistance\\n* Ability to climb ladders, work at ceiling heights, work in tight spaces (i.e. crawl spaces, attics)\\n* Ability to repetitively push/pull/lift/carry objects\\n* Ability to work with/around cleaning agents\\n\\nEach SERVPRO® Franchise is Independently Owned and Operated.  \\n*All employees of a SERVPRO Franchise are hired by, employed by, and under the sole supervision and control of an independently owned and operated Servpro Franchise. Servpro Franchise employees are not employed by, jointly employed by, agents of or under the supervision or control of Servpro Industries, LLC or Servpro Franchisor, LLC (the Franchisor), in any manner whatsoever. All Sample Forms provided by Servpro Industries to Servpro Franchises should be reviewed and approved by the Franchise's attorney for compliance with Federal, State and Local laws. All Sample Forms are provided for informational purposes and Servpro Franchises may choose whether or not to use them.*\",\r\n" + //
+                      "                \"industry\": \"Services\",\r\n" + //
+                      "                \"jobBenefits\": \"Pension Plan\",\r\n" + //
+                      "                \"title\": \"Restoration Supervisor\",\r\n" + //
+                      "                \"directApply\": true,\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://servpro-careers.careerplug.com/jobs/3489663\",\r\n" + //
+                      "                \"relevantOccupation\": \"Manager\",\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"7f7dacae3c800b3469364821\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"SERVPRO of Monterey Peninsula\",\r\n" + //
+                      "                    \"logo\": \"https://d2zpdrfrohaf9r.cloudfront.net/system/logos/519142/original/Logo_300px_wide.png?1663599356\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://servpro.com\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"13063369711df4c0a780040e\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"postalCode\": \"95012\",\r\n" + //
+                      "                        \"addressLocality\": \"Castroville\",\r\n" + //
+                      "                        \"addressRegion\": \"CA\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 36.76195,\r\n" + //
+                      "                    \"name\": \"Castroville, CA, US\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -121.7518\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"PDT Timezone\",\r\n" + //
+                      "                \"sameAs\": \"https://servpro-careers.careerplug.com/jobs/3489663\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"careerplug_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -121.7518,\r\n" + //
+                      "                \"lat\": 36.76195\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Restoration Supervisor\",\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T00:00:00.000Z\",\r\n" + //
+                      "            \"timezoneOffset\": -7,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"SERVPRO of Monterey Peninsula\",\r\n" + //
+                      "            \"state\": \"CA\",\r\n" + //
+                      "            \"isDuplicate\": true,\r\n" + //
+                      "            \"portal\": \"careerplug\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"minSalary\": 24,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Technician\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-18T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Lawrenceville\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Healthcare\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f0d834f3fca1e7b475e10\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-18\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"52000\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"62400\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"YEAR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Pay:** $25--$30 per hour\\n\\n**Schedule:** Afternoon hours schedule / After‑school hours\\n\\n**Setting:** Home‑based cases / Clinic cases / Day-care cases\\n\\n**About Circle Care Services**\\n\\nCircle Care Services provides compassionate ABA therapy for children on the autism spectrum. We support our RBTs with strong supervision and clear onboarding so you can confidently apply your skills and make a real impact with the families you serve.\\n\\n**About the Role**\\n\\nAs Registered Behavior Technician (RBT), you will work one‑on‑one with children in home, school, or clinic settings, implementing ABA programs designed by a supervising BCBA.\\n\\n**Responsibilities**\\n\\n- Provide ABA therapy under BCBA supervision\\n\\n- Follow treatment and behavior intervention plans\\n\\n- Collect and track session data\\n\\n- Support skill development and promote positive behavior\\n\\n- Share progress with your clinical team   \\n\\n**Why You'll Love Working With Us**\\n\\n- Flexible scheduling\\n\\n- Supportive supervision and ongoing feedback\\n\\n- Competitive pay ($25--$30/hour)\\n\\n- Opportunities to grow in ABA and behavioral health\\n\\n**Requirements**\\n\\n**-Active RBT Certification**\\n\\n- High school diploma\\n\\n- At least 18 years old\\n\\n- Reliable transportation and valid driver's license\\n\\n- Organized, dependable, and open to feedback\\n\\n- Interest in behavioral health\",\r\n" + //
+                      "                \"industry\": \"Healthcare\",\r\n" + //
+                      "                \"title\": \"Registered Behavior Technician (RBT)\",\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://jobr.pro/job/42001159/registered-behavior-technician-rbt\",\r\n" + //
+                      "                \"relevantOccupation\": \"Technician\",\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"3377eed3236eafdcd769a761\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"Circle Care Services\",\r\n" + //
+                      "                    \"logo\": \"https://jobr.pro/icon-192.png\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://jobr.pro\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"d9ae533a974daeecb0670dac\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"addressLocality\": \"Lawrenceville\",\r\n" + //
+                      "                        \"addressRegion\": \"GA\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 33.95621,\r\n" + //
+                      "                    \"name\": \"Lawrenceville, GA, United States\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -83.98796\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"applicationUrl\": \"https://jobr.pro/job/42001159/registered-behavior-technician-rbt\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"techmap_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -83.98796,\r\n" + //
+                      "                \"lat\": 33.95621\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Registered Behavior Technician (RBT)\",\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T02:18:31.955Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"Circle Care Services\",\r\n" + //
+                      "            \"state\": \"GA\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"techmap\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"dateExpired\": \"2026-08-18T00:00:00.000Z\",\r\n" + //
+                      "            \"minSalary\": 52000,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        },\r\n" + //
+                      "        {\r\n" + //
+                      "            \"occupation\": \"Technician\",\r\n" + //
+                      "            \"dateActive\": \"2026-08-18T00:00:00.000Z\",\r\n" + //
+                      "            \"city\": \"Lawrenceville\",\r\n" + //
+                      "            \"timezone\": \"EDT\",\r\n" + //
+                      "            \"contractType\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"language\": \"en\",\r\n" + //
+                      "            \"industry\": \"Healthcare\",\r\n" + //
+                      "            \"jsonLD\": {\r\n" + //
+                      "                \"identifier\": \"6a4f0d834f3fca1e7b475e11\",\r\n" + //
+                      "                \"validThrough\": \"2026-08-18\",\r\n" + //
+                      "                \"employmentType\": \"FlexTime\",\r\n" + //
+                      "                \"@type\": \"JobPosting\",\r\n" + //
+                      "                \"baseSalary\": {\r\n" + //
+                      "                    \"@type\": \"MonetaryAmount\",\r\n" + //
+                      "                    \"currency\": \"USD\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"value\": {\r\n" + //
+                      "                        \"minValue\": \"52000\",\r\n" + //
+                      "                        \"@type\": \"QuantitativeValue\",\r\n" + //
+                      "                        \"maxValue\": \"62400\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\",\r\n" + //
+                      "                        \"unitText\": \"YEAR\"\r\n" + //
+                      "                    }\r\n" + //
+                      "                },\r\n" + //
+                      "                \"salaryCurrency\": \"USD\",\r\n" + //
+                      "                \"description\": \"**Pay:** $25--$30 per hour\\n\\n**Schedule:** Afternoon hours schedule / After‑school hours\\n\\n**Setting:** Home‑based cases / Clinic cases / Day-care cases\\n\\n**About Circle Care Services**\\n\\nCircle Care Services provides compassionate ABA therapy for children on the autism spectrum. We support our RBTs with strong supervision and clear onboarding so you can confidently apply your skills and make a real impact with the families you serve.\\n\\n**About the Role**\\n\\nAs Registered Behavior Technician (RBT), you will work one‑on‑one with children in home, school, or clinic settings, implementing ABA programs designed by a supervising BCBA.\\n\\n**Responsibilities**\\n\\n- Provide ABA therapy under BCBA supervision\\n\\n- Follow treatment and behavior intervention plans\\n\\n- Collect and track session data\\n\\n- Support skill development and promote positive behavior\\n\\n- Share progress with your clinical team   \\n\\n**Why You'll Love Working With Us**\\n\\n- Flexible scheduling\\n\\n- Supportive supervision and ongoing feedback\\n\\n- Competitive pay ($25--$30/hour)\\n\\n- Opportunities to grow in ABA and behavioral health\\n\\n**Requirements**\\n\\n**-Active RBT Certification**\\n\\n- High school diploma\\n\\n- At least 18 years old\\n\\n- Reliable transportation and valid driver's license\\n\\n- Organized, dependable, and open to feedback\\n\\n- Interest in behavioral health\",\r\n" + //
+                      "                \"industry\": \"Healthcare\",\r\n" + //
+                      "                \"title\": \"Registered Behavior Technician (RBT)\",\r\n" + //
+                      "                \"@context\": \"https://schema.org\",\r\n" + //
+                      "                \"url\": \"https://jobr.pro/job/42001159/registered-behavior-technician-rbt\",\r\n" + //
+                      "                \"relevantOccupation\": \"Technician\",\r\n" + //
+                      "                \"hiringOrganization\": {\r\n" + //
+                      "                    \"identifier\": \"3377eed3236eafdcd769a761\",\r\n" + //
+                      "                    \"@type\": \"Organization\",\r\n" + //
+                      "                    \"name\": \"Circle Care Services\",\r\n" + //
+                      "                    \"logo\": \"https://jobr.pro/icon-192.png\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"url\": \"https://jobr.pro\"\r\n" + //
+                      "                },\r\n" + //
+                      "                \"jobLocation\": {\r\n" + //
+                      "                    \"identifier\": \"d9ae533a974daeecb0670dac\",\r\n" + //
+                      "                    \"address\": {\r\n" + //
+                      "                        \"addressCountry\": \"United States\",\r\n" + //
+                      "                        \"@type\": \"PostalAddress\",\r\n" + //
+                      "                        \"addressLocality\": \"Lawrenceville\",\r\n" + //
+                      "                        \"addressRegion\": \"GA\",\r\n" + //
+                      "                        \"@context\": \"https://schema.org\"\r\n" + //
+                      "                    },\r\n" + //
+                      "                    \"@type\": \"Place\",\r\n" + //
+                      "                    \"latitude\": 33.95621,\r\n" + //
+                      "                    \"name\": \"Lawrenceville, GA, United States\",\r\n" + //
+                      "                    \"@context\": \"https://schema.org\",\r\n" + //
+                      "                    \"longitude\": -83.98796\r\n" + //
+                      "                },\r\n" + //
+                      "                \"employmentUnit\": \"N/A\",\r\n" + //
+                      "                \"applicationUrl\": \"https://jobr.pro/job/42001159/registered-behavior-technician-rbt\",\r\n" + //
+                      "                \"datePosted\": \"2026-07-09\",\r\n" + //
+                      "                \"applicantLocationRequirements\": \"EDT Timezone\"\r\n" + //
+                      "            },\r\n" + //
+                      "            \"source\": \"techmap_us\",\r\n" + //
+                      "            \"locale\": \"en_US\",\r\n" + //
+                      "            \"geoPoint\": {\r\n" + //
+                      "                \"lon\": -83.98796,\r\n" + //
+                      "                \"lat\": 33.95621\r\n" + //
+                      "            },\r\n" + //
+                      "            \"title\": \"Registered Behavior Technician (RBT)\",\r\n" + //
+                      "            \"dateCreated\": \"2026-07-09T02:18:31.955Z\",\r\n" + //
+                      "            \"timezoneOffset\": -4,\r\n" + //
+                      "            \"countryCode\": \"us\",\r\n" + //
+                      "            \"company\": \"Circle Care Services\",\r\n" + //
+                      "            \"state\": \"GA\",\r\n" + //
+                      "            \"isDuplicate\": false,\r\n" + //
+                      "            \"portal\": \"techmap\",\r\n" + //
+                      "            \"department\": \"N/A\",\r\n" + //
+                      "            \"workPlace\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isRecruiter\": false,\r\n" + //
+                      "            \"dateExpired\": \"2026-08-18T00:00:00.000Z\",\r\n" + //
+                      "            \"minSalary\": 52000,\r\n" + //
+                      "            \"hasSalary\": true,\r\n" + //
+                      "            \"careerLevel\": [\r\n" + //
+                      "                \"N/A\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"workType\": [\r\n" + //
+                      "                \"FlexTime\",\r\n" + //
+                      "                \"FullTime\"\r\n" + //
+                      "            ],\r\n" + //
+                      "            \"isDirect\": true\r\n" + //
+                      "        }\r\n" + //
+                      "    ],\r\n" + //
+                      "    \"resultSizeInBytes\": 52644\r\n" + //
+                      "}";
     }
 }
