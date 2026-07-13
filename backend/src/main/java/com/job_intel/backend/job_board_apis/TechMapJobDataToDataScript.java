@@ -4,9 +4,11 @@ import org.apache.tomcat.util.digester.SystemPropertySource;
 import org.json.*;
 
 import com.job_intel.backend.models.Company;
+import com.job_intel.backend.repositories.CompanyRepository;
 
 public class TechMapJobDataToDataScript {
 
+    private CompanyRepository cRepository;
     public static void mapJobDataToEntity(String jobDataBody) {
         // TODO: print out actual jobs with the correct JSON lib syntax
         // ie job 1, job 2, etc
@@ -35,10 +37,12 @@ public class TechMapJobDataToDataScript {
     }
 
     private static String companyDBentry(String companyName){
+    
         Company companyFromJobData = new Company();
         companyFromJobData.setName(companyName);
         
         if(companyFromJobData.getName() == companyName){
+        
             return "good";
         } else {
             return "bad";
