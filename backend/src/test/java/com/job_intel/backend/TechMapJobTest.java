@@ -12,11 +12,14 @@ import org.springframework.beans.factory.annotation.Value;
 
 import com.job_intel.backend.job_board_apis.TechMapJobDataToDataScript;
 import com.job_intel.backend.job_board_apis.TechMapJobInit;
+import com.job_intel.backend.repositories.CompanyRepository;
 
 @SpringBootTest
 class TechMapJobTest {
 
-   
+    @Autowired
+    private TechMapJobDataToDataScript tec;
+
 
     /*
     @Test
@@ -49,9 +52,10 @@ class TechMapJobTest {
 
     @Test
     void jsonTest(){
-        // so far so good, just need to print actual jobs
+        // if company exist i need to skip it being entered
         String json = JsonEx.jsonTemp();
-        TechMapJobDataToDataScript.mapJobDataToEntity(json);
+        tec.mapJobDataToEntity(json);
+        
     }
          
 }
