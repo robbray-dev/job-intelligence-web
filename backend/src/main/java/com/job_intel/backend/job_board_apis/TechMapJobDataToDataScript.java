@@ -26,11 +26,19 @@ public class TechMapJobDataToDataScript {
             String company = arr.getJSONObject(i).getString("company");
 
            Company comp = new Company();
+            System.out.println("here");
+
            comp.setName(company);
+           System.out.println("made it out");
 
 
            // if a company exist i need to skip it from being entered in the db
-           cRepository.save(comp);
+
+           if(cRepository.existsByName(comp.getName())){
+            continue;
+           } else {
+            cRepository.save(comp);
+           }
 
         }
     }
