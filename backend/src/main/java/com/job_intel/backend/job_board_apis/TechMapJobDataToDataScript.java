@@ -5,6 +5,7 @@ import org.json.*;
 import org.springframework.stereotype.Component;
 
 import com.job_intel.backend.models.Company;
+import com.job_intel.backend.models.Skill;
 import com.job_intel.backend.repositories.CompanyRepository;
 import com.job_intel.backend.repositories.SkillRepository;
 
@@ -40,7 +41,22 @@ public class TechMapJobDataToDataScript {
            //skills table setup and insertion
            // skills [3] --> 0: JAVA, 1: SQL, 2: Python
 
-           
+           JSONArray skillArray = obj.getJSONArray("skills");
+
+           for (int j = 0; j < skillArray.length(); j++) {
+            String skill = skillArray.getJSONObject(j).getString(String.valueOf(j));
+            System.out.println(skill);
+            Skill skillObj = new Skill();
+            skillObj.setName(skill);
+            
+            if(sRepository.existsByName(skillObj.getName())) {
+                continue;
+            } else {
+                sRepository.save(skillObj);
+            }
+           }
+
+
 
         }
     }
