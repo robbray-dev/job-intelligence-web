@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.job_intel.backend.models.Company;
 import com.job_intel.backend.repositories.CompanyRepository;
+import com.job_intel.backend.repositories.SkillRepository;
 
 import lombok.AllArgsConstructor;
 
@@ -14,6 +15,7 @@ import lombok.AllArgsConstructor;
 public class TechMapJobDataToDataScript {
 
     private CompanyRepository cRepository;
+    private SkillRepository sRepository;
 
     public void mapJobDataToEntity(String jobDataBody) {
     
@@ -25,20 +27,20 @@ public class TechMapJobDataToDataScript {
         for (int i = 0; i < arr.length(); i++) {
             String company = arr.getJSONObject(i).getString("company");
 
+            //company table setup and insertion 
            Company comp = new Company();
-            System.out.println("here");
-
            comp.setName(company);
-           System.out.println("made it out");
-
-
-           // if a company exist i need to skip it from being entered in the db
 
            if(cRepository.existsByName(comp.getName())){
             continue;
            } else {
             cRepository.save(comp);
            }
+
+           //skills table setup and insertion
+           // skills [3] --> 0: JAVA, 1: SQL, 2: Python
+
+           
 
         }
     }
