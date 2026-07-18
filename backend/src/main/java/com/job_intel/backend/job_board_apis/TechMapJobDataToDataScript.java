@@ -28,8 +28,9 @@ public class TechMapJobDataToDataScript {
         // results [10]
         // results at i = {occ, title, skill[], etc}
         for(int l = 0; l < arr.length(); l++){
-           if(arr.getJSONObject(l).optJSONArray("skills") != null) {
-                System.out.println(l + ": " + arr.getJSONObject(l).optJSONArray("skills"));
+            JSONArray skillsArray = arr.getJSONObject(l).optJSONArray("skills");
+           if( skillsArray != null) {
+                System.out.println(l + ": " + skillsArray);
             }
             
         }
