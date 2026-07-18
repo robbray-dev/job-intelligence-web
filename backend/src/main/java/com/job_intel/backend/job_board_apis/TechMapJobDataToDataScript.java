@@ -34,10 +34,17 @@ public class TechMapJobDataToDataScript {
              */
 
             if (skillsArray != null) {
-                System.out.println(arr.getJSONObject(l).get("occupation") + " needs skills ...");
                 for (int j = 0; j < skillsArray.length(); j++) {
 
                     System.out.println(l + ": " + skillsArray.getString(j));
+                    String skillName = skillsArray.getString(j);
+                    Skill skillObj = new Skill();
+                    skillObj.setName(skillName);
+
+                    if (!sRepository.existsByName(skillObj.getName())) {
+                        sRepository.save(skillObj);
+                    }
+
                 }
             }
 
