@@ -32,11 +32,12 @@ public class TechMapJobDataToDataScript {
             /*
              * if( skillsArray != null) { System.out.println(l + ": " + skillsArray); }
              */
-            System.out.println(arr.getJSONObject(l).get("occupation") + " needs skills ...");
-            if (skillsArray != null) {
-                for (int j = 0; j < skillsArray.length(); j++) {
-                    System.out.println(skillsArray.getString(j));
 
+            if (skillsArray != null) {
+                System.out.println(arr.getJSONObject(l).get("occupation") + " needs skills ...");
+                for (int j = 0; j < skillsArray.length(); j++) {
+
+                    System.out.println(l + ": " + skillsArray.getString(j));
                 }
             }
 
