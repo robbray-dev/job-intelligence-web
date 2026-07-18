@@ -25,6 +25,15 @@ public class TechMapJobDataToDataScript {
 
         JSONArray arr = obj.getJSONArray("result");
 
+        // results [10]
+        // results at i = {occ, title, skill[], etc}
+        for(int l = 0; l < arr.length(); l++){
+           if(arr.getJSONObject(l).optJSONArray("skills") != null) {
+                System.out.println(l + ": " + arr.getJSONObject(l).optJSONArray("skills"));
+            }
+            
+        }
+
         for (int i = 0; i < arr.length(); i++) {
             String company = arr.getJSONObject(i).getString("company");
 
@@ -32,16 +41,15 @@ public class TechMapJobDataToDataScript {
            Company comp = new Company();
            comp.setName(company);
 
-           if(cRepository.existsByName(comp.getName())){
-            continue;
-           } else {
-            cRepository.save(comp);
+           if(!cRepository.existsByName(comp.getName())){
+             cRepository.save(comp);
            }
-
            //skills table setup and insertion
            // skills [3] --> 0: JAVA, 1: SQL, 2: Python
+    
 
-           JSONArray skillArray = obj.getJSONArray("skills");
+           /*
+           JSONArray skillArray = obj.getJSONArray("results");
 
            for (int j = 0; j < skillArray.length(); j++) {
             String skill = skillArray.getJSONObject(j).getString(String.valueOf(j));
@@ -56,7 +64,7 @@ public class TechMapJobDataToDataScript {
             }
            }
 
-
+ */
 
         }
     }
