@@ -36,7 +36,6 @@ public class TechMapJobDataToDataScript {
             if (skillsArray != null) {
                 for (int j = 0; j < skillsArray.length(); j++) {
 
-                    System.out.println(l + ": " + skillsArray.getString(j));
                     String skillName = skillsArray.getString(j);
                     Skill skillObj = new Skill();
                     skillObj.setName(skillName);
