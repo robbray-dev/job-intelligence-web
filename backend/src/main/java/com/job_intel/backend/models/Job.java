@@ -46,6 +46,7 @@ public class Job {
     @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    // break down this right here
     @OneToMany(mappedBy = "job")
     private List<JobSkill> jobSkills;
 }
