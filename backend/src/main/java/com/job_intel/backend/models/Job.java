@@ -47,6 +47,8 @@ public class Job {
     private LocalDateTime createdAt;
 
     // break down this right here
+    // so far, its one job has many job skill entries and they are mapped by the job
+    // field in the jobSkills
     @OneToMany(mappedBy = "job")
     private List<JobSkill> jobSkills;
 }
