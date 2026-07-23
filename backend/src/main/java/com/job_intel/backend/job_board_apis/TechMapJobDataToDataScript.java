@@ -27,8 +27,8 @@ public class TechMapJobDataToDataScript {
 
         // results [10]
         // results at i = {occ, title, skill[], etc}
-        for (int l = 0; l < arr.length(); l++) {
-            JSONArray skillsArray = arr.getJSONObject(l).optJSONArray("skills");
+        for (int i = 0; i < arr.length(); i++) {
+            JSONArray skillsArray = arr.getJSONObject(i).optJSONArray("skills");
             /*
              * if( skillsArray != null) { System.out.println(l + ": " + skillsArray); }
              */
@@ -47,9 +47,6 @@ public class TechMapJobDataToDataScript {
                 }
             }
 
-        }
-
-        for (int i = 0; i < arr.length(); i++) {
             String company = arr.getJSONObject(i).getString("company");
 
             // company table setup and insertion
@@ -59,23 +56,9 @@ public class TechMapJobDataToDataScript {
             if (!cRepository.existsByName(comp.getName())) {
                 cRepository.save(comp);
             }
-            // skills table setup and insertion
-            // skills [3] --> 0: JAVA, 1: SQL, 2: Python
-
-            /*
-             * JSONArray skillArray = obj.getJSONArray("results");
-             * 
-             * for (int j = 0; j < skillArray.length(); j++) { String skill =
-             * skillArray.getJSONObject(j).getString(String.valueOf(j));
-             * System.out.println(skill); Skill skillObj = new Skill();
-             * skillObj.setName(skill);
-             * 
-             * if(sRepository.existsByName(skillObj.getName())) { continue; } else {
-             * sRepository.save(skillObj); } }
-             * 
-             */
 
         }
+
     }
 
 }
