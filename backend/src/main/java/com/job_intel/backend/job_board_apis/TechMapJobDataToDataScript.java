@@ -57,6 +57,13 @@ public class TechMapJobDataToDataScript {
                 cRepository.save(comp);
             }
 
+            // gotta do the job skill entry BUT after jobs are inserted
+            // id, job_id, skill_id
+            /*
+             * results at i = {occ, title, skill[], etc} - > skill{0: skill 0, 1: skill 1,
+             * 2: skill 2,} get the skill id by name,
+             */
+
         }
 
     }
