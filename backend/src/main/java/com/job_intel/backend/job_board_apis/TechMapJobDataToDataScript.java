@@ -60,6 +60,11 @@ public class TechMapJobDataToDataScript {
             // gotta do the job skill entry BUT after jobs are inserted
             // id, job_id, skill_id
             /*
+             * Job entity: id - auto gen title - title field, but may be too naunced company
+             * - needs to map to the company id in its table or just store the company id
+             * jsonLd - base salary - value - minValue and maxValue for min and max salary
+             */
+            /*
              * results at i = {occ, title, skill[], etc} - > skill{0: skill 0, 1: skill 1,
              * 2: skill 2,} get the skill id by name,
              */
