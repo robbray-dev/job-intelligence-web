@@ -1,12 +1,16 @@
 package com.job_intel.backend.job_board_apis;
 
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
+
 import org.apache.tomcat.util.digester.SystemPropertySource;
 import org.json.*;
 import org.springframework.stereotype.Component;
 
 import com.job_intel.backend.models.Company;
+import com.job_intel.backend.models.Job;
 import com.job_intel.backend.models.Skill;
 import com.job_intel.backend.repositories.CompanyRepository;
+import com.job_intel.backend.repositories.JobRepository;
 import com.job_intel.backend.repositories.SkillRepository;
 
 import lombok.AllArgsConstructor;
@@ -17,6 +21,7 @@ public class TechMapJobDataToDataScript {
 
     private CompanyRepository cRepository;
     private SkillRepository sRepository;
+    private JobRepository jRepository;
 
     public void mapJobDataToEntity(String jobDataBody) {
 
@@ -68,6 +73,9 @@ public class TechMapJobDataToDataScript {
              * results at i = {occ, title, skill[], etc} - > skill{0: skill 0, 1: skill 1,
              * 2: skill 2,} get the skill id by name,
              */
+            Job jobEntity = new Job();
+            String title = arr.getJSONObject(i).getString("title");
+            System.out.println(title);
 
         }
 
