@@ -20,42 +20,33 @@ class TechMapJobTest {
     @Autowired
     private TechMapJobDataToDataScript tec;
 
-
     /*
-    @Test
-    void jobInitTest (){
-       
-       
-        tec.initClient();
-        System.out.println(tec.getRes());
-        assertNotNull(tec.getRes());
-
-    }
-
-
-    @Test
-    void apiTest(@Autowired RapidApiService apiService){
-        String apiKey = apiService.getApiKey();
-        System.out.println(apiKey);
-
-        assertNotNull(apiKey);
-    }
-
- */
-/* 
-    @Test
-    void techMapJobInitConstructorTest() {
-
-        System.out.println(TechMapJobInit.getJobDataFromApi());
-    }
-*/
+     * @Test void jobInitTest (){
+     * 
+     * 
+     * tec.initClient(); System.out.println(tec.getRes());
+     * assertNotNull(tec.getRes());
+     * 
+     * }
+     * 
+     * 
+     * @Test void apiTest(@Autowired RapidApiService apiService){ String apiKey =
+     * apiService.getApiKey(); System.out.println(apiKey);
+     * 
+     * assertNotNull(apiKey); }
+     * 
+     */
+    /*
+     * @Test void techMapJobInitConstructorTest() {
+     * 
+     * System.out.println(TechMapJobInit.getJobDataFromApi()); }
+     */
 
     @Test
-    void jsonTest(){
-        // if company exist i need to skip it being entered
+    void jsonTest() {
         String json = JsonEx.jsonTemp();
         tec.mapJobDataToEntity(json);
-        
+
     }
-         
+
 }

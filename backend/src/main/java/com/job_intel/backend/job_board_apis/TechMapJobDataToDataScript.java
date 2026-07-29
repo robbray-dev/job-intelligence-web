@@ -72,10 +72,34 @@ public class TechMapJobDataToDataScript {
             /*
              * results at i = {occ, title, skill[], etc} - > skill{0: skill 0, 1: skill 1,
              * 2: skill 2,} get the skill id by name,
+             * 
+             * private String location;
+             * 
+             * @Column(name = "salary_min") private Integer salaryMin;
+             * 
+             * @Column(name = "salary_max") private Integer salaryMax;
+             * 
+             * @Column(nullable = false) private String description;
+             * 
+             * @Column(name = "job_url", nullable = false, unique = true) private String
+             * jobUrl;
              */
             Job jobEntity = new Job();
             String title = arr.getJSONObject(i).getString("title");
-            System.out.println(title);
+            // use comp for company
+            String locationCheck = arr.getJSONObject(i).optString("city");
+            String location;
+            if (locationCheck == "") {
+                location = "Remote";
+            } else {
+                location = locationCheck;
+            }
+
+            Integer minSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
+                    .getJSONObject("value").getInt("minValue");
+
+            Integer maxSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
+                    .getJSONObject("value").getInt("maxValue");
 
         }
 

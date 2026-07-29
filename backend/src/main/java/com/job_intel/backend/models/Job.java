@@ -22,6 +22,7 @@ public class Job {
     @Column(nullable = false)
     private String title;
 
+    // how does it work when saving comp in the map script
     @ManyToOne
     @JoinColumn(name = "company_id", nullable = false)
     private Company company;
@@ -40,6 +41,7 @@ public class Job {
     @Column(name = "job_url", nullable = false, unique = true)
     private String jobUrl;
 
+    // how does this get populated, is it a db thing?
     @Column(name = "posted_date")
     private LocalDate postedDate;
 
