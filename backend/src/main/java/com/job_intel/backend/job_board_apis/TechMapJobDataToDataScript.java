@@ -101,6 +101,11 @@ public class TechMapJobDataToDataScript {
             Integer maxSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
                     .getJSONObject("value").getInt("maxValue");
 
+            String description = arr.getJSONObject(i).getJSONObject("jsonLD").getString("description");
+
+            String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
+            System.out.println(minSalary + " " + maxSalary + " " + location + " " + jobUrl);
+
         }
 
     }
