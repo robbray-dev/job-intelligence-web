@@ -10,6 +10,8 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "jobs")

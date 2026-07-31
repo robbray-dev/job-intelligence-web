@@ -73,6 +73,16 @@ public class TechMapJobDataToDataScript {
              * results at i = {occ, title, skill[], etc} - > skill{0: skill 0, 1: skill 1,
              * 2: skill 2,} get the skill id by name,
              * 
+             * @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
+             * 
+             * @Column(nullable = false) private String title;
+             * 
+             * // how does it work when saving comp in the map script
+             * 
+             * @ManyToOne
+             * 
+             * @JoinColumn(name = "company_id", nullable = false) private Company company;
+             * 
              * private String location;
              * 
              * @Column(name = "salary_min") private Integer salaryMin;
@@ -83,6 +93,18 @@ public class TechMapJobDataToDataScript {
              * 
              * @Column(name = "job_url", nullable = false, unique = true) private String
              * jobUrl;
+             * 
+             * // how does this get populated, is it a db thing?
+             * 
+             * @Column(name = "posted_date") private LocalDate postedDate;
+             * 
+             * @Column(name = "created_at", insertable = false, updatable = false) private
+             * LocalDateTime createdAt;
+             * 
+             * // break down this right here // so far, its one job has many job skill
+             * entries and they are mapped by the job // field in the jobSkills
+             * 
+             * @OneToMany(mappedBy = "job") private List<JobSkill> jobSkills;
              */
             Job jobEntity = new Job();
             String title = arr.getJSONObject(i).getString("title");
@@ -101,6 +123,10 @@ public class TechMapJobDataToDataScript {
                     .getJSONObject("value").getInt("maxValue");
             String description = arr.getJSONObject(i).getJSONObject("jsonLD").getString("description");
             String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
+
+            Job.builder().title(title).company(comp).location(location).salaryMin(minSalary).salaryMax(maxSalary)
+                    .description(description).jobUrl(jobUrl).build();
+
             System.out.println(minSalary + " " + maxSalary + " " + location + " " + jobUrl);
 
         }
