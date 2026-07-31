@@ -1,5 +1,7 @@
 package com.job_intel.backend.job_board_apis;
 
+import java.time.LocalDate;
+
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
 import org.apache.tomcat.util.digester.SystemPropertySource;
@@ -123,11 +125,11 @@ public class TechMapJobDataToDataScript {
                     .getJSONObject("value").getInt("maxValue");
             String description = arr.getJSONObject(i).getJSONObject("jsonLD").getString("description");
             String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
+            String datePosted = arr.getJSONObject(i).getJSONObject("jsonLD").getString("datePosted");
+            LocalDate postedDate = LocalDate.parse(datePosted);
 
             Job.builder().title(title).company(comp).location(location).salaryMin(minSalary).salaryMax(maxSalary)
-                    .description(description).jobUrl(jobUrl).build();
-
-            System.out.println(minSalary + " " + maxSalary + " " + location + " " + jobUrl);
+                    .description(description).jobUrl(jobUrl).postedDate(postedDate).build();
 
         }
 
