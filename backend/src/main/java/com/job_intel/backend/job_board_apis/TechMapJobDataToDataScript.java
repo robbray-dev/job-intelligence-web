@@ -36,6 +36,47 @@ public class TechMapJobDataToDataScript {
         // results [10]
         // results at i = {occ, title, skill[], etc}
         for (int i = 0; i < arr.length(); i++) {
+            String company = arr.getJSONObject(i).getString("company");
+
+            // company table setup and insertion
+            Company comp = new Company();
+            comp.setName(company);
+
+            if (!cRepository.existsByName(comp.getName())) {
+                cRepository.save(comp);
+            }
+
+            Job jobEntity = new Job();
+            String title = arr.getJSONObject(i).getString("title");
+            // use comp for company
+            String locationCheck = arr.getJSONObject(i).optString("city");
+            String location;
+            if (locationCheck == "") {
+                location = "Remote";
+            } else {
+                location = locationCheck;
+            }
+
+            Integer minSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
+                    .getJSONObject("value").getInt("minValue");
+            Integer maxSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
+                    .getJSONObject("value").getInt("maxValue");
+            String description = arr.getJSONObject(i).getJSONObject("jsonLD").getString("description");
+            String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
+            String datePosted = arr.getJSONObject(i).getJSONObject("jsonLD").getString("datePosted");
+            LocalDate postedDate = LocalDate.parse(datePosted);
+
+            // how am i going to do this step: @OneToMany(mappedBy = "job") private
+            // List<JobSkill> jobSkills;
+            // for each job, place an entry with the job id and the skill id for each skill
+            // assoicated with this job and place it in the job_skills table
+
+            Job storedJob = Job.builder().title(title).company(comp).location(location).salaryMin(minSalary)
+                    .salaryMax(maxSalary).description(description).jobUrl(jobUrl).postedDate(postedDate).build();
+
+            // new theory just populate the job skills table and let spring handle this list
+            // populate job skills table, so populate the job first
+
             JSONArray skillsArray = arr.getJSONObject(i).optJSONArray("skills");
             /*
              * if( skillsArray != null) { System.out.println(l + ": " + skillsArray); }
@@ -53,16 +94,6 @@ public class TechMapJobDataToDataScript {
                     }
 
                 }
-            }
-
-            String company = arr.getJSONObject(i).getString("company");
-
-            // company table setup and insertion
-            Company comp = new Company();
-            comp.setName(company);
-
-            if (!cRepository.existsByName(comp.getName())) {
-                cRepository.save(comp);
             }
 
             // gotta do the job skill entry BUT after jobs are inserted
@@ -109,33 +140,6 @@ public class TechMapJobDataToDataScript {
              * 
              * @OneToMany(mappedBy = "job") private List<JobSkill> jobSkills;
              */
-            Job jobEntity = new Job();
-            String title = arr.getJSONObject(i).getString("title");
-            // use comp for company
-            String locationCheck = arr.getJSONObject(i).optString("city");
-            String location;
-            if (locationCheck == "") {
-                location = "Remote";
-            } else {
-                location = locationCheck;
-            }
-
-            Integer minSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
-                    .getJSONObject("value").getInt("minValue");
-            Integer maxSalary = arr.getJSONObject(i).getJSONObject("jsonLD").getJSONObject("baseSalary")
-                    .getJSONObject("value").getInt("maxValue");
-            String description = arr.getJSONObject(i).getJSONObject("jsonLD").getString("description");
-            String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
-            String datePosted = arr.getJSONObject(i).getJSONObject("jsonLD").getString("datePosted");
-            LocalDate postedDate = LocalDate.parse(datePosted);
-
-            // how am i going to do this step: @OneToMany(mappedBy = "job") private
-            // List<JobSkill> jobSkills;
-            // for each job, place an entry with the job id and the skill id for each skill
-            // assoicated with this job and place it in the job_skills table
-
-            Job.builder().title(title).company(comp).location(location).salaryMin(minSalary).salaryMax(maxSalary)
-                    .description(description).jobUrl(jobUrl).postedDate(postedDate).build();
 
         }
 
