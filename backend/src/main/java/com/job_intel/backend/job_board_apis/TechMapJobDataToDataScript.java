@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import com.job_intel.backend.models.Company;
 import com.job_intel.backend.models.Job;
+import com.job_intel.backend.models.JobSkill;
 import com.job_intel.backend.models.Skill;
 import com.job_intel.backend.repositories.CompanyRepository;
 import com.job_intel.backend.repositories.JobRepository;
@@ -127,6 +128,11 @@ public class TechMapJobDataToDataScript {
             String jobUrl = arr.getJSONObject(i).getJSONObject("jsonLD").getString("url");
             String datePosted = arr.getJSONObject(i).getJSONObject("jsonLD").getString("datePosted");
             LocalDate postedDate = LocalDate.parse(datePosted);
+
+            // how am i going to do this step: @OneToMany(mappedBy = "job") private
+            // List<JobSkill> jobSkills;
+            // for each job, place an entry with the job id and the skill id for each skill
+            // assoicated with this job and place it in the job_skills table
 
             Job.builder().title(title).company(comp).location(location).salaryMin(minSalary).salaryMax(maxSalary)
                     .description(description).jobUrl(jobUrl).postedDate(postedDate).build();
