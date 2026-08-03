@@ -93,6 +93,13 @@ public class TechMapJobDataToDataScript {
                         sRepository.save(skillObj);
                     }
 
+                    // for each job, place its skill and job in the job skill table
+                    // job 1 has - communication, sodering, communication job 2 has booking,
+                    // communication
+                    // for each skill in the job, place job + skill in the job_skill table only if
+                    // job_skills doesn't contain a job + skill entry already. how do i check that
+                    // job + skill doesnt exist
+
                 }
             }
 
