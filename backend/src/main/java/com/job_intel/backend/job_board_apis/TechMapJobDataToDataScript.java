@@ -1,6 +1,7 @@
 package com.job_intel.backend.job_board_apis;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
@@ -14,6 +15,7 @@ import com.job_intel.backend.models.JobSkill;
 import com.job_intel.backend.models.Skill;
 import com.job_intel.backend.repositories.CompanyRepository;
 import com.job_intel.backend.repositories.JobRepository;
+import com.job_intel.backend.repositories.JobSkillRepository;
 import com.job_intel.backend.repositories.SkillRepository;
 
 import lombok.AllArgsConstructor;
@@ -25,6 +27,7 @@ public class TechMapJobDataToDataScript {
     private CompanyRepository cRepository;
     private SkillRepository sRepository;
     private JobRepository jRepository;
+    private JobSkillRepository jsRepository;
 
     public void mapJobDataToEntity(String jobDataBody) {
 
@@ -46,7 +49,8 @@ public class TechMapJobDataToDataScript {
                 cRepository.save(comp);
             }
 
-            Job jobEntity = new Job();
+            Company compForJob = cRepository.findByName(company).orElse(null);
+
             String title = arr.getJSONObject(i).getString("title");
             // use comp for company
             String locationCheck = arr.getJSONObject(i).optString("city");
@@ -71,8 +75,10 @@ public class TechMapJobDataToDataScript {
             // for each job, place an entry with the job id and the skill id for each skill
             // assoicated with this job and place it in the job_skills table
 
-            Job storedJob = Job.builder().title(title).company(comp).location(location).salaryMin(minSalary)
+            Job storedJob = Job.builder().title(title).company(compForJob).location(location).salaryMin(minSalary)
                     .salaryMax(maxSalary).description(description).jobUrl(jobUrl).postedDate(postedDate).build();
+
+            jRepository.save(storedJob);
 
             // new theory just populate the job skills table and let spring handle this list
             // populate job skills table, so populate the job first
@@ -93,12 +99,14 @@ public class TechMapJobDataToDataScript {
                         sRepository.save(skillObj);
                     }
 
-                    // for each job, place its skill and job in the job skill table
-                    // job 1 has - communication, sodering, communication job 2 has booking,
-                    // communication
-                    // for each skill in the job, place job + skill in the job_skill table only if
-                    // job_skills doesn't contain a job + skill entry already. how do i check that
-                    // job + skill doesnt exist
+                    // i need a method to retrieve the skill object from the db by skill name
+                    // need to retrieve an entity by a field, jpa derivied method
+                    Skill skillForJSkill = sRepository.findByName(skillName).orElse(null);
+
+                    if (skillForJSkill != null) {
+                        JobSkill jobSkillEntry = JobSkill.builder().job(storedJob).skill(skillForJSkill).build();
+                        jsRepository.save(jobSkillEntry);
+                    }
 
                 }
             }
