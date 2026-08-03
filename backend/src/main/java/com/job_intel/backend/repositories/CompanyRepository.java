@@ -1,7 +1,6 @@
 package com.job_intel.backend.repositories;
 
 import com.job_intel.backend.models.Company;
-import com.job_intel.backend.models.Skill;
 
 import java.util.Optional;
 
@@ -11,6 +10,6 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
 
     boolean existsByName(String name);
 
-    Optional<Skill> findByName(String name);
+    Optional<Company> findByName(String name);
 
 }
